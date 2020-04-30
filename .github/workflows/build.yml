@@ -11,6 +11,8 @@ jobs:
     - name: Install Cocoapods
       run: gem install cocoapods      
     - name: Deploy to Cocoapods
+      env:
+        COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
         set -eo pipefail
         export LIB_VERSION=${GITHUB_REF:11}
