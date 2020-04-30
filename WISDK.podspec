@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "WISDK"
-  spec.version      = "0.0.1"
+  spec.version      = ENV['LIB_VERSION'] || "0.0.1"
   spec.summary      = "Wiinvent Sdk iOS"
 
   spec.description  = <<-DESC
