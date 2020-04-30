@@ -7,7 +7,7 @@ jobs:
   deploy:
     runs-on: macos-latest
     steps:
-    - uses: anhnam00   
+    - uses: actions/checkout@v2  
     - name: Install Cocoapods
       run: gem install cocoapods      
     - name: Deploy to Cocoapods
