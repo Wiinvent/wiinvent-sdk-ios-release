@@ -4,77 +4,88 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/WISDK-Swift.h</key>
+		<key>Headers/wiinvent_sdk_ios-Swift.h</key>
 		<data>
-		q/PrSF0+crnJJ0w1Mx1NYKhxSwo=
+		ZCXvi6LyqLtXZSHiPQdM/h2XBU8=
+		</data>
+		<key>Headers/wiinvent_sdk_ios.h</key>
+		<data>
+		OVch/gI6FriyRsml7b6gCw970TE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Qj7xaCksjrYUFlI/bTJDzhJK/3c=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
-		<data>
-		TydWWwYACiVoV0W2wHQoXtteiyk=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<data>
-		tjG3OR3UElMZHCAVfUrN21Z4IcE=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		TydWWwYACiVoV0W2wHQoXtteiyk=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		tjG3OR3UElMZHCAVfUrN21Z4IcE=
+		bBWbLNPl7zjTdZlt3LJBTb/ReUI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		F68gCk1XiAolNystGaRDfsSb86g=
+		Z2oF4Xi7HsdGYw2vu9oUWkk7XYQ=
+		</data>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<data>
+		iKCok5GFFQffhvcmD2mPIB2WJMI=
+		</data>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<data>
+		ZMevGlFKnENXAsww3ujTX+GD5dk=
+		</data>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64.swiftdoc</key>
+		<data>
+		iKCok5GFFQffhvcmD2mPIB2WJMI=
+		</data>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64.swiftmodule</key>
+		<data>
+		ZMevGlFKnENXAsww3ujTX+GD5dk=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/WISDK-Swift.h</key>
+		<key>Headers/wiinvent_sdk_ios-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wICrMwSSq1bBCyH7jGERHIyMEdATOdWVyIm+ma61BC8=
+			JUIPM7P+KUo7rQi3bTost8nrwlUNkOrGYmliBFBV2ug=
 			</data>
 		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<key>Headers/wiinvent_sdk_ios.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			72akIxaG7dOI5QjKuzI2XFCwSnh0ZEk1nN3yKkSE6rk=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j0MJu1CKXqDDB/OxYgQxik357uLqRkpvPjpgMXRHS1c=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			72akIxaG7dOI5QjKuzI2XFCwSnh0ZEk1nN3yKkSE6rk=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			j0MJu1CKXqDDB/OxYgQxik357uLqRkpvPjpgMXRHS1c=
+			5vVHgtkTtr/BU4dVBU84CI0scJNVU9wSfHr//hOifY4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X9ana7XAZaVwWsNXQI08S8Dfg0f6wM4CGJtGdXGcp6E=
+			fyNkoWFASZYwzNDwTCxZOiB6AfWyI4LWFrp+s9WMacA=
+			</data>
+		</dict>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64-apple-ios.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5GMr9wW9+L36TMb60V59EfsohLpDSA1wc+ADusisOOU=
+			</data>
+		</dict>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64-apple-ios.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ju18sI9m2gMlfPBXo2y5n8mRswHNFxyTvCJbVqUpIW0=
+			</data>
+		</dict>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5GMr9wW9+L36TMb60V59EfsohLpDSA1wc+ADusisOOU=
+			</data>
+		</dict>
+		<key>Modules/wiinvent_sdk_ios.swiftmodule/arm64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ju18sI9m2gMlfPBXo2y5n8mRswHNFxyTvCJbVqUpIW0=
 			</data>
 		</dict>
 	</dict>

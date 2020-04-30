@@ -1,0 +1,11 @@
+framework module wiinvent_sdk_ios {
+  umbrella header "wiinvent_sdk_ios.h"
+
+  export *
+  module * { export * }
+}
+
+module wiinvent_sdk_ios.Swift {
+    header "wiinvent_sdk_ios-Swift.h"
+    requires objc
+}
