@@ -18,9 +18,9 @@ Pod::Spec.new do |spec|
   
   spec.source = { :git => "https://github.com/Wiinvent/wiinvent-sdk-ios-release.git", :tag => "#{spec.version}" }
 
-  spec.source_files = "wiinvent_sdk_ios.framework/Headers/*.h"
-  spec.public_header_files = "wiinvent_sdk_ios.framework/Headers/*.h"
-  spec.vendored_frameworks = "wiinvent_sdk_ios.framework"
+  spec.source_files = "WISDK.framework/Headers/*.h"
+  spec.public_header_files = "WISDK.framework/Headers/*.h"
+  spec.vendored_frameworks = "WISDK.framework"
 
   spec.frameworks = 'AVFoundation', 'UIKit', 'WebKit'
 end
