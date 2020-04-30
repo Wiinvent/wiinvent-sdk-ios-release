@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "WiinventSdk"
+  spec.name         = "WISDK"
   spec.version      = "0.0.1"
   spec.summary      = "Wiinvent Sdk iOS"
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
                         Wiinvent SDK iOS
                    DESC
 
-  spec.homepage     = "https://github.com/Wiinvent/wiinvent-sdk-ios-release.git"
+  spec.homepage     = "https://wiinvent.tv"
   spec.license      = { :type => 'Copyright', :text => 'Copyright (C) 2020 by Wiinvent TV, Inc' }
   spec.author       = { "Wiinvent" => "support@wiinvent.tv" }
 

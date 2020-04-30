@@ -181,6 +181,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -196,11 +199,79 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_attribute(external_source_symbol)
 # pragma push_macro("any")
 # undef any
-# pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="wiinvent_sdk_ios",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
+# pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="WISDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
 
+@class UIEvent;
+@class NSCoder;
 
+SWIFT_CLASS("_TtC5WISDK15PassthroughView")
+@interface PassthroughView : UIView
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+SWIFT_CLASS("_TtC5WISDK12WIConfigData")
+@interface WIConfigData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
+@interface WIOverlayData : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+@class WKUserContentController;
+@class WKScriptMessage;
+@class WKWebView;
+@class WKNavigationAction;
+@class WKNavigation;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+@class WKWebViewConfiguration;
+@class WKWindowFeatures;
+
+SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
+@interface WIOverlayView : PassthroughView <WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+- (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webViewDidClose:(WKWebView * _Nonnull)webView;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK5WISDK")
+@interface WISDK : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK14WIStreamSource")
+@interface WIStreamSource : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC5WISDK11WIWebAction")
+@interface WIWebAction : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
 
 
 
