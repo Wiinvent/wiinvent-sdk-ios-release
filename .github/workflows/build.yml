@@ -1,4 +1,4 @@
-name: publish pod
+name: deploy pod
 on:
   release:
     types: 
