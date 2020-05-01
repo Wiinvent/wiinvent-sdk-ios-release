@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tjG3OR3UElMZHCAVfUrN21Z4IcE=
+		TM7jBtE5SdNByS57CmPuwn3cUWI=
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		tjG3OR3UElMZHCAVfUrN21Z4IcE=
+		TM7jBtE5SdNByS57CmPuwn3cUWI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -53,7 +53,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j0MJu1CKXqDDB/OxYgQxik357uLqRkpvPjpgMXRHS1c=
+			2UoG9zV0Obf23trvHNIaruljjoXY7gY5XYSJf09tjXY=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			j0MJu1CKXqDDB/OxYgQxik357uLqRkpvPjpgMXRHS1c=
+			2UoG9zV0Obf23trvHNIaruljjoXY7gY5XYSJf09tjXY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
