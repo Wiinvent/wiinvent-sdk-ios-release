@@ -1,4 +1,4 @@
-name: deloy pod
+name: deploy_pod
 on:
   release:
     types: 
