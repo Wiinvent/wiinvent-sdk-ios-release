@@ -12,7 +12,7 @@ import WebKit
   @objc deinit
 }
 @objc open class WISDK : ObjectiveC.NSObject {
-  public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
+  @objc public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
   @objc public static func unmonitorAVPlayer()
   @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, overlayData: WISDK.WIOverlayData!)

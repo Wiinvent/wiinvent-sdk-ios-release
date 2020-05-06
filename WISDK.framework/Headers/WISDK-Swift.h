@@ -277,6 +277,9 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
 
 SWIFT_CLASS("_TtC5WISDK5WISDK")
 @interface WISDK : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
++ (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
