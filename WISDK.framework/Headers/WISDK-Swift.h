@@ -215,19 +215,39 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 
 
 
+@class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 @interface WIConfigData : NSObject
+@property (nonatomic, copy) NSArray<WIStreamSource *> * _Nullable sources;
+@property (nonatomic, readonly) BOOL isVod;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
+enum Environment : NSInteger;
+@class Platform;
+enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
+  DeviceTypePHONE = 0,
+  DeviceTypeTV = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
+  EnvironmentDEV = 0,
+  EnvironmentSTAGING = 1,
+  EnvironmentPRODUCTION = 2,
+};
 
 @class WKUserContentController;
 @class WKScriptMessage;
@@ -253,15 +273,21 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
 - (void)webViewDidClose:(WKWebView * _Nonnull)webView;
 @end
 
+@class AVPlayer;
 
 SWIFT_CLASS("_TtC5WISDK5WISDK")
 @interface WISDK : NSObject
++ (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
++ (void)unmonitorAVPlayer;
++ (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC5WISDK14WIStreamSource")
 @interface WIStreamSource : NSObject
+@property (nonatomic, readonly, copy) NSURL * _Nullable url;
+@property (nonatomic, readonly, copy) NSString * _Nullable mineType;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
