@@ -68,9 +68,6 @@ import WebKit
   @objc override dynamic public init()
   @objc deinit
 }
-extension WKWebView {
-  public func hijackConsoleLog()
-}
 @objc open class PassthroughView : UIKit.UIView {
   open var isUserGestureEnabled: Swift.Bool
   @objc override dynamic public func point(inside point: CoreGraphics.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
