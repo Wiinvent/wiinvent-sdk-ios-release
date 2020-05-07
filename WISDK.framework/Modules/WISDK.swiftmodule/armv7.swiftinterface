@@ -3,6 +3,7 @@
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name WISDK
 import AVKit
 import Foundation
+import JavaScriptCore
 import Swift
 import WebKit
 @objc public class WIStreamSource : ObjectiveC.NSObject {
@@ -66,6 +67,9 @@ import WebKit
   public func getType() -> WISDK.WIWebAction.TypeAction
   @objc override dynamic public init()
   @objc deinit
+}
+extension WKWebView {
+  public func hijackConsoleLog()
 }
 @objc open class PassthroughView : UIKit.UIView {
   open var isUserGestureEnabled: Swift.Bool
