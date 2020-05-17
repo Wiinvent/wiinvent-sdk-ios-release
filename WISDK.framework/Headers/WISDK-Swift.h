@@ -237,6 +237,7 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -288,6 +289,12 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
++ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
++ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))value;
@@ -562,6 +569,7 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -613,6 +621,12 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
++ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
++ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSInteger))value;

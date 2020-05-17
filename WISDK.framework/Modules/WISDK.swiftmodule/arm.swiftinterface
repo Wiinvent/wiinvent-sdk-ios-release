@@ -14,6 +14,8 @@ import WebKit
 }
 @objc open class WISDK : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((WISDK.WIConfigData) -> ())?
+  @objc public static var onTimeout: (() -> ())?
+  @objc public static var onError: (() -> ())?
   @objc public static var onVoted: ((Swift.String, Swift.String, Swift.String?, Swift.String, Swift.Int) -> ())?
   @objc public static var onUserPurchase: ((Swift.String, Swift.Int) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
@@ -27,6 +29,7 @@ import WebKit
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, debug: Swift.Bool = false)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, accountId: Swift.Int, mappingType: WISDK.WIOverlayData.MappingType = MappingType.WI, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, debug: Swift.Bool = false, timeoutSecond: Swift.Int = 0)
   @objc public enum DeviceType : Swift.Int, Swift.RawRepresentable {
     case PHONE, TV
     public typealias RawValue = Swift.String
