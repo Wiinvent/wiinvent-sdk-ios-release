@@ -303,7 +303,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUser
 + (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSInteger))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
-+ (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
++ (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container frame:(CGRect)frame overlayData:(WIOverlayData * _Null_unspecified)overlayData;
 + (void)setFrameWithFrame:(CGRect)frame;
 + (void)onUserPurchaseSuccessWithUserId:(NSString * _Nonnull)userId productId:(NSString * _Nonnull)productId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -636,7 +636,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUser
 + (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSInteger))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
-+ (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
++ (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container frame:(CGRect)frame overlayData:(WIOverlayData * _Null_unspecified)overlayData;
 + (void)setFrameWithFrame:(CGRect)frame;
 + (void)onUserPurchaseSuccessWithUserId:(NSString * _Nonnull)userId productId:(NSString * _Nonnull)productId;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
