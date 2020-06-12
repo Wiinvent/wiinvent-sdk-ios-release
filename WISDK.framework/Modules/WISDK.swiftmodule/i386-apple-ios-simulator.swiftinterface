@@ -23,6 +23,7 @@ import WebKit
   @objc public static func unmonitorAVPlayer()
   @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, frame: CoreGraphics.CGRect, overlayData: WISDK.WIOverlayData!)
   @objc public static func setFrame(frame: CoreGraphics.CGRect)
+  @objc public static func removeOverlays()
   @objc public static func onUserPurchaseSuccess(token: Swift.String, productId: Swift.String)
   @objc public static func onUserPurchaseError(errorCode: Swift.String)
   @objc deinit
