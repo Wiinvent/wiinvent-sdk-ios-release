@@ -105,7 +105,6 @@ import WebKit
   }
   public func injectJavascript(javascript: Swift.String)
   @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
-  @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
   @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
   @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
   @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
