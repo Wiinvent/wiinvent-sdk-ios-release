@@ -111,6 +111,7 @@ import WebKit
   @objc public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
   @objc public func webViewDidClose(_ webView: WebKit.WKWebView)
+  public func clearAll()
   @objc deinit
 }
 extension WISDK.WIOverlayData.DeviceType : Swift.Equatable {}
