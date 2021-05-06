@@ -237,16 +237,17 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
+enum OverlayType : NSInteger;
 @class Platform;
 enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -270,6 +271,11 @@ typedef SWIFT_ENUM(NSInteger, MappingType, open) {
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
   ContentTypeVOD = 0,
   ContentTypeLIVESTREAM = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
+  OverlayTypePROFILE = 0,
+  OverlayTypeOVERLAY = 1,
 };
 
 @class UIScrollView;
@@ -587,16 +593,17 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
+enum OverlayType : NSInteger;
 @class Platform;
 enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -620,6 +627,11 @@ typedef SWIFT_ENUM(NSInteger, MappingType, open) {
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
   ContentTypeVOD = 0,
   ContentTypeLIVESTREAM = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
+  OverlayTypePROFILE = 0,
+  OverlayTypeOVERLAY = 1,
 };
 
 @class UIScrollView;
@@ -940,16 +952,17 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
+enum OverlayType : NSInteger;
 @class Platform;
 enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -973,6 +986,11 @@ typedef SWIFT_ENUM(NSInteger, MappingType, open) {
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
   ContentTypeVOD = 0,
   ContentTypeLIVESTREAM = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
+  OverlayTypePROFILE = 0,
+  OverlayTypeOVERLAY = 1,
 };
 
 @class UIScrollView;
@@ -1290,16 +1308,17 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
+enum OverlayType : NSInteger;
 @class Platform;
 enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType type:(enum OverlayType)type debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1323,6 +1342,11 @@ typedef SWIFT_ENUM(NSInteger, MappingType, open) {
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
   ContentTypeVOD = 0,
   ContentTypeLIVESTREAM = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
+  OverlayTypePROFILE = 0,
+  OverlayTypeOVERLAY = 1,
 };
 
 @class UIScrollView;
