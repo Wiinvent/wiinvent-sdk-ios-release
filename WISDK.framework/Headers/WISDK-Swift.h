@@ -323,6 +323,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onToke
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
++ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
@@ -683,6 +686,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onToke
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
++ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
@@ -1046,6 +1052,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onToke
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
++ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
@@ -1406,6 +1415,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onToke
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
++ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;

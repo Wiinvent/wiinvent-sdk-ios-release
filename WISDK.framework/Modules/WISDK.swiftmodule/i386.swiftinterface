@@ -18,6 +18,7 @@ import WebKit
   @objc public static var onError: (() -> ())?
   @objc public static var onTokenExpire: (() -> ())?
   @objc public static var onProfileClose: (() -> ())?
+  @objc public static var onLogin: (() -> ())?
   @objc public static var onVoted: ((Swift.String, Swift.String, Swift.String?, Swift.String, Swift.String?, Swift.String?, Swift.String?, Swift.Int) -> ())?
   @objc public static var onUserPurchase: ((Swift.String, Swift.String) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
@@ -91,7 +92,7 @@ import WebKit
 }
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, CLOSE_PROFILE_PAGE, UNKNOWN
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, UNKNOWN
     public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
     public var rawValue: Swift.String {
