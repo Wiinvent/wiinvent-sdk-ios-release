@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 effective-4.2 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
-// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name WISDK
+// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 import AVKit
 import Foundation
 import JavaScriptCore
@@ -14,6 +14,9 @@ import WebKit
   @objc public static var onTokenExpire: (() -> ())?
   @objc public static var onProfileClose: (() -> ())?
   @objc public static var onLogin: (() -> ())?
+  @objc public static var onOverlayStart: (() -> ())?
+  @objc public static var onOverlayCompleted: (() -> ())?
+  @objc public static var onDisplayOverlay: ((Swift.Bool) -> ())?
   @objc public static var onVideoDetail: ((Swift.String) -> ())?
   @objc public static var onVoted: ((Swift.String, Swift.String, Swift.String?, Swift.String, Swift.String?, Swift.String?, Swift.String?, Swift.Int) -> ())?
   @objc public static var onUserPurchase: ((Swift.String, Swift.String) -> ())?
@@ -34,7 +37,7 @@ import WebKit
 }
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, UNKNOWN
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, UNKNOWN
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -115,6 +118,7 @@ import WebKit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class WIOverlayView : WISDK.PassthroughView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIScrollViewDelegate {
   open var mWebView: WebKit.WKWebView!
+  open var currentOverlay: Swift.Int
   open var mWebViewError: Swift.Bool {
     get
     set
