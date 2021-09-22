@@ -240,16 +240,15 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -263,12 +262,8 @@ typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
-  EnvironmentPRODUCTION = 2,
-};
-
-typedef SWIFT_ENUM(NSInteger, MappingType, open) {
-  MappingTypeWI = 0,
-  MappingTypeTHIRDPARTY = 1,
+  EnvironmentSANDBOX = 2,
+  EnvironmentPRODUCTION = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -313,42 +308,42 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
-+ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTimeout:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
-+ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnError:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
-+ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
-+ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
-+ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnLogin:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayTimeout)(void);)
++ (void (^ _Nullable)(void))onOverlayTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayError)(void);)
++ (void (^ _Nullable)(void))onOverlayError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayStart)(void);)
 + (void (^ _Nullable)(void))onOverlayStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayStart:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayCompleted)(void);)
 + (void (^ _Nullable)(void))onOverlayCompleted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayCompleted:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
++ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserLogin)(void);)
++ (void (^ _Nullable)(void))onUserLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisplayOverlay)(BOOL);)
 + (void (^ _Nullable)(BOOL))onDisplayOverlay SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnDisplayOverlay:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
++ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequestAdsComplete)(BOOL);)
-+ (void (^ _Nullable)(BOOL))onRequestAdsComplete SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnRequestAdsComplete:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestSuccess)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestSuccess SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestSuccess:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -356,7 +351,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequ
 + (void)onUserPurchaseSuccessWithToken:(NSString * _Nonnull)token productId:(NSString * _Nonnull)productId;
 + (void)onUserPurchaseErrorWithErrorCode:(NSString * _Nonnull)errorCode;
 + (void)requestAds;
-+ (void)requestAdsByVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
++ (void)requestAdsWithVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -623,16 +618,15 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -646,12 +640,8 @@ typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
-  EnvironmentPRODUCTION = 2,
-};
-
-typedef SWIFT_ENUM(NSInteger, MappingType, open) {
-  MappingTypeWI = 0,
-  MappingTypeTHIRDPARTY = 1,
+  EnvironmentSANDBOX = 2,
+  EnvironmentPRODUCTION = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -696,42 +686,42 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
-+ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTimeout:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
-+ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnError:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
-+ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
-+ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
-+ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnLogin:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayTimeout)(void);)
++ (void (^ _Nullable)(void))onOverlayTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayError)(void);)
++ (void (^ _Nullable)(void))onOverlayError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayStart)(void);)
 + (void (^ _Nullable)(void))onOverlayStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayStart:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayCompleted)(void);)
 + (void (^ _Nullable)(void))onOverlayCompleted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayCompleted:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
++ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserLogin)(void);)
++ (void (^ _Nullable)(void))onUserLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisplayOverlay)(BOOL);)
 + (void (^ _Nullable)(BOOL))onDisplayOverlay SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnDisplayOverlay:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
++ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequestAdsComplete)(BOOL);)
-+ (void (^ _Nullable)(BOOL))onRequestAdsComplete SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnRequestAdsComplete:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestSuccess)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestSuccess SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestSuccess:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -739,7 +729,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequ
 + (void)onUserPurchaseSuccessWithToken:(NSString * _Nonnull)token productId:(NSString * _Nonnull)productId;
 + (void)onUserPurchaseErrorWithErrorCode:(NSString * _Nonnull)errorCode;
 + (void)requestAds;
-+ (void)requestAdsByVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
++ (void)requestAdsWithVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1009,16 +999,15 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1032,12 +1021,8 @@ typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
-  EnvironmentPRODUCTION = 2,
-};
-
-typedef SWIFT_ENUM(NSInteger, MappingType, open) {
-  MappingTypeWI = 0,
-  MappingTypeTHIRDPARTY = 1,
+  EnvironmentSANDBOX = 2,
+  EnvironmentPRODUCTION = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -1082,42 +1067,42 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
-+ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTimeout:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
-+ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnError:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
-+ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
-+ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
-+ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnLogin:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayTimeout)(void);)
++ (void (^ _Nullable)(void))onOverlayTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayError)(void);)
++ (void (^ _Nullable)(void))onOverlayError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayStart)(void);)
 + (void (^ _Nullable)(void))onOverlayStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayStart:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayCompleted)(void);)
 + (void (^ _Nullable)(void))onOverlayCompleted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayCompleted:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
++ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserLogin)(void);)
++ (void (^ _Nullable)(void))onUserLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisplayOverlay)(BOOL);)
 + (void (^ _Nullable)(BOOL))onDisplayOverlay SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnDisplayOverlay:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
++ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequestAdsComplete)(BOOL);)
-+ (void (^ _Nullable)(BOOL))onRequestAdsComplete SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnRequestAdsComplete:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestSuccess)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestSuccess SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestSuccess:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -1125,7 +1110,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequ
 + (void)onUserPurchaseSuccessWithToken:(NSString * _Nonnull)token productId:(NSString * _Nonnull)productId;
 + (void)onUserPurchaseErrorWithErrorCode:(NSString * _Nonnull)errorCode;
 + (void)requestAds;
-+ (void)requestAdsByVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
++ (void)requestAdsWithVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1392,16 +1377,15 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum MappingType : NSInteger;
 enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId mappingType:(enum MappingType)mappingType platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType debug:(BOOL)debug timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1415,12 +1399,8 @@ typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
   EnvironmentSTAGING = 1,
-  EnvironmentPRODUCTION = 2,
-};
-
-typedef SWIFT_ENUM(NSInteger, MappingType, open) {
-  MappingTypeWI = 0,
-  MappingTypeTHIRDPARTY = 1,
+  EnvironmentSANDBOX = 2,
+  EnvironmentPRODUCTION = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -1465,42 +1445,42 @@ SWIFT_CLASS("_TtC5WISDK5WISDK")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTimeout)(void);)
-+ (void (^ _Nullable)(void))onTimeout SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTimeout:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onError)(void);)
-+ (void (^ _Nullable)(void))onError SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnError:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
-+ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
-+ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onLogin)(void);)
-+ (void (^ _Nullable)(void))onLogin SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnLogin:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayTimeout)(void);)
++ (void (^ _Nullable)(void))onOverlayTimeout SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayTimeout:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayError)(void);)
++ (void (^ _Nullable)(void))onOverlayError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnOverlayError:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayStart)(void);)
 + (void (^ _Nullable)(void))onOverlayStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayStart:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onOverlayCompleted)(void);)
 + (void (^ _Nullable)(void))onOverlayCompleted SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnOverlayCompleted:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onTokenExpire)(void);)
++ (void (^ _Nullable)(void))onTokenExpire SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnTokenExpire:(void (^ _Nullable)(void))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserLogin)(void);)
++ (void (^ _Nullable)(void))onUserLogin SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnUserLogin:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisplayOverlay)(BOOL);)
 + (void (^ _Nullable)(BOOL))onDisplayOverlay SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnDisplayOverlay:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
++ (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnProfileClose:(void (^ _Nullable)(void))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVoted)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))onVoted SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVoted:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull, NSString * _Nullable, NSString * _Nonnull, NSString * _Nullable, NSString * _Nullable, NSString * _Nullable, NSInteger))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onUserPurchase)(NSString * _Nonnull, NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onUserPurchase SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnUserPurchase:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequestAdsComplete)(BOOL);)
-+ (void (^ _Nullable)(BOOL))onRequestAdsComplete SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnRequestAdsComplete:(void (^ _Nullable)(BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestSuccess)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestSuccess SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestSuccess:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -1508,7 +1488,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onRequ
 + (void)onUserPurchaseSuccessWithToken:(NSString * _Nonnull)token productId:(NSString * _Nonnull)productId;
 + (void)onUserPurchaseErrorWithErrorCode:(NSString * _Nonnull)errorCode;
 + (void)requestAds;
-+ (void)requestAdsByVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
++ (void)requestAdsWithVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
