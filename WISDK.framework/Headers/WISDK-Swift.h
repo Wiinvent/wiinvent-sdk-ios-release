@@ -240,24 +240,18 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
-  DeviceTypePHONE = 0,
-  DeviceTypeTV = 1,
-};
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
@@ -618,24 +612,18 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
-  DeviceTypePHONE = 0,
-  DeviceTypeTV = 1,
-};
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
@@ -999,24 +987,18 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
-  DeviceTypePHONE = 0,
-  DeviceTypeTV = 1,
-};
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
@@ -1377,24 +1359,18 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
-enum DeviceType : NSInteger;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env deviceType:(enum DeviceType)deviceType timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env deviceType:(enum DeviceType)deviceType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum Environment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum Environment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
-typedef SWIFT_ENUM(NSInteger, DeviceType, open) {
-  DeviceTypePHONE = 0,
-  DeviceTypeTV = 1,
-};
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,

@@ -55,17 +55,9 @@ import WebKit
 @objc public class WIOverlayData : ObjectiveC.NSObject {
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE)
-  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE, timeoutSecond: Swift.Int = 0)
-  @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, deviceType: WISDK.WIOverlayData.DeviceType = DeviceType.PHONE)
-  @objc public enum DeviceType : Swift.Int, Swift.RawRepresentable {
-    case PHONE, TV
-    public typealias RawValue = Swift.String
-    public var rawValue: WISDK.WIOverlayData.DeviceType.RawValue {
-      get
-    }
-    public init?(rawValue: WISDK.WIOverlayData.DeviceType.RawValue)
-  }
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
+  @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, timeoutSecond: Swift.Int = 0)
+  @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
   @objc public enum Environment : Swift.Int, Swift.RawRepresentable {
     case DEV, STAGING, SANDBOX, PRODUCTION
     public typealias RawValue = Swift.String
@@ -137,8 +129,6 @@ import WebKit
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
-extension WISDK.WIOverlayData.DeviceType : Swift.Equatable {}
-extension WISDK.WIOverlayData.DeviceType : Swift.Hashable {}
 extension WISDK.WIOverlayData.Environment : Swift.Equatable {}
 extension WISDK.WIOverlayData.Environment : Swift.Hashable {}
 extension WISDK.WIOverlayData.ContentType : Swift.Equatable {}
