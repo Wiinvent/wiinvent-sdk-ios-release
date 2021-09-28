@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
 // swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 import AVKit
 import Foundation
@@ -21,6 +21,7 @@ import WebKit
   @objc public static var onAdsRequestStart: ((Swift.String) -> ())?
   @objc public static var onAdsRequestSuccess: ((Swift.String) -> ())?
   @objc public static var onAdsRequestError: ((Swift.String, Swift.String) -> ())?
+  @objc public static var onAdsEvent: ((WISDK.WIAdEvent) -> ())?
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
   @objc public static func unmonitorAVPlayer()
   @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, overlayData: WISDK.WIOverlayData!)
@@ -29,28 +30,47 @@ import WebKit
   @objc public static func onUserPurchaseError(errorCode: Swift.String)
   @objc public static func requestAds()
   @objc public static func requestAdsWithVastLink(vastLink: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
+}
+@objc open class WIAdEvent : ObjectiveC.NSObject {
+  @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
+    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, ERROR, UNKNOW
+    public typealias RawValue = Swift.String
+    public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
+      get
+    }
+    public init?(rawValue: WISDK.WIAdEvent.AdEventType.RawValue)
+  }
+  public init(event: [Swift.String : Any]?)
+  @objc public func getEventData(key: Swift.String) -> Swift.String
+  @objc public func getCampaignId() -> Swift.String
+  @objc public func isLinear() -> Swift.Bool
+  @objc public func getErrorCode() -> Swift.Int
+  @objc public func getErrorMessage() -> Swift.String
+  @objc public func getEventType() -> WISDK.WIAdEvent.AdEventType
+  @objc deinit
+  @objc override dynamic public init()
 }
 @_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
   @objc final public let url: Foundation.URL?
   @objc final public let mineType: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, ADS_REQUEST_START, ADS_REQUEST_SUCCESS, ADS_REQUEST_ERROR, UNKNOWN
-    public init?(rawValue: Swift.String)
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, ADS_REQUEST_START, ADS_REQUEST_SUCCESS, ADS_REQUEST_ERROR, ADS_EVENT, UNKNOWN
     public typealias RawValue = Swift.String
+    public init?(rawValue: Swift.String)
     public var rawValue: Swift.String {
       get
     }
   }
   public init(payload: Swift.String)
   public func getType() -> WISDK.WIWebAction.TypeAction
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
@@ -59,7 +79,7 @@ import WebKit
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIOverlayData.ContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION, timeoutSecond: Swift.Int = 0)
   @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIOverlayData.Environment = Environment.PRODUCTION)
   @objc public enum Environment : Swift.Int, Swift.RawRepresentable {
-    case DEV, STAGING, SANDBOX, PRODUCTION
+    case DEV, LOCAL, STAGING, SANDBOX, PRODUCTION
     public typealias RawValue = Swift.String
     public var rawValue: WISDK.WIOverlayData.Environment.RawValue {
       get
@@ -67,8 +87,8 @@ import WebKit
     public init?(rawValue: WISDK.WIOverlayData.Environment.RawValue)
   }
   @objc @_hasMissingDesignatedInitializers public class Platform : ObjectiveC.NSObject {
-    @objc override dynamic public init()
     @objc deinit
+    @objc override dynamic public init()
   }
   @objc public enum ContentType : Swift.Int, Swift.RawRepresentable {
     case VOD, LIVESTREAM
@@ -86,15 +106,15 @@ import WebKit
     }
     public init?(rawValue: WISDK.WIOverlayData.OverlayType.RawValue)
   }
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc public class WIConfigData : ObjectiveC.NSObject {
   @objc public var sources: [WISDK.WIStreamSource]?
   @objc final public let isVod: Swift.Bool
   public init(data: [Swift.String : Any]?)
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers open class PassthroughView : UIKit.UIView {
   open var isUserGestureEnabled: Swift.Bool
@@ -126,6 +146,8 @@ import WebKit
   public func clearAll()
   @objc deinit
 }
+extension WISDK.WIAdEvent.AdEventType : Swift.Equatable {}
+extension WISDK.WIAdEvent.AdEventType : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.RawRepresentable {}
