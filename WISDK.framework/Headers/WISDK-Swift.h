@@ -226,6 +226,32 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+@class NSString;
+enum AdEventType : NSInteger;
+
+SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
+@interface WIAdEvent : NSObject
+- (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (enum AdEventType)getEventType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
+  AdEventTypeREQUEST = 0,
+  AdEventTypeSTART = 1,
+  AdEventTypeIMPRESSION = 2,
+  AdEventTypeCLICK = 3,
+  AdEventTypeCOMPLETE = 4,
+  AdEventTypeSKIPPED = 5,
+  AdEventTypeERROR = 6,
+  AdEventTypeUNKNOW = 7,
+};
+
 @class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
@@ -236,7 +262,6 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
@@ -255,9 +280,10 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
-  EnvironmentSTAGING = 1,
-  EnvironmentSANDBOX = 2,
-  EnvironmentPRODUCTION = 3,
+  EnvironmentLOCAL = 1,
+  EnvironmentSTAGING = 2,
+  EnvironmentSANDBOX = 3,
+  EnvironmentPRODUCTION = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -338,6 +364,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsR
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsEvent)(WIAdEvent * _Nonnull);)
++ (void (^ _Nullable)(WIAdEvent * _Nonnull))onAdsEvent SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsEvent:(void (^ _Nullable)(WIAdEvent * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -598,6 +627,32 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+@class NSString;
+enum AdEventType : NSInteger;
+
+SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
+@interface WIAdEvent : NSObject
+- (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (enum AdEventType)getEventType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
+  AdEventTypeREQUEST = 0,
+  AdEventTypeSTART = 1,
+  AdEventTypeIMPRESSION = 2,
+  AdEventTypeCLICK = 3,
+  AdEventTypeCOMPLETE = 4,
+  AdEventTypeSKIPPED = 5,
+  AdEventTypeERROR = 6,
+  AdEventTypeUNKNOW = 7,
+};
+
 @class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
@@ -608,7 +663,6 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
@@ -627,9 +681,10 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
-  EnvironmentSTAGING = 1,
-  EnvironmentSANDBOX = 2,
-  EnvironmentPRODUCTION = 3,
+  EnvironmentLOCAL = 1,
+  EnvironmentSTAGING = 2,
+  EnvironmentSANDBOX = 3,
+  EnvironmentPRODUCTION = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -710,6 +765,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsR
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsEvent)(WIAdEvent * _Nonnull);)
++ (void (^ _Nullable)(WIAdEvent * _Nonnull))onAdsEvent SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsEvent:(void (^ _Nullable)(WIAdEvent * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -973,6 +1031,32 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+@class NSString;
+enum AdEventType : NSInteger;
+
+SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
+@interface WIAdEvent : NSObject
+- (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (enum AdEventType)getEventType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
+  AdEventTypeREQUEST = 0,
+  AdEventTypeSTART = 1,
+  AdEventTypeIMPRESSION = 2,
+  AdEventTypeCLICK = 3,
+  AdEventTypeCOMPLETE = 4,
+  AdEventTypeSKIPPED = 5,
+  AdEventTypeERROR = 6,
+  AdEventTypeUNKNOW = 7,
+};
+
 @class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
@@ -983,7 +1067,6 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
@@ -1002,9 +1085,10 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
-  EnvironmentSTAGING = 1,
-  EnvironmentSANDBOX = 2,
-  EnvironmentPRODUCTION = 3,
+  EnvironmentLOCAL = 1,
+  EnvironmentSTAGING = 2,
+  EnvironmentSANDBOX = 3,
+  EnvironmentPRODUCTION = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -1085,6 +1169,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsR
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsEvent)(WIAdEvent * _Nonnull);)
++ (void (^ _Nullable)(WIAdEvent * _Nonnull))onAdsEvent SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsEvent:(void (^ _Nullable)(WIAdEvent * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
@@ -1345,6 +1432,32 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+@class NSString;
+enum AdEventType : NSInteger;
+
+SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
+@interface WIAdEvent : NSObject
+- (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
+- (enum AdEventType)getEventType SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
+  AdEventTypeREQUEST = 0,
+  AdEventTypeSTART = 1,
+  AdEventTypeIMPRESSION = 2,
+  AdEventTypeCLICK = 3,
+  AdEventTypeCOMPLETE = 4,
+  AdEventTypeSKIPPED = 5,
+  AdEventTypeERROR = 6,
+  AdEventTypeUNKNOW = 7,
+};
+
 @class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
@@ -1355,7 +1468,6 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 enum ContentType : NSInteger;
 enum Environment : NSInteger;
 @class Platform;
@@ -1374,9 +1486,10 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 
 typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentDEV = 0,
-  EnvironmentSTAGING = 1,
-  EnvironmentSANDBOX = 2,
-  EnvironmentPRODUCTION = 3,
+  EnvironmentLOCAL = 1,
+  EnvironmentSTAGING = 2,
+  EnvironmentSANDBOX = 3,
+  EnvironmentPRODUCTION = 4,
 };
 
 typedef SWIFT_ENUM(NSInteger, ContentType, open) {
@@ -1457,6 +1570,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsR
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestError)(NSString * _Nonnull, NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))onAdsRequestError SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestError:(void (^ _Nullable)(NSString * _Nonnull, NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsEvent)(WIAdEvent * _Nonnull);)
++ (void (^ _Nullable)(WIAdEvent * _Nonnull))onAdsEvent SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnAdsEvent:(void (^ _Nullable)(WIAdEvent * _Nonnull))value;
 + (void)monitorAVPlayerWithPlayer:(AVPlayer * _Nullable)player;
 + (void)unmonitorAVPlayer;
 + (void)addOverlaysToPlayerViewWithContainer:(UIView * _Null_unspecified)container overlayData:(WIOverlayData * _Null_unspecified)overlayData;
