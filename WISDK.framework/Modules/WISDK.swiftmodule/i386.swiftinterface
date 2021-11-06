@@ -17,7 +17,8 @@ import WebKit
   @objc public static var onUserLogin: (() -> ())?
   @objc public static var onDisplayOverlay: ((Swift.Bool) -> ())?
   @objc public static var onProfileClose: (() -> ())?
-  @objc public static var onVideoDetail: ((Swift.String) -> ())?
+  @objc public static var onVideoDetail: ((Swift.String, Swift.Bool) -> ())?
+  @objc public static var onCategoryDetail: ((Swift.String) -> ())?
   @objc public static var onAdsRequestStart: ((Swift.String) -> ())?
   @objc public static var onAdsRequestSuccess: ((Swift.String) -> ())?
   @objc public static var onAdsRequestError: ((Swift.String, Swift.String) -> ())?
@@ -35,7 +36,7 @@ import WebKit
 }
 @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
-    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, ERROR, UNKNOW
+    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
     public typealias RawValue = Swift.String
     public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
       get
@@ -45,6 +46,7 @@ import WebKit
   public init(event: [Swift.String : Any]?)
   @objc public func getEventData(key: Swift.String) -> Swift.String
   @objc public func getCampaignId() -> Swift.String
+  @objc public func getDuration() -> Swift.String
   @objc public func isLinear() -> Swift.Bool
   @objc public func getErrorCode() -> Swift.Int
   @objc public func getErrorMessage() -> Swift.String
@@ -60,7 +62,7 @@ import WebKit
 }
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, ADS_REQUEST_START, ADS_REQUEST_SUCCESS, ADS_REQUEST_ERROR, ADS_EVENT, UNKNOWN
+    case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, DETAIL_CATEGORY, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, ADS_REQUEST_START, ADS_REQUEST_SUCCESS, ADS_REQUEST_ERROR, ADS_EVENT, UNKNOWN
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {

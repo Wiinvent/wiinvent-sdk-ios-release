@@ -233,6 +233,7 @@ SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
 @interface WIAdEvent : NSObject
 - (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDuration SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
@@ -248,8 +249,11 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeERROR = 6,
-  AdEventTypeUNKNOW = 7,
+  AdEventTypeUSER_AD_BLOCK = 6,
+  AdEventTypeVOLUME_MUTED = 7,
+  AdEventTypeVOLUME_ON = 8,
+  AdEventTypeERROR = 9,
+  AdEventTypeUNKNOW = 10,
 };
 
 @class WIStreamSource;
@@ -352,9 +356,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull, BOOL);)
++ (void (^ _Nullable)(NSString * _Nonnull, BOOL))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull, BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onCategoryDetail)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onCategoryDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnCategoryDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
@@ -634,6 +641,7 @@ SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
 @interface WIAdEvent : NSObject
 - (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDuration SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
@@ -649,8 +657,11 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeERROR = 6,
-  AdEventTypeUNKNOW = 7,
+  AdEventTypeUSER_AD_BLOCK = 6,
+  AdEventTypeVOLUME_MUTED = 7,
+  AdEventTypeVOLUME_ON = 8,
+  AdEventTypeERROR = 9,
+  AdEventTypeUNKNOW = 10,
 };
 
 @class WIStreamSource;
@@ -753,9 +764,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull, BOOL);)
++ (void (^ _Nullable)(NSString * _Nonnull, BOOL))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull, BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onCategoryDetail)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onCategoryDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnCategoryDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
@@ -1038,6 +1052,7 @@ SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
 @interface WIAdEvent : NSObject
 - (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDuration SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
@@ -1053,8 +1068,11 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeERROR = 6,
-  AdEventTypeUNKNOW = 7,
+  AdEventTypeUSER_AD_BLOCK = 6,
+  AdEventTypeVOLUME_MUTED = 7,
+  AdEventTypeVOLUME_ON = 8,
+  AdEventTypeERROR = 9,
+  AdEventTypeUNKNOW = 10,
 };
 
 @class WIStreamSource;
@@ -1157,9 +1175,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull, BOOL);)
++ (void (^ _Nullable)(NSString * _Nonnull, BOOL))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull, BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onCategoryDetail)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onCategoryDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnCategoryDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
@@ -1439,6 +1460,7 @@ SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
 @interface WIAdEvent : NSObject
 - (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getDuration SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
@@ -1454,8 +1476,11 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeERROR = 6,
-  AdEventTypeUNKNOW = 7,
+  AdEventTypeUSER_AD_BLOCK = 6,
+  AdEventTypeVOLUME_MUTED = 7,
+  AdEventTypeVOLUME_ON = 8,
+  AdEventTypeERROR = 9,
+  AdEventTypeUNKNOW = 10,
 };
 
 @class WIStreamSource;
@@ -1558,9 +1583,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onDisp
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onProfileClose)(void);)
 + (void (^ _Nullable)(void))onProfileClose SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnProfileClose:(void (^ _Nullable)(void))value;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull);)
-+ (void (^ _Nullable)(NSString * _Nonnull))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
-+ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onVideoDetail)(NSString * _Nonnull, BOOL);)
++ (void (^ _Nullable)(NSString * _Nonnull, BOOL))onVideoDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnVideoDetail:(void (^ _Nullable)(NSString * _Nonnull, BOOL))value;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onCategoryDetail)(NSString * _Nonnull);)
++ (void (^ _Nullable)(NSString * _Nonnull))onCategoryDetail SWIFT_WARN_UNUSED_RESULT;
++ (void)setOnCategoryDetail:(void (^ _Nullable)(NSString * _Nonnull))value;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsRequestStart)(NSString * _Nonnull);)
 + (void (^ _Nullable)(NSString * _Nonnull))onAdsRequestStart SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnAdsRequestStart:(void (^ _Nullable)(NSString * _Nonnull))value;
