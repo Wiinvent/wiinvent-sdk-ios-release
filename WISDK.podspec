@@ -18,10 +18,10 @@ Pod::Spec.new do |spec|
   
   spec.source = { :git => "https://github.com/Wiinvent/wiinvent-sdk-ios-release.git", :tag => "v#{spec.version.to_s}" }
 
-  spec.vendored_frameworks = "WISDK.xcframework"
+  spec.vendored_frameworks = "WISDK.framework"
 
-  spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
   spec.frameworks = 'AVFoundation', 'UIKit', 'WebKit'
 end
