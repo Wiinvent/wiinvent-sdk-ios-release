@@ -6,6 +6,6 @@ framework module WISDK {
 }
 
 module WISDK.Swift {
-    header "WISDK-Swift.h"
-    requires objc
+  header "WISDK-Swift.h"
+  requires objc
 }

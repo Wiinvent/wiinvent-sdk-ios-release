@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WISDK-Swift.h</key>
 		<data>
-		KN8S6YyldXS92N8aQrppMhfQDD8=
+		S/+87lEkJsI++6bex/hTCL+bJM4=
 		</data>
 		<key>Headers/WISDK.h</key>
 		<data>
@@ -14,91 +14,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		35dxl0OJCH9qAhitz1fBSSEi/7s=
-		</data>
-		<key>Modules/WISDK.swiftmodule/Project/arm.swiftsourceinfo</key>
-		<data>
-		a4uyvJCJFalHKqYwopxLRPaO9V4=
+		shKZO7BW1lsv6HzUePkAJv1C19I=
 		</data>
 		<key>Modules/WISDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		2I6FZlqrwmu4yAz5T6YcEOozcSk=
+		879iZZHNi6mbD7j3GCOrU7ezYxQ=
 		</data>
-		<key>Modules/WISDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		2I6FZlqrwmu4yAz5T6YcEOozcSk=
+		SaKNPQk8J1BCEqPpqUKuUHyBB0k=
 		</data>
-		<key>Modules/WISDK.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		a4uyvJCJFalHKqYwopxLRPaO9V4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/Project/armv7.swiftsourceinfo</key>
-		<data>
-		a4uyvJCJFalHKqYwopxLRPaO9V4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm.swiftdoc</key>
-		<data>
-		jWTbeWKIy3pEt6fttc0bEhjKdh4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm.swiftinterface</key>
-		<data>
-		PQKGe1RzXglLr+oWs8bu+EjRYEo=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm.swiftmodule</key>
-		<data>
-		yWdO3JEHpk5L+ehNW1JQy+2beF4=
+		b3wAGhN3k6OovTU3In3+KYqtWus=
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lx7CdUJ66cjjqPITZdpwDU136Pk=
+		HDdsBx5fRL0VsQfN6e6EfpZZpeQ=
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		/9UM6LToSaLUFFw+OyHYGKsD36w=
+		b3wAGhN3k6OovTU3In3+KYqtWus=
 		</data>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		+GX91u3I3/hV7thAOidsw3WDbeg=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		lx7CdUJ66cjjqPITZdpwDU136Pk=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		/9UM6LToSaLUFFw+OyHYGKsD36w=
-		</data>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		+GX91u3I3/hV7thAOidsw3WDbeg=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<data>
-		jWTbeWKIy3pEt6fttc0bEhjKdh4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<data>
-		PQKGe1RzXglLr+oWs8bu+EjRYEo=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<data>
-		yWdO3JEHpk5L+ehNW1JQy+2beF4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftdoc</key>
-		<data>
-		jWTbeWKIy3pEt6fttc0bEhjKdh4=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftinterface</key>
-		<data>
-		PQKGe1RzXglLr+oWs8bu+EjRYEo=
-		</data>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftmodule</key>
-		<data>
-		yWdO3JEHpk5L+ehNW1JQy+2beF4=
+		MCRRxtKUX+8KHTCCyXRdE3o9jrk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		TAKmkx/yp64B1D+cZJMuQWFjsAk=
+		FxjRf1R8OJd91qlulBRy1ESYlO4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -107,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KN8S6YyldXS92N8aQrppMhfQDD8=
+			S/+87lEkJsI++6bex/hTCL+bJM4=
 			</data>
 			<key>hash2</key>
 			<data>
-			NFKzZILBxYJJ2S9FKG9PEo7Ik6z6aCosv8WzYvCgByA=
+			G7iAGL1nUKftWmZ0AKFSefRsCjbOMDnqYriGnqlPjBc=
 			</data>
 		</dict>
 		<key>Headers/WISDK.h</key>
@@ -125,235 +69,81 @@
 			fPM/hwDmvllInX1xBoi/HXMaor5qy3WoIDxcq7G0+2I=
 			</data>
 		</dict>
-		<key>Modules/WISDK.swiftmodule/Project/arm.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a4uyvJCJFalHKqYwopxLRPaO9V4=
-			</data>
-			<key>hash2</key>
-			<data>
-			DNviqZJloKAfO4HcBsxtcQ/UOcenxzXFpehQ8UgInAY=
-			</data>
-		</dict>
 		<key>Modules/WISDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2I6FZlqrwmu4yAz5T6YcEOozcSk=
+			879iZZHNi6mbD7j3GCOrU7ezYxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			+lksQdN7b+bmJoeybSpY/ME0U9xoqNvgXJLUzwlm/6Y=
+			KvMT46VwnE1JArNLSFfI04enL5UPHI+nw7/HQIlltAE=
 			</data>
 		</dict>
-		<key>Modules/WISDK.swiftmodule/Project/arm64.swiftsourceinfo</key>
+		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2I6FZlqrwmu4yAz5T6YcEOozcSk=
+			SaKNPQk8J1BCEqPpqUKuUHyBB0k=
 			</data>
 			<key>hash2</key>
 			<data>
-			+lksQdN7b+bmJoeybSpY/ME0U9xoqNvgXJLUzwlm/6Y=
+			GZwFJih6PmhCs9wu/w9OJY6iPr1zuCz5ah7FWu0wzTQ=
 			</data>
 		</dict>
-		<key>Modules/WISDK.swiftmodule/Project/armv7-apple-ios.swiftsourceinfo</key>
+		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a4uyvJCJFalHKqYwopxLRPaO9V4=
+			b3wAGhN3k6OovTU3In3+KYqtWus=
 			</data>
 			<key>hash2</key>
 			<data>
-			DNviqZJloKAfO4HcBsxtcQ/UOcenxzXFpehQ8UgInAY=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/Project/armv7.swiftsourceinfo</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			a4uyvJCJFalHKqYwopxLRPaO9V4=
-			</data>
-			<key>hash2</key>
-			<data>
-			DNviqZJloKAfO4HcBsxtcQ/UOcenxzXFpehQ8UgInAY=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jWTbeWKIy3pEt6fttc0bEhjKdh4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Jf4cYf8erxLlF+ItxbsNfk9CLENUS3TNpUtpPMJYwl8=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PQKGe1RzXglLr+oWs8bu+EjRYEo=
-			</data>
-			<key>hash2</key>
-			<data>
-			jKuye7HpT+Rlfu66NtLKDXUq583B9nY2xy4ly3/CDck=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWdO3JEHpk5L+ehNW1JQy+2beF4=
-			</data>
-			<key>hash2</key>
-			<data>
-			5z7hB09CCYn77G/5CHMf0HVJ2Tn0iawxCpp/0tmLbNk=
+			qUnhhqKIeykqYk1Xnat8yd1eHAaZFHSSRSLZhEwDUiA=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lx7CdUJ66cjjqPITZdpwDU136Pk=
+			HDdsBx5fRL0VsQfN6e6EfpZZpeQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			7bM8GaQsY+7t5pKTFSMIvtDh11BA1nO5Tm6FBAE91ZQ=
+			SAL4gXxT3xP4NGI8GnQR/LyzgnZyHQp+tezeA2ySTFs=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/9UM6LToSaLUFFw+OyHYGKsD36w=
+			b3wAGhN3k6OovTU3In3+KYqtWus=
 			</data>
 			<key>hash2</key>
 			<data>
-			6r3I4oQV/ktOvmwk9dj9uF5TsJHthyflQbgn0Wf+/2o=
+			qUnhhqKIeykqYk1Xnat8yd1eHAaZFHSSRSLZhEwDUiA=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+GX91u3I3/hV7thAOidsw3WDbeg=
+			MCRRxtKUX+8KHTCCyXRdE3o9jrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			dsfE1pL37VzaG5B7nYeace4cLBOfq8v+f9c5oUyAYKA=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lx7CdUJ66cjjqPITZdpwDU136Pk=
-			</data>
-			<key>hash2</key>
-			<data>
-			7bM8GaQsY+7t5pKTFSMIvtDh11BA1nO5Tm6FBAE91ZQ=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/9UM6LToSaLUFFw+OyHYGKsD36w=
-			</data>
-			<key>hash2</key>
-			<data>
-			6r3I4oQV/ktOvmwk9dj9uF5TsJHthyflQbgn0Wf+/2o=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+GX91u3I3/hV7thAOidsw3WDbeg=
-			</data>
-			<key>hash2</key>
-			<data>
-			dsfE1pL37VzaG5B7nYeace4cLBOfq8v+f9c5oUyAYKA=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jWTbeWKIy3pEt6fttc0bEhjKdh4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Jf4cYf8erxLlF+ItxbsNfk9CLENUS3TNpUtpPMJYwl8=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PQKGe1RzXglLr+oWs8bu+EjRYEo=
-			</data>
-			<key>hash2</key>
-			<data>
-			jKuye7HpT+Rlfu66NtLKDXUq583B9nY2xy4ly3/CDck=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7-apple-ios.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWdO3JEHpk5L+ehNW1JQy+2beF4=
-			</data>
-			<key>hash2</key>
-			<data>
-			5z7hB09CCYn77G/5CHMf0HVJ2Tn0iawxCpp/0tmLbNk=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			jWTbeWKIy3pEt6fttc0bEhjKdh4=
-			</data>
-			<key>hash2</key>
-			<data>
-			Jf4cYf8erxLlF+ItxbsNfk9CLENUS3TNpUtpPMJYwl8=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftinterface</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			PQKGe1RzXglLr+oWs8bu+EjRYEo=
-			</data>
-			<key>hash2</key>
-			<data>
-			jKuye7HpT+Rlfu66NtLKDXUq583B9nY2xy4ly3/CDck=
-			</data>
-		</dict>
-		<key>Modules/WISDK.swiftmodule/armv7.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			yWdO3JEHpk5L+ehNW1JQy+2beF4=
-			</data>
-			<key>hash2</key>
-			<data>
-			5z7hB09CCYn77G/5CHMf0HVJ2Tn0iawxCpp/0tmLbNk=
+			RqJ/mwK9sYU4geYa+h0qjYE8Wzcm6Gdbh6dzBB2VJjk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			TAKmkx/yp64B1D+cZJMuQWFjsAk=
+			FxjRf1R8OJd91qlulBRy1ESYlO4=
 			</data>
 			<key>hash2</key>
 			<data>
-			wsHuTAMwbvlVGd1dR+5Qxfv5amIIn9k40irTqMRJeQo=
+			BXpvQa30nu6ZPE6gyPNU92WCrBJnRU7E/AeetJiYIhE=
 			</data>
 		</dict>
 	</dict>
