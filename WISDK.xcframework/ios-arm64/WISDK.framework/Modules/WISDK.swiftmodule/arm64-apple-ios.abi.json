@@ -1122,8 +1122,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "WISDK",
-        "printedName": "WISDK",
+        "name": "WIOverlayManager",
+        "printedName": "WIOverlayManager",
         "children": [
           {
             "kind": "Var",
@@ -1158,8 +1158,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onConfigReady",
-            "mangledName": "$s5WISDKAAC13onConfigReadyyAA12WIConfigDataCcSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onConfigReady",
+            "mangledName": "$s5WISDK16WIOverlayManagerC13onConfigReadyyAA12WIConfigDataCcSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -1204,8 +1204,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onConfigReady",
-                "mangledName": "$s5WISDKAAC13onConfigReadyyAA12WIConfigDataCcSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onConfigReady",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onConfigReadyyAA12WIConfigDataCcSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1253,8 +1253,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnConfigReady:",
-                "mangledName": "$s5WISDKAAC13onConfigReadyyAA12WIConfigDataCcSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnConfigReady:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onConfigReadyyAA12WIConfigDataCcSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1276,8 +1276,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC13onConfigReadyyAA12WIConfigDataCcSgvMZ",
-                "mangledName": "$s5WISDKAAC13onConfigReadyyAA12WIConfigDataCcSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC13onConfigReadyyAA12WIConfigDataCcSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onConfigReadyyAA12WIConfigDataCcSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1320,8 +1320,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onOverlayTimeout",
-            "mangledName": "$s5WISDKAAC16onOverlayTimeoutyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onOverlayTimeout",
+            "mangledName": "$s5WISDK16WIOverlayManagerC16onOverlayTimeoutyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -1365,8 +1365,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onOverlayTimeout",
-                "mangledName": "$s5WISDKAAC16onOverlayTimeoutyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onOverlayTimeout",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onOverlayTimeoutyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1413,8 +1413,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnOverlayTimeout:",
-                "mangledName": "$s5WISDKAAC16onOverlayTimeoutyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnOverlayTimeout:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onOverlayTimeoutyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1436,8 +1436,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC16onOverlayTimeoutyycSgvMZ",
-                "mangledName": "$s5WISDKAAC16onOverlayTimeoutyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC16onOverlayTimeoutyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onOverlayTimeoutyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1480,8 +1480,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onOverlayError",
-            "mangledName": "$s5WISDKAAC14onOverlayErroryycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onOverlayError",
+            "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayErroryycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -1525,8 +1525,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onOverlayError",
-                "mangledName": "$s5WISDKAAC14onOverlayErroryycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onOverlayError",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayErroryycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1573,8 +1573,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnOverlayError:",
-                "mangledName": "$s5WISDKAAC14onOverlayErroryycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnOverlayError:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayErroryycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1596,8 +1596,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC14onOverlayErroryycSgvMZ",
-                "mangledName": "$s5WISDKAAC14onOverlayErroryycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC14onOverlayErroryycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayErroryycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1640,8 +1640,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onOverlayStart",
-            "mangledName": "$s5WISDKAAC14onOverlayStartyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onOverlayStart",
+            "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayStartyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -1685,8 +1685,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onOverlayStart",
-                "mangledName": "$s5WISDKAAC14onOverlayStartyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onOverlayStart",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayStartyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1733,8 +1733,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnOverlayStart:",
-                "mangledName": "$s5WISDKAAC14onOverlayStartyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnOverlayStart:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayStartyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1756,8 +1756,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC14onOverlayStartyycSgvMZ",
-                "mangledName": "$s5WISDKAAC14onOverlayStartyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC14onOverlayStartyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onOverlayStartyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1800,8 +1800,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onOverlayCompleted",
-            "mangledName": "$s5WISDKAAC18onOverlayCompletedyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onOverlayCompleted",
+            "mangledName": "$s5WISDK16WIOverlayManagerC18onOverlayCompletedyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -1845,8 +1845,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onOverlayCompleted",
-                "mangledName": "$s5WISDKAAC18onOverlayCompletedyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onOverlayCompleted",
+                "mangledName": "$s5WISDK16WIOverlayManagerC18onOverlayCompletedyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1893,8 +1893,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnOverlayCompleted:",
-                "mangledName": "$s5WISDKAAC18onOverlayCompletedyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnOverlayCompleted:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC18onOverlayCompletedyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1916,8 +1916,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC18onOverlayCompletedyycSgvMZ",
-                "mangledName": "$s5WISDKAAC18onOverlayCompletedyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC18onOverlayCompletedyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC18onOverlayCompletedyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -1960,8 +1960,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onTokenExpire",
-            "mangledName": "$s5WISDKAAC13onTokenExpireyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onTokenExpire",
+            "mangledName": "$s5WISDK16WIOverlayManagerC13onTokenExpireyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2005,8 +2005,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onTokenExpire",
-                "mangledName": "$s5WISDKAAC13onTokenExpireyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onTokenExpire",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onTokenExpireyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2053,8 +2053,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnTokenExpire:",
-                "mangledName": "$s5WISDKAAC13onTokenExpireyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnTokenExpire:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onTokenExpireyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2076,8 +2076,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC13onTokenExpireyycSgvMZ",
-                "mangledName": "$s5WISDKAAC13onTokenExpireyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC13onTokenExpireyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onTokenExpireyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2120,8 +2120,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onUserLogin",
-            "mangledName": "$s5WISDKAAC11onUserLoginyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onUserLogin",
+            "mangledName": "$s5WISDK16WIOverlayManagerC11onUserLoginyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2165,8 +2165,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onUserLogin",
-                "mangledName": "$s5WISDKAAC11onUserLoginyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onUserLogin",
+                "mangledName": "$s5WISDK16WIOverlayManagerC11onUserLoginyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2213,8 +2213,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnUserLogin:",
-                "mangledName": "$s5WISDKAAC11onUserLoginyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnUserLogin:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC11onUserLoginyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2236,8 +2236,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC11onUserLoginyycSgvMZ",
-                "mangledName": "$s5WISDKAAC11onUserLoginyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC11onUserLoginyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC11onUserLoginyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2281,8 +2281,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onDisplayOverlay",
-            "mangledName": "$s5WISDKAAC16onDisplayOverlayySbcSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onDisplayOverlay",
+            "mangledName": "$s5WISDK16WIOverlayManagerC16onDisplayOverlayySbcSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2327,8 +2327,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onDisplayOverlay",
-                "mangledName": "$s5WISDKAAC16onDisplayOverlayySbcSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onDisplayOverlay",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onDisplayOverlayySbcSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2376,8 +2376,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnDisplayOverlay:",
-                "mangledName": "$s5WISDKAAC16onDisplayOverlayySbcSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnDisplayOverlay:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onDisplayOverlayySbcSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2399,8 +2399,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC16onDisplayOverlayySbcSgvMZ",
-                "mangledName": "$s5WISDKAAC16onDisplayOverlayySbcSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC16onDisplayOverlayySbcSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onDisplayOverlayySbcSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2443,8 +2443,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onProfileClose",
-            "mangledName": "$s5WISDKAAC14onProfileCloseyycSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onProfileClose",
+            "mangledName": "$s5WISDK16WIOverlayManagerC14onProfileCloseyycSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2488,8 +2488,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onProfileClose",
-                "mangledName": "$s5WISDKAAC14onProfileCloseyycSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onProfileClose",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onProfileCloseyycSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2536,8 +2536,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnProfileClose:",
-                "mangledName": "$s5WISDKAAC14onProfileCloseyycSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnProfileClose:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onProfileCloseyycSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2559,8 +2559,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC14onProfileCloseyycSgvMZ",
-                "mangledName": "$s5WISDKAAC14onProfileCloseyycSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC14onProfileCloseyycSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC14onProfileCloseyycSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2617,8 +2617,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onVideoDetail",
-            "mangledName": "$s5WISDKAAC13onVideoDetailySS_SbtcSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onVideoDetail",
+            "mangledName": "$s5WISDK16WIOverlayManagerC13onVideoDetailySS_SbtcSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2676,8 +2676,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onVideoDetail",
-                "mangledName": "$s5WISDKAAC13onVideoDetailySS_SbtcSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onVideoDetail",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onVideoDetailySS_SbtcSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2738,8 +2738,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnVideoDetail:",
-                "mangledName": "$s5WISDKAAC13onVideoDetailySS_SbtcSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnVideoDetail:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onVideoDetailySS_SbtcSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2761,8 +2761,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC13onVideoDetailySS_SbtcSgvMZ",
-                "mangledName": "$s5WISDKAAC13onVideoDetailySS_SbtcSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC13onVideoDetailySS_SbtcSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC13onVideoDetailySS_SbtcSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2806,8 +2806,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onCategoryDetail",
-            "mangledName": "$s5WISDKAAC16onCategoryDetailySScSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onCategoryDetail",
+            "mangledName": "$s5WISDK16WIOverlayManagerC16onCategoryDetailySScSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -2852,8 +2852,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onCategoryDetail",
-                "mangledName": "$s5WISDKAAC16onCategoryDetailySScSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onCategoryDetail",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onCategoryDetailySScSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2901,8 +2901,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnCategoryDetail:",
-                "mangledName": "$s5WISDKAAC16onCategoryDetailySScSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnCategoryDetail:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onCategoryDetailySScSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2924,8 +2924,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC16onCategoryDetailySScSgvMZ",
-                "mangledName": "$s5WISDKAAC16onCategoryDetailySScSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC16onCategoryDetailySScSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC16onCategoryDetailySScSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -2969,8 +2969,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onAdsRequestStart",
-            "mangledName": "$s5WISDKAAC17onAdsRequestStartySScSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onAdsRequestStart",
+            "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestStartySScSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3015,8 +3015,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onAdsRequestStart",
-                "mangledName": "$s5WISDKAAC17onAdsRequestStartySScSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onAdsRequestStart",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestStartySScSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3064,8 +3064,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnAdsRequestStart:",
-                "mangledName": "$s5WISDKAAC17onAdsRequestStartySScSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnAdsRequestStart:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestStartySScSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3087,8 +3087,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC17onAdsRequestStartySScSgvMZ",
-                "mangledName": "$s5WISDKAAC17onAdsRequestStartySScSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC17onAdsRequestStartySScSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestStartySScSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3132,8 +3132,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onAdsRequestSuccess",
-            "mangledName": "$s5WISDKAAC19onAdsRequestSuccessySScSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onAdsRequestSuccess",
+            "mangledName": "$s5WISDK16WIOverlayManagerC19onAdsRequestSuccessySScSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3178,8 +3178,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onAdsRequestSuccess",
-                "mangledName": "$s5WISDKAAC19onAdsRequestSuccessySScSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onAdsRequestSuccess",
+                "mangledName": "$s5WISDK16WIOverlayManagerC19onAdsRequestSuccessySScSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3227,8 +3227,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnAdsRequestSuccess:",
-                "mangledName": "$s5WISDKAAC19onAdsRequestSuccessySScSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnAdsRequestSuccess:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC19onAdsRequestSuccessySScSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3250,8 +3250,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC19onAdsRequestSuccessySScSgvMZ",
-                "mangledName": "$s5WISDKAAC19onAdsRequestSuccessySScSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC19onAdsRequestSuccessySScSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC19onAdsRequestSuccessySScSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3308,8 +3308,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onAdsRequestError",
-            "mangledName": "$s5WISDKAAC17onAdsRequestErrorySS_SStcSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onAdsRequestError",
+            "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestErrorySS_SStcSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3367,8 +3367,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onAdsRequestError",
-                "mangledName": "$s5WISDKAAC17onAdsRequestErrorySS_SStcSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onAdsRequestError",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestErrorySS_SStcSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3429,8 +3429,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnAdsRequestError:",
-                "mangledName": "$s5WISDKAAC17onAdsRequestErrorySS_SStcSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnAdsRequestError:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestErrorySS_SStcSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3452,8 +3452,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC17onAdsRequestErrorySS_SStcSgvMZ",
-                "mangledName": "$s5WISDKAAC17onAdsRequestErrorySS_SStcSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC17onAdsRequestErrorySS_SStcSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC17onAdsRequestErrorySS_SStcSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3497,8 +3497,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cpy)onAdsEvent",
-            "mangledName": "$s5WISDKAAC10onAdsEventyAA04WIAdD0CcSgvpZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cpy)onAdsEvent",
+            "mangledName": "$s5WISDK16WIOverlayManagerC10onAdsEventyAA04WIAdF0CcSgvpZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3543,8 +3543,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onAdsEvent",
-                "mangledName": "$s5WISDKAAC10onAdsEventyAA04WIAdD0CcSgvgZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onAdsEvent",
+                "mangledName": "$s5WISDK16WIOverlayManagerC10onAdsEventyAA04WIAdF0CcSgvgZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3592,8 +3592,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@WISDK@objc(cs)WISDK(cm)setOnAdsEvent:",
-                "mangledName": "$s5WISDKAAC10onAdsEventyAA04WIAdD0CcSgvsZ",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)setOnAdsEvent:",
+                "mangledName": "$s5WISDK16WIOverlayManagerC10onAdsEventyAA04WIAdF0CcSgvsZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3615,8 +3615,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDKAAC10onAdsEventyAA04WIAdD0CcSgvMZ",
-                "mangledName": "$s5WISDKAAC10onAdsEventyAA04WIAdD0CcSgvMZ",
+                "usr": "s:5WISDK16WIOverlayManagerC10onAdsEventyAA04WIAdF0CcSgvMZ",
+                "mangledName": "$s5WISDK16WIOverlayManagerC10onAdsEventyAA04WIAdF0CcSgvMZ",
                 "moduleName": "WISDK",
                 "static": true,
                 "implicit": true,
@@ -3653,8 +3653,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)monitorAVPlayerWithPlayer:",
-            "mangledName": "$s5WISDKAAC15monitorAVPlayer6playerySo0C0CSg_tFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)monitorAVPlayerWithPlayer:",
+            "mangledName": "$s5WISDK16WIOverlayManagerC15monitorAVPlayer6playerySo0E0CSg_tFZ",
             "moduleName": "WISDK",
             "static": true,
             "objc_name": "monitorAVPlayerWithPlayer:",
@@ -3677,8 +3677,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)unmonitorAVPlayer",
-            "mangledName": "$s5WISDKAAC17unmonitorAVPlayeryyFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)unmonitorAVPlayer",
+            "mangledName": "$s5WISDK16WIOverlayManagerC17unmonitorAVPlayeryyFZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3728,8 +3728,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)addOverlaysToPlayerViewWithContainer:overlayData:",
-            "mangledName": "$s5WISDKAAC23addOverlaysToPlayerView9container11overlayDataySo6UIViewCSg_AA09WIOverlayI0CSgtFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)addOverlaysToPlayerViewWithContainer:overlayData:",
+            "mangledName": "$s5WISDK16WIOverlayManagerC23addOverlaysToPlayerView9container11overlayDataySo6UIViewCSg_AA0bK0CSgtFZ",
             "moduleName": "WISDK",
             "static": true,
             "objc_name": "addOverlaysToPlayerViewWithContainer:overlayData:",
@@ -3752,8 +3752,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)removeOverlays",
-            "mangledName": "$s5WISDKAAC14removeOverlaysyyFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)removeOverlays",
+            "mangledName": "$s5WISDK16WIOverlayManagerC14removeOverlaysyyFZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3787,8 +3787,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onUserPurchaseSuccessWithToken:productId:",
-            "mangledName": "$s5WISDKAAC21onUserPurchaseSuccess5token9productIdySS_SStFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onUserPurchaseSuccessWithToken:productId:",
+            "mangledName": "$s5WISDK16WIOverlayManagerC21onUserPurchaseSuccess5token9productIdySS_SStFZ",
             "moduleName": "WISDK",
             "static": true,
             "objc_name": "onUserPurchaseSuccessWithToken:productId:",
@@ -3817,8 +3817,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)onUserPurchaseErrorWithErrorCode:",
-            "mangledName": "$s5WISDKAAC19onUserPurchaseError9errorCodeySS_tFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)onUserPurchaseErrorWithErrorCode:",
+            "mangledName": "$s5WISDK16WIOverlayManagerC19onUserPurchaseError9errorCodeySS_tFZ",
             "moduleName": "WISDK",
             "static": true,
             "objc_name": "onUserPurchaseErrorWithErrorCode:",
@@ -3841,8 +3841,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)requestAds",
-            "mangledName": "$s5WISDKAAC10requestAdsyyFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)requestAds",
+            "mangledName": "$s5WISDK16WIOverlayManagerC10requestAdsyyFZ",
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
@@ -3870,8 +3870,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(cm)requestAdsWithVastLinkWithVastLink:",
-            "mangledName": "$s5WISDKAAC22requestAdsWithVastLink04vastF0ySS_tFZ",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(cm)requestAdsWithVastLinkWithVastLink:",
+            "mangledName": "$s5WISDK16WIOverlayManagerC22requestAdsWithVastLink04vastH0ySS_tFZ",
             "moduleName": "WISDK",
             "static": true,
             "objc_name": "requestAdsWithVastLinkWithVastLink:",
@@ -3889,14 +3889,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WISDK",
-                "printedName": "WISDK.WISDK",
-                "usr": "c:@M@WISDK@objc(cs)WISDK"
+                "name": "WIOverlayManager",
+                "printedName": "WISDK.WIOverlayManager",
+                "usr": "c:@M@WISDK@objc(cs)WIOverlayManager"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WISDK(im)init",
-            "mangledName": "$s5WISDKAACABycfc",
+            "usr": "c:@M@WISDK@objc(cs)WIOverlayManager(im)init",
+            "mangledName": "$s5WISDK16WIOverlayManagerCACycfc",
             "moduleName": "WISDK",
             "overriding": true,
             "implicit": true,
@@ -3910,8 +3910,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@WISDK@objc(cs)WISDK",
-        "mangledName": "$s5WISDKAAC",
+        "usr": "c:@M@WISDK@objc(cs)WIOverlayManager",
+        "mangledName": "$s5WISDK16WIOverlayManagerC",
         "moduleName": "WISDK",
         "declAttributes": [
           "AccessControl",
@@ -9127,23 +9127,23 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WISDK.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1582,
+      "offset": 1593,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WISDK.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1630,
+      "offset": 1641,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WISDK.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1875,
+      "offset": 1886,
       "length": 5,
       "value": "false"
     },
@@ -9374,7 +9374,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/mobile\/ios\/WISDK\/WISDK\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2104,
+      "offset": 2115,
       "length": 5,
       "value": "false"
     }

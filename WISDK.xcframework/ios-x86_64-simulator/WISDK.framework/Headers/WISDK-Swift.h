@@ -393,34 +393,9 @@ typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
   OverlayTypeOVERLAY = 1,
 };
 
-@class UIScrollView;
-@class WKUserContentController;
-@class WKScriptMessage;
-@class WKWebView;
-@class WKNavigation;
-@class NSURLAuthenticationChallenge;
-@class NSURLCredential;
-@class WKWebViewConfiguration;
-@class WKNavigationAction;
-@class WKWindowFeatures;
 
-SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
-@interface WIOverlayView : PassthroughView <UIScrollViewDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (void)scrollViewWillBeginZooming:(UIScrollView * _Nonnull)scrollView withView:(UIView * _Nullable)view;
-- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
-- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
-- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
-- (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
-- (void)webViewDidClose:(WKWebView * _Nonnull)webView;
-@end
-
-
-SWIFT_CLASS("_TtC5WISDK5WISDK")
-@interface WISDK : NSObject
+SWIFT_CLASS("_TtC5WISDK16WIOverlayManager")
+@interface WIOverlayManager : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onConfigReady)(WIConfigData * _Nonnull);)
 + (void (^ _Nullable)(WIConfigData * _Nonnull))onConfigReady SWIFT_WARN_UNUSED_RESULT;
 + (void)setOnConfigReady:(void (^ _Nullable)(WIConfigData * _Nonnull))value;
@@ -475,6 +450,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) void (^ _Nullable onAdsE
 + (void)requestAds;
 + (void)requestAdsWithVastLinkWithVastLink:(NSString * _Nonnull)vastLink;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIScrollView;
+@class WKUserContentController;
+@class WKScriptMessage;
+@class WKWebView;
+@class WKNavigation;
+@class NSURLAuthenticationChallenge;
+@class NSURLCredential;
+@class WKWebViewConfiguration;
+@class WKNavigationAction;
+@class WKWindowFeatures;
+
+SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
+@interface WIOverlayView : PassthroughView <UIScrollViewDelegate, WKNavigationDelegate, WKScriptMessageHandler, WKUIDelegate>
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (void)scrollViewWillBeginZooming:(UIScrollView * _Nonnull)scrollView withView:(UIView * _Nullable)view;
+- (void)userContentController:(WKUserContentController * _Nonnull)userContentController didReceiveScriptMessage:(WKScriptMessage * _Nonnull)message;
+- (void)webView:(WKWebView * _Nonnull)webView didStartProvisionalNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
+- (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
+- (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
+- (void)webViewDidClose:(WKWebView * _Nonnull)webView;
 @end
 
 @class NSURL;

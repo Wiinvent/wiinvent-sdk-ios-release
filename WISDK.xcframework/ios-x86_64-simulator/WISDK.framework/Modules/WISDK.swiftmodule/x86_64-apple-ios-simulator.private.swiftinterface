@@ -48,7 +48,7 @@ import _StringProcessing
   public func release()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class WISDK : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class WIOverlayManager : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((_ configData: WISDK.WIConfigData) -> ())?
   @objc public static var onOverlayTimeout: (() -> ())?
   @objc public static var onOverlayError: (() -> ())?
