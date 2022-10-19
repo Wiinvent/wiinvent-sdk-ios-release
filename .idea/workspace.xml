@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.abi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/arm64-apple-ios.swiftsourceinfo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.abi.json" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.abi.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftsourceinfo" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftsourceinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WISDK.framework/WISDK" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/WISDK" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.podspec" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +70,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608859924450</updated>
       <workItem from="1608859927451" duration="44000" />
-      <workItem from="1664435373549" duration="2027000" />
+      <workItem from="1664435373549" duration="2481000" />
+      <workItem from="1665445652176" duration="662000" />
     </task>
     <servers />
   </component>
