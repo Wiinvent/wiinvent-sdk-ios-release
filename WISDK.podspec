@@ -20,8 +20,8 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'ONLY_ACTIVE_ARCH' => 'YES'}
   spec.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'ONLY_ACTIVE_ARCH' => 'YES'}
 
-  spec.dependency = 'Alamofire'
-  spec.dependency = 'GoogleAds-IMA-iOS-SDK', '~> 3.14.5'
+  spec.dependency 'Alamofire'
+  spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.14.5'
 
   spec.frameworks = 'AVFoundation', 'UIKit', 'WebKit'
 end
