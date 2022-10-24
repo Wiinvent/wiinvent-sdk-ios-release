@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.podspec" afterDir="false" />
-    </list>
+    <list default="true" id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,7 +69,7 @@
       <workItem from="1608859927451" duration="44000" />
       <workItem from="1664435373549" duration="2481000" />
       <workItem from="1665445652176" duration="662000" />
-      <workItem from="1666582737063" duration="1074000" />
+      <workItem from="1666582737063" duration="1398000" />
     </task>
     <servers />
   </component>
