@@ -3,9 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
-import Alamofire
 import Foundation
-import GoogleInteractiveMediaAds
 import JavaScriptCore
 import Swift
 @_exported import WISDK
@@ -35,36 +33,6 @@ import _StringProcessing
   @objc func wiManagerRequestPauseContent()
   @objc func wiManagerRequestFailure()
   @objc func onEvent(event: WISDK.WIAdEvent)
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate {
-  public class func shared() -> WISDK.WIAdsInStreamManager
-  public var loaderDelegate: WISDK.WIAdsInStreamLoaderDelegate?
-  @objc public enum AdsEnvironment : Swift.Int, Swift.RawRepresentable {
-    case SANDBOX, PRODUCTION
-    public typealias RawValue = Swift.String
-    public var rawValue: WISDK.WIAdsInStreamManager.AdsEnvironment.RawValue {
-      get
-    }
-    public init?(rawValue: WISDK.WIAdsInStreamManager.AdsEnvironment.RawValue)
-  }
-  @objc public enum LevelLog : Swift.Int, Swift.RawRepresentable {
-    case NODE, BODY
-    public typealias RawValue = Swift.String
-    public var rawValue: WISDK.WIAdsInStreamManager.LevelLog.RawValue {
-      get
-    }
-    public init?(rawValue: WISDK.WIAdsInStreamManager.LevelLog.RawValue)
-  }
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIAdsInStreamManager.AdsEnvironment, timeoutInSecond: Swift.Int64, logLevel: WISDK.WIAdsInStreamManager.LevelLog)
-  @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController)
-  @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
-  @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
-  @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent)
-  @objc public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
-  @objc public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
-  @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive error: GoogleInteractiveMediaAds.IMAAdError)
-  public func release()
-  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class WIOverlayManager : ObjectiveC.NSObject {
   @objc public static var onConfigReady: ((_ configData: WISDK.WIConfigData) -> ())?
@@ -228,10 +196,6 @@ import _StringProcessing
 extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
-extension WISDK.WIAdsInStreamManager.AdsEnvironment : Swift.Equatable {}
-extension WISDK.WIAdsInStreamManager.AdsEnvironment : Swift.Hashable {}
-extension WISDK.WIAdsInStreamManager.LevelLog : Swift.Equatable {}
-extension WISDK.WIAdsInStreamManager.LevelLog : Swift.Hashable {}
 extension WISDK.WIAdEvent.AdEventType : Swift.Equatable {}
 extension WISDK.WIAdEvent.AdEventType : Swift.Hashable {}
 extension WISDK.WIWebAction.TypeAction : Swift.Equatable {}

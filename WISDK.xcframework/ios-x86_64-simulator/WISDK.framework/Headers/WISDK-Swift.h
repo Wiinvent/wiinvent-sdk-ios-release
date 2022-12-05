@@ -232,7 +232,6 @@ using UInt = size_t;
 #endif
 @import CoreFoundation;
 @import Foundation;
-@import GoogleInteractiveMediaAds;
 @import ObjectiveC;
 @import UIKit;
 @import WebKit;
@@ -304,42 +303,6 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)wiManagerRequestFailure;
 - (void)onEventWithEvent:(WIAdEvent * _Nonnull)event;
 @end
-
-enum AdsEnvironment : NSInteger;
-enum LevelLog : NSInteger;
-@class WIAdsRequestData;
-@class AVPlayer;
-@class UIViewController;
-@class IMAAdsLoader;
-@class IMAAdsLoadedData;
-@class IMAAdLoadingErrorData;
-@class IMAAdsManager;
-@class IMAAdEvent;
-@class IMAAdError;
-
-SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
-@interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum AdsEnvironment)env timeoutInSecond:(int64_t)timeoutInSecond logLevel:(enum LevelLog)logLevel SWIFT_METHOD_FAMILY(none);
-- (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController;
-- (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
-- (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
-- (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdEvent:(IMAAdEvent * _Nonnull)event;
-- (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
-- (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
-- (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
-@end
-
-typedef SWIFT_ENUM(NSInteger, AdsEnvironment, open) {
-  AdsEnvironmentSANDBOX = 0,
-  AdsEnvironmentPRODUCTION = 1,
-};
-
-typedef SWIFT_ENUM(NSInteger, LevelLog, open) {
-  LevelLogNODE = 0,
-  LevelLogBODY = 1,
-};
 
 
 SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
@@ -430,6 +393,7 @@ typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
   OverlayTypeOVERLAY = 1,
 };
 
+@class AVPlayer;
 
 SWIFT_CLASS("_TtC5WISDK16WIOverlayManager")
 @interface WIOverlayManager : NSObject
