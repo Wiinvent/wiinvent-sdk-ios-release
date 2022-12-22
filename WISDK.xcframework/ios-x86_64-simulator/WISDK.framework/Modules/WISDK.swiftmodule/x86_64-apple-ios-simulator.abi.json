@@ -21,6 +21,30 @@
         "children": [
           {
             "kind": "Function",
+            "name": "onNoAds",
+            "printedName": "onNoAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate(im)onNoAds",
+            "mangledName": "$s5WISDK19WIWelcomeAdDelegateP7onNoAdsyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIWelcomeAdDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIWelcomeAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onAdsWelcomeDismiss",
             "printedName": "onAdsWelcomeDismiss()",
             "children": [
@@ -816,14 +840,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "WelcomeAdEnv",
-                "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
+                "name": "Environment",
+                "printedName": "WISDK.Environment",
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:env:",
-            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId3envACSSSg_AC07WelcomeC3EnvOtcfc",
+            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId3envACSSSg_AA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithAccountId:env:",
             "declAttributes": [
@@ -831,217 +855,6 @@
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "WelcomeAdEnv",
-            "printedName": "WelcomeAdEnv",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "SANDBOX",
-                "printedName": "SANDBOX",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIWelcomeAdData.WelcomeAdEnv.Type) -> WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WelcomeAdEnv",
-                        "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                        "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "WelcomeAdEnv",
-                            "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                            "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO7SANDBOXyA2EmF",
-                "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO7SANDBOXyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "PRODUCTION",
-                "printedName": "PRODUCTION",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIWelcomeAdData.WelcomeAdEnv.Type) -> WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WelcomeAdEnv",
-                        "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                        "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "WelcomeAdEnv",
-                            "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                            "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO10PRODUCTIONyA2EmF",
-                "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO10PRODUCTIONyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueSSvp",
-                "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueSSvp",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueSSvg",
-                    "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueSSvg",
-                    "moduleName": "WISDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WelcomeAdEnv",
-                        "printedName": "WISDK.WIWelcomeAdData.WelcomeAdEnv",
-                        "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO8rawValueAESgSS_tcfc",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO",
-            "mangledName": "$s5WISDK15WIWelcomeAdDataC07WelcomeC3EnvO",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
           },
           {
             "kind": "Constructor",
@@ -1296,428 +1109,6 @@
             ]
           },
           {
-            "kind": "TypeDecl",
-            "name": "AdsEnvironment",
-            "printedName": "AdsEnvironment",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "SANDBOX",
-                "printedName": "SANDBOX",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIAdsInStreamManager.AdsEnvironment.Type) -> WISDK.WIAdsInStreamManager.AdsEnvironment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdsEnvironment",
-                        "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AdsEnvironment",
-                            "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                            "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO7SANDBOXyA2EmF",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO7SANDBOXyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "PRODUCTION",
-                "printedName": "PRODUCTION",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIAdsInStreamManager.AdsEnvironment.Type) -> WISDK.WIAdsInStreamManager.AdsEnvironment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdsEnvironment",
-                        "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "AdsEnvironment",
-                            "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                            "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO10PRODUCTIONyA2EmF",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO10PRODUCTIONyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueSSvp",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueSSvp",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueSSvg",
-                    "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueSSvg",
-                    "moduleName": "WISDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "AdsEnvironment",
-                        "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO8rawValueAESgSS_tcfc",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "LevelLog",
-            "printedName": "LevelLog",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "NODE",
-                "printedName": "NODE",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIAdsInStreamManager.LevelLog.Type) -> WISDK.WIAdsInStreamManager.LevelLog",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LevelLog",
-                        "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIAdsInStreamManager.LevelLog.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LevelLog",
-                            "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                            "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO4NODEyA2EmF",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO4NODEyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "BODY",
-                "printedName": "BODY",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIAdsInStreamManager.LevelLog.Type) -> WISDK.WIAdsInStreamManager.LevelLog",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LevelLog",
-                        "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIAdsInStreamManager.LevelLog.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LevelLog",
-                            "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                            "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO4BODYyA2EmF",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO4BODYyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueSSvp",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueSSvp",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueSSvg",
-                    "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueSSvg",
-                    "moduleName": "WISDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WISDK.WIAdsInStreamManager.LevelLog?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LevelLog",
-                        "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                        "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO8rawValueAESgSS_tcfc",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC8LevelLogO",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "initInstream",
             "printedName": "initInstream(accountId:env:timeoutInSecond:logLevel:)",
@@ -1735,9 +1126,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "AdsEnvironment",
-                "printedName": "WISDK.WIAdsInStreamManager.AdsEnvironment",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC14AdsEnvironmentO"
+                "name": "Environment",
+                "printedName": "WISDK.Environment",
+                "usr": "c:@M@WISDK@E@Environment"
               },
               {
                 "kind": "TypeNominal",
@@ -1748,13 +1139,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "LevelLog",
-                "printedName": "WISDK.WIAdsInStreamManager.LevelLog",
-                "usr": "s:5WISDK20WIAdsInStreamManagerC8LevelLogO"
+                "printedName": "WISDK.LevelLog",
+                "usr": "c:@M@WISDK@E@LevelLog"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:timeoutInSecond:logLevel:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env07timeoutC6Second8logLevelySi_AC14AdsEnvironmentOs5Int64VAC0N3LogOtF",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env07timeoutC6Second8logLevelySi_AA11EnvironmentOs5Int64VAA0N3LogOtF",
             "moduleName": "WISDK",
             "objc_name": "initInstreamWithAccountId:env:timeoutInSecond:logLevel:",
             "declAttributes": [
@@ -4980,6 +4371,227 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Environment",
+        "printedName": "Environment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "SANDBOX",
+            "printedName": "SANDBOX",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.Environment.Type) -> WISDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "WISDK.Environment",
+                    "usr": "c:@M@WISDK@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "WISDK.Environment",
+                        "usr": "c:@M@WISDK@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@Environment@EnvironmentSANDBOX",
+            "mangledName": "$s5WISDK11EnvironmentO7SANDBOXyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "PRODUCTION",
+            "printedName": "PRODUCTION",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.Environment.Type) -> WISDK.Environment",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "WISDK.Environment",
+                    "usr": "c:@M@WISDK@E@Environment"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.Environment.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "WISDK.Environment",
+                        "usr": "c:@M@WISDK@E@Environment"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@Environment@EnvironmentPRODUCTION",
+            "mangledName": "$s5WISDK11EnvironmentO10PRODUCTIONyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK11EnvironmentO8rawValueSSvp",
+            "mangledName": "$s5WISDK11EnvironmentO8rawValueSSvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK11EnvironmentO8rawValueSSvg",
+                "mangledName": "$s5WISDK11EnvironmentO8rawValueSSvg",
+                "moduleName": "WISDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WISDK.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "WISDK.Environment",
+                    "usr": "c:@M@WISDK@E@Environment"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK11EnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK11EnvironmentO8rawValueACSgSS_tcfc",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@WISDK@E@Environment",
+        "mangledName": "$s5WISDK11EnvironmentO",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "WIAdEvent",
         "printedName": "WIAdEvent",
         "children": [
@@ -7448,14 +7060,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Environment",
-                "printedName": "WISDK.WIOverlayData.Environment",
+                "printedName": "WISDK.Environment",
                 "hasDefaultArg": true,
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:contentType:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType3envACSSSg_AhC07ContentH0OAC11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType3envACSSSg_AhC07ContentH0OAA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:contentType:env:",
             "declAttributes": [
@@ -7526,14 +7138,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Environment",
-                "printedName": "WISDK.WIOverlayData.Environment",
+                "printedName": "WISDK.Environment",
                 "hasDefaultArg": true,
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:contentType:platform:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType8platform3envACSSSg_AiC07ContentH0OAC8PlatformCSgAC11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType8platform3envACSSSg_AiC07ContentH0OAC8PlatformCSgAA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:contentType:platform:env:",
             "declAttributes": [
@@ -7624,14 +7236,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Environment",
-                "printedName": "WISDK.WIOverlayData.Environment",
+                "printedName": "WISDK.Environment",
                 "hasDefaultArg": true,
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3envACSSSg_A2kC07ContentK0OSiAC8PlatformCSgAC11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3envACSSSg_A2kC07ContentK0OSiAC8PlatformCSgAA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:",
             "declAttributes": [
@@ -7722,9 +7334,9 @@
               {
                 "kind": "TypeNominal",
                 "name": "Environment",
-                "printedName": "WISDK.WIOverlayData.Environment",
+                "printedName": "WISDK.Environment",
                 "hasDefaultArg": true,
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
+                "usr": "c:@M@WISDK@E@Environment"
               },
               {
                 "kind": "TypeNominal",
@@ -7736,7 +7348,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:timeoutSecond:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3env13timeoutSecondACSSSg_A2lC07ContentK0OSiAC8PlatformCSgAC11EnvironmentOSitcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3env13timeoutSecondACSSSg_A2lC07ContentK0OSiAC8PlatformCSgAA11EnvironmentOSitcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:timeoutSecond:",
             "declAttributes": [
@@ -7785,14 +7397,14 @@
               {
                 "kind": "TypeNominal",
                 "name": "Environment",
-                "printedName": "WISDK.WIOverlayData.Environment",
+                "printedName": "WISDK.Environment",
                 "hasDefaultArg": true,
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithType:accountId:thirdPartyToken:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC4type9accountId15thirdPartyToken3envA2C11OverlayTypeO_SiSSSgAC11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC4type9accountId15thirdPartyToken3envA2C11OverlayTypeO_SiSSSgAA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithType:accountId:thirdPartyToken:env:",
             "declAttributes": [
@@ -7800,340 +7412,6 @@
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "Environment",
-            "printedName": "Environment",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "DEV",
-                "printedName": "DEV",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIOverlayData.Environment.Type) -> WISDK.WIOverlayData.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIOverlayData.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIOverlayData.Environment",
-                            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO3DEVyA2EmF",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO3DEVyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "LOCAL",
-                "printedName": "LOCAL",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIOverlayData.Environment.Type) -> WISDK.WIOverlayData.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIOverlayData.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIOverlayData.Environment",
-                            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO5LOCALyA2EmF",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO5LOCALyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "STAGING",
-                "printedName": "STAGING",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIOverlayData.Environment.Type) -> WISDK.WIOverlayData.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIOverlayData.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIOverlayData.Environment",
-                            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO7STAGINGyA2EmF",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO7STAGINGyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 2
-              },
-              {
-                "kind": "Var",
-                "name": "SANDBOX",
-                "printedName": "SANDBOX",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIOverlayData.Environment.Type) -> WISDK.WIOverlayData.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIOverlayData.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIOverlayData.Environment",
-                            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO7SANDBOXyA2EmF",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO7SANDBOXyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 3
-              },
-              {
-                "kind": "Var",
-                "name": "PRODUCTION",
-                "printedName": "PRODUCTION",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIOverlayData.Environment.Type) -> WISDK.WIOverlayData.Environment",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIOverlayData.Environment.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Environment",
-                            "printedName": "WISDK.WIOverlayData.Environment",
-                            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO10PRODUCTIONyA2EmF",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO10PRODUCTIONyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 4
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO8rawValueSSvp",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO8rawValueSSvp",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO8rawValueSSvg",
-                    "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO8rawValueSSvg",
-                    "moduleName": "WISDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WISDK.WIOverlayData.Environment?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.WIOverlayData.Environment",
-                        "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO8rawValueAESgSS_tcfc",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:5WISDK13WIOverlayDataC11EnvironmentO",
-            "mangledName": "$s5WISDK13WIOverlayDataC11EnvironmentO",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
           },
           {
             "kind": "TypeDecl",
@@ -9106,6 +8384,227 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LevelLog",
+        "printedName": "LevelLog",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "NODE",
+            "printedName": "NODE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.LevelLog.Type) -> WISDK.LevelLog",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LevelLog",
+                    "printedName": "WISDK.LevelLog",
+                    "usr": "c:@M@WISDK@E@LevelLog"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.LevelLog.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LevelLog",
+                        "printedName": "WISDK.LevelLog",
+                        "usr": "c:@M@WISDK@E@LevelLog"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@LevelLog@LevelLogNODE",
+            "mangledName": "$s5WISDK8LevelLogO4NODEyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "BODY",
+            "printedName": "BODY",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.LevelLog.Type) -> WISDK.LevelLog",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LevelLog",
+                    "printedName": "WISDK.LevelLog",
+                    "usr": "c:@M@WISDK@E@LevelLog"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.LevelLog.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LevelLog",
+                        "printedName": "WISDK.LevelLog",
+                        "usr": "c:@M@WISDK@E@LevelLog"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@LevelLog@LevelLogBODY",
+            "mangledName": "$s5WISDK8LevelLogO4BODYyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK8LevelLogO8rawValueSSvp",
+            "mangledName": "$s5WISDK8LevelLogO8rawValueSSvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK8LevelLogO8rawValueSSvg",
+                "mangledName": "$s5WISDK8LevelLogO8rawValueSSvg",
+                "moduleName": "WISDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WISDK.LevelLog?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LevelLog",
+                    "printedName": "WISDK.LevelLog",
+                    "usr": "c:@M@WISDK@E@LevelLog"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK8LevelLogO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK8LevelLogO8rawValueACSgSS_tcfc",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@WISDK@E@LevelLog",
+        "mangledName": "$s5WISDK8LevelLogO",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -10847,14 +10346,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "GameEnv",
-                "printedName": "WISDK.WIGameData.GameEnv",
-                "usr": "s:5WISDK10WIGameDataC7GameEnvO"
+                "name": "Environment",
+                "printedName": "WISDK.Environment",
+                "usr": "c:@M@WISDK@E@Environment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIGameData(im)initWithAccountId:channelId:streamId:token:env:",
-            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iC7GameEnvOtcfc",
+            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iA11EnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithAccountId:channelId:streamId:token:env:",
             "declAttributes": [
@@ -10862,217 +10361,6 @@
               "ObjC"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "TypeDecl",
-            "name": "GameEnv",
-            "printedName": "GameEnv",
-            "children": [
-              {
-                "kind": "Var",
-                "name": "SANDBOX",
-                "printedName": "SANDBOX",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIGameData.GameEnv.Type) -> WISDK.WIGameData.GameEnv",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GameEnv",
-                        "printedName": "WISDK.WIGameData.GameEnv",
-                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIGameData.GameEnv.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GameEnv",
-                            "printedName": "WISDK.WIGameData.GameEnv",
-                            "usr": "s:5WISDK10WIGameDataC7GameEnvO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK10WIGameDataC7GameEnvO7SANDBOXyA2EmF",
-                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO7SANDBOXyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 0
-              },
-              {
-                "kind": "Var",
-                "name": "PRODUCTION",
-                "printedName": "PRODUCTION",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(WISDK.WIGameData.GameEnv.Type) -> WISDK.WIGameData.GameEnv",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GameEnv",
-                        "printedName": "WISDK.WIGameData.GameEnv",
-                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "WISDK.WIGameData.GameEnv.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GameEnv",
-                            "printedName": "WISDK.WIGameData.GameEnv",
-                            "usr": "s:5WISDK10WIGameDataC7GameEnvO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:5WISDK10WIGameDataC7GameEnvO10PRODUCTIONyA2EmF",
-                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO10PRODUCTIONyA2EmF",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "fixedbinaryorder": 1
-              },
-              {
-                "kind": "Var",
-                "name": "rawValue",
-                "printedName": "rawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueSSvp",
-                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueSSvp",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueSSvg",
-                    "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueSSvg",
-                    "moduleName": "WISDK",
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(rawValue:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "WISDK.WIGameData.GameEnv?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "GameEnv",
-                        "printedName": "WISDK.WIGameData.GameEnv",
-                        "usr": "s:5WISDK10WIGameDataC7GameEnvO"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:5WISDK10WIGameDataC7GameEnvO8rawValueAESgSS_tcfc",
-                "mangledName": "$s5WISDK10WIGameDataC7GameEnvO8rawValueAESgSS_tcfc",
-                "moduleName": "WISDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "init_kind": "Designated"
-              }
-            ],
-            "declKind": "Enum",
-            "usr": "s:5WISDK10WIGameDataC7GameEnvO",
-            "mangledName": "$s5WISDK10WIGameDataC7GameEnvO",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "enumRawTypeName": "Int",
-            "conformances": [
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
-              },
-              {
-                "kind": "Conformance",
-                "name": "RawRepresentable",
-                "printedName": "RawRepresentable",
-                "children": [
-                  {
-                    "kind": "TypeWitness",
-                    "name": "RawValue",
-                    "printedName": "RawValue",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:SY",
-                "mangledName": "$sSY"
-              }
-            ]
           },
           {
             "kind": "Constructor",
@@ -11183,6 +10471,20 @@
         "moduleName": "WISDK"
       },
       {
+        "kind": "Import",
+        "name": "Alamofire",
+        "printedName": "Alamofire",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "GoogleInteractiveMediaAds",
+        "printedName": "GoogleInteractiveMediaAds",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "WIWelcomeAdManager",
         "printedName": "WIWelcomeAdManager",
@@ -11211,13 +10513,19 @@
           },
           {
             "kind": "Function",
-            "name": "addGameView",
-            "printedName": "addGameView(container:data:delegate:)",
+            "name": "requestAds",
+            "printedName": "requestAds(requestData:container:delegate:timeoutInSecond:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WIWelcomeAdData",
+                "printedName": "WISDK.WIWelcomeAdData",
+                "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData"
               },
               {
                 "kind": "TypeNominal",
@@ -11235,30 +10543,22 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "WISDK.WIWelcomeAdData?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WIWelcomeAdData",
-                    "printedName": "WISDK.WIWelcomeAdData",
-                    "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "WIWelcomeAdDelegate",
                 "printedName": "WISDK.WIWelcomeAdDelegate",
                 "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)addGameViewWithContainer:data:delegate:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC11addGameView9container4data8delegateySo6UIViewCSg_AA0bC4DataCSgAA0bC8Delegate_ptF",
+            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecondyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_ps5Int32VtF",
             "moduleName": "WISDK",
-            "objc_name": "addGameViewWithContainer:data:delegate:",
+            "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -11378,6 +10678,16 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       }
     ],
     "json_format_version": 8
@@ -11389,13 +10699,6 @@
       "offset": 121,
       "length": 15,
       "value": "\"WISDK.WIGameWebAction\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1212,
-      "length": 10,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdData.swift",
@@ -11426,20 +10729,6 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1547,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2176,
-      "length": 4,
-      "value": "1"
-    },
-    {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1593,
@@ -11459,6 +10748,13 @@
       "offset": 1886,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Environment.swift",
+      "kind": "IntegerLiteral",
+      "offset": 171,
+      "length": 10,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
@@ -11602,50 +10898,22 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6346,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6353,
-      "length": 7,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6362,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6371,
-      "length": 10,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
-      "offset": 7304,
+      "offset": 6046,
       "length": 8,
       "value": "\"WISDK.Platform\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 7649,
+      "offset": 6391,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 8297,
+      "offset": 7039,
       "length": 7,
       "value": "1"
     },
@@ -11662,6 +10930,13 @@
       "offset": 118,
       "length": 12,
       "value": "\"WISDK.WIConfigData\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/LevelLog.swift",
+      "kind": "IntegerLiteral",
+      "offset": 161,
+      "length": 4,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdWebAction.swift",
@@ -11700,17 +10975,24 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2035,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/game\/WIGameData.swift",
       "kind": "StringLiteral",
       "offset": 116,
       "length": 10,
       "value": "\"WISDK.WIGameData\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "BooleanLiteral",
+      "offset": 306,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "5"
     }
   ]
 }
