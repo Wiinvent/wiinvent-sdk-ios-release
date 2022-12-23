@@ -840,14 +840,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
-                "usr": "c:@M@WISDK@E@Environment"
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdData(im)initWithAccountId:env:",
-            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId3envACSSSg_AA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK15WIWelcomeAdDataC9accountId3envACSSSg_AA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithAccountId:env:",
             "declAttributes": [
@@ -1126,9 +1126,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
-                "usr": "c:@M@WISDK@E@Environment"
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               },
               {
                 "kind": "TypeNominal",
@@ -1138,14 +1138,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "LevelLog",
-                "printedName": "WISDK.LevelLog",
-                "usr": "c:@M@WISDK@E@LevelLog"
+                "name": "WILevelLog",
+                "printedName": "WISDK.WILevelLog",
+                "usr": "c:@M@WISDK@E@WILevelLog"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:timeoutInSecond:logLevel:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env07timeoutC6Second8logLevelySi_AA11EnvironmentOs5Int64VAA0N3LogOtF",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env07timeoutC6Second8logLevelySi_AA13WIEnvironmentOs5Int64VAA10WILevelLogOtF",
             "moduleName": "WISDK",
             "objc_name": "initInstreamWithAccountId:env:timeoutInSecond:logLevel:",
             "declAttributes": [
@@ -4371,8 +4371,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Environment",
-        "printedName": "Environment",
+        "name": "WIEnvironment",
+        "printedName": "WIEnvironment",
         "children": [
           {
             "kind": "Var",
@@ -4382,24 +4382,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WISDK.Environment.Type) -> WISDK.Environment",
+                "printedName": "(WISDK.WIEnvironment.Type) -> WISDK.WIEnvironment",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "WISDK.Environment",
-                    "usr": "c:@M@WISDK@E@Environment"
+                    "name": "WIEnvironment",
+                    "printedName": "WISDK.WIEnvironment",
+                    "usr": "c:@M@WISDK@E@WIEnvironment"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "WISDK.Environment.Type",
+                    "printedName": "WISDK.WIEnvironment.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.Environment",
-                        "usr": "c:@M@WISDK@E@Environment"
+                        "name": "WIEnvironment",
+                        "printedName": "WISDK.WIEnvironment",
+                        "usr": "c:@M@WISDK@E@WIEnvironment"
                       }
                     ]
                   }
@@ -4407,8 +4407,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@Environment@EnvironmentSANDBOX",
-            "mangledName": "$s5WISDK11EnvironmentO7SANDBOXyA2CmF",
+            "usr": "c:@M@WISDK@E@WIEnvironment@WIEnvironmentSANDBOX",
+            "mangledName": "$s5WISDK13WIEnvironmentO7SANDBOXyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -4423,24 +4423,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WISDK.Environment.Type) -> WISDK.Environment",
+                "printedName": "(WISDK.WIEnvironment.Type) -> WISDK.WIEnvironment",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "WISDK.Environment",
-                    "usr": "c:@M@WISDK@E@Environment"
+                    "name": "WIEnvironment",
+                    "printedName": "WISDK.WIEnvironment",
+                    "usr": "c:@M@WISDK@E@WIEnvironment"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "WISDK.Environment.Type",
+                    "printedName": "WISDK.WIEnvironment.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Environment",
-                        "printedName": "WISDK.Environment",
-                        "usr": "c:@M@WISDK@E@Environment"
+                        "name": "WIEnvironment",
+                        "printedName": "WISDK.WIEnvironment",
+                        "usr": "c:@M@WISDK@E@WIEnvironment"
                       }
                     ]
                   }
@@ -4448,8 +4448,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@Environment@EnvironmentPRODUCTION",
-            "mangledName": "$s5WISDK11EnvironmentO10PRODUCTIONyA2CmF",
+            "usr": "c:@M@WISDK@E@WIEnvironment@WIEnvironmentPRODUCTION",
+            "mangledName": "$s5WISDK13WIEnvironmentO10PRODUCTIONyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -4469,8 +4469,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5WISDK11EnvironmentO8rawValueSSvp",
-            "mangledName": "$s5WISDK11EnvironmentO8rawValueSSvp",
+            "usr": "s:5WISDK13WIEnvironmentO8rawValueSSvp",
+            "mangledName": "$s5WISDK13WIEnvironmentO8rawValueSSvp",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl"
@@ -4489,8 +4489,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDK11EnvironmentO8rawValueSSvg",
-                "mangledName": "$s5WISDK11EnvironmentO8rawValueSSvg",
+                "usr": "s:5WISDK13WIEnvironmentO8rawValueSSvg",
+                "mangledName": "$s5WISDK13WIEnvironmentO8rawValueSSvg",
                 "moduleName": "WISDK",
                 "accessorKind": "get"
               }
@@ -4504,13 +4504,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WISDK.Environment?",
+                "printedName": "WISDK.WIEnvironment?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Environment",
-                    "printedName": "WISDK.Environment",
-                    "usr": "c:@M@WISDK@E@Environment"
+                    "name": "WIEnvironment",
+                    "printedName": "WISDK.WIEnvironment",
+                    "usr": "c:@M@WISDK@E@WIEnvironment"
                   }
                 ],
                 "usr": "s:Sq"
@@ -4523,8 +4523,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5WISDK11EnvironmentO8rawValueACSgSS_tcfc",
-            "mangledName": "$s5WISDK11EnvironmentO8rawValueACSgSS_tcfc",
+            "usr": "s:5WISDK13WIEnvironmentO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK13WIEnvironmentO8rawValueACSgSS_tcfc",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl"
@@ -4533,8 +4533,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "c:@M@WISDK@E@Environment",
-        "mangledName": "$s5WISDK11EnvironmentO",
+        "usr": "c:@M@WISDK@E@WIEnvironment",
+        "mangledName": "$s5WISDK13WIEnvironmentO",
         "moduleName": "WISDK",
         "declAttributes": [
           "AccessControl",
@@ -7059,15 +7059,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
                 "hasDefaultArg": true,
-                "usr": "c:@M@WISDK@E@Environment"
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:contentType:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType3envACSSSg_AhC07ContentH0OAA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType3envACSSSg_AhC07ContentH0OAA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:contentType:env:",
             "declAttributes": [
@@ -7137,15 +7137,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
                 "hasDefaultArg": true,
-                "usr": "c:@M@WISDK@E@Environment"
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:contentType:platform:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType8platform3envACSSSg_AiC07ContentH0OAC8PlatformCSgAA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE011contentType8platform3envACSSSg_AiC07ContentH0OAC8PlatformCSgAA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:contentType:platform:env:",
             "declAttributes": [
@@ -7235,15 +7235,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
                 "hasDefaultArg": true,
-                "usr": "c:@M@WISDK@E@Environment"
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3envACSSSg_A2kC07ContentK0OSiAC8PlatformCSgAA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3envACSSSg_A2kC07ContentK0OSiAC8PlatformCSgAA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:",
             "declAttributes": [
@@ -7333,10 +7333,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
                 "hasDefaultArg": true,
-                "usr": "c:@M@WISDK@E@Environment"
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               },
               {
                 "kind": "TypeNominal",
@@ -7348,7 +7348,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:timeoutSecond:",
-            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3env13timeoutSecondACSSSg_A2lC07ContentK0OSiAC8PlatformCSgAA11EnvironmentOSitcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC9channelId06streamE015thirdPartyToken11contentType07accountE08platform3env13timeoutSecondACSSSg_A2lC07ContentK0OSiAC8PlatformCSgAA13WIEnvironmentOSitcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithChannelId:streamId:thirdPartyToken:contentType:accountId:platform:env:timeoutSecond:",
             "declAttributes": [
@@ -7396,15 +7396,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
                 "hasDefaultArg": true,
-                "usr": "c:@M@WISDK@E@Environment"
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIOverlayData(im)initWithType:accountId:thirdPartyToken:env:",
-            "mangledName": "$s5WISDK13WIOverlayDataC4type9accountId15thirdPartyToken3envA2C11OverlayTypeO_SiSSSgAA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK13WIOverlayDataC4type9accountId15thirdPartyToken3envA2C11OverlayTypeO_SiSSSgAA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithType:accountId:thirdPartyToken:env:",
             "declAttributes": [
@@ -8397,8 +8397,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "LevelLog",
-        "printedName": "LevelLog",
+        "name": "WILevelLog",
+        "printedName": "WILevelLog",
         "children": [
           {
             "kind": "Var",
@@ -8408,24 +8408,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WISDK.LevelLog.Type) -> WISDK.LevelLog",
+                "printedName": "(WISDK.WILevelLog.Type) -> WISDK.WILevelLog",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LevelLog",
-                    "printedName": "WISDK.LevelLog",
-                    "usr": "c:@M@WISDK@E@LevelLog"
+                    "name": "WILevelLog",
+                    "printedName": "WISDK.WILevelLog",
+                    "usr": "c:@M@WISDK@E@WILevelLog"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "WISDK.LevelLog.Type",
+                    "printedName": "WISDK.WILevelLog.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LevelLog",
-                        "printedName": "WISDK.LevelLog",
-                        "usr": "c:@M@WISDK@E@LevelLog"
+                        "name": "WILevelLog",
+                        "printedName": "WISDK.WILevelLog",
+                        "usr": "c:@M@WISDK@E@WILevelLog"
                       }
                     ]
                   }
@@ -8433,8 +8433,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@LevelLog@LevelLogNODE",
-            "mangledName": "$s5WISDK8LevelLogO4NODEyA2CmF",
+            "usr": "c:@M@WISDK@E@WILevelLog@WILevelLogNODE",
+            "mangledName": "$s5WISDK10WILevelLogO4NODEyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -8449,24 +8449,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(WISDK.LevelLog.Type) -> WISDK.LevelLog",
+                "printedName": "(WISDK.WILevelLog.Type) -> WISDK.WILevelLog",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LevelLog",
-                    "printedName": "WISDK.LevelLog",
-                    "usr": "c:@M@WISDK@E@LevelLog"
+                    "name": "WILevelLog",
+                    "printedName": "WISDK.WILevelLog",
+                    "usr": "c:@M@WISDK@E@WILevelLog"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "WISDK.LevelLog.Type",
+                    "printedName": "WISDK.WILevelLog.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "LevelLog",
-                        "printedName": "WISDK.LevelLog",
-                        "usr": "c:@M@WISDK@E@LevelLog"
+                        "name": "WILevelLog",
+                        "printedName": "WISDK.WILevelLog",
+                        "usr": "c:@M@WISDK@E@WILevelLog"
                       }
                     ]
                   }
@@ -8474,8 +8474,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@LevelLog@LevelLogBODY",
-            "mangledName": "$s5WISDK8LevelLogO4BODYyA2CmF",
+            "usr": "c:@M@WISDK@E@WILevelLog@WILevelLogBODY",
+            "mangledName": "$s5WISDK10WILevelLogO4BODYyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -8495,8 +8495,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:5WISDK8LevelLogO8rawValueSSvp",
-            "mangledName": "$s5WISDK8LevelLogO8rawValueSSvp",
+            "usr": "s:5WISDK10WILevelLogO8rawValueSSvp",
+            "mangledName": "$s5WISDK10WILevelLogO8rawValueSSvp",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl"
@@ -8515,8 +8515,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:5WISDK8LevelLogO8rawValueSSvg",
-                "mangledName": "$s5WISDK8LevelLogO8rawValueSSvg",
+                "usr": "s:5WISDK10WILevelLogO8rawValueSSvg",
+                "mangledName": "$s5WISDK10WILevelLogO8rawValueSSvg",
                 "moduleName": "WISDK",
                 "accessorKind": "get"
               }
@@ -8530,13 +8530,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "WISDK.LevelLog?",
+                "printedName": "WISDK.WILevelLog?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "LevelLog",
-                    "printedName": "WISDK.LevelLog",
-                    "usr": "c:@M@WISDK@E@LevelLog"
+                    "name": "WILevelLog",
+                    "printedName": "WISDK.WILevelLog",
+                    "usr": "c:@M@WISDK@E@WILevelLog"
                   }
                 ],
                 "usr": "s:Sq"
@@ -8549,8 +8549,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:5WISDK8LevelLogO8rawValueACSgSS_tcfc",
-            "mangledName": "$s5WISDK8LevelLogO8rawValueACSgSS_tcfc",
+            "usr": "s:5WISDK10WILevelLogO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK10WILevelLogO8rawValueACSgSS_tcfc",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl"
@@ -8559,8 +8559,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "c:@M@WISDK@E@LevelLog",
-        "mangledName": "$s5WISDK8LevelLogO",
+        "usr": "c:@M@WISDK@E@WILevelLog",
+        "mangledName": "$s5WISDK10WILevelLogO",
         "moduleName": "WISDK",
         "declAttributes": [
           "AccessControl",
@@ -10346,14 +10346,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Environment",
-                "printedName": "WISDK.Environment",
-                "usr": "c:@M@WISDK@E@Environment"
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
+                "usr": "c:@M@WISDK@E@WIEnvironment"
               }
             ],
             "declKind": "Constructor",
             "usr": "c:@M@WISDK@objc(cs)WIGameData(im)initWithAccountId:channelId:streamId:token:env:",
-            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iA11EnvironmentOtcfc",
+            "mangledName": "$s5WISDK10WIGameDataC9accountId07channelE006streamE05token3envACSSSg_A3iA13WIEnvironmentOtcfc",
             "moduleName": "WISDK",
             "objc_name": "initWithAccountId:channelId:streamId:token:env:",
             "declAttributes": [
@@ -10750,9 +10750,9 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/Environment.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIEnvironment.swift",
       "kind": "IntegerLiteral",
-      "offset": 171,
+      "offset": 173,
       "length": 10,
       "value": "1"
     },
@@ -10878,42 +10878,42 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 1079,
+      "offset": 1081,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
-      "offset": 1224,
+      "offset": 1226,
       "length": 7,
       "value": "\"1.6.4\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 2671,
+      "offset": 2689,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "StringLiteral",
-      "offset": 6046,
+      "offset": 6072,
       "length": 8,
       "value": "\"WISDK.Platform\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 6391,
+      "offset": 6417,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayData.swift",
       "kind": "IntegerLiteral",
-      "offset": 7039,
+      "offset": 7065,
       "length": 7,
       "value": "1"
     },
@@ -10932,9 +10932,9 @@
       "value": "\"WISDK.WIConfigData\""
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/LevelLog.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WILevelLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 161,
+      "offset": 163,
       "length": 4,
       "value": "1"
     },
