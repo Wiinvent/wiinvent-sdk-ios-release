@@ -47,6 +47,7 @@ import _StringProcessing
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
   @objc public init(accountId: Swift.String?, env: WISDK.WIEnvironment)
+  @objc public init(accountId: Swift.String?, domainUrl: Swift.String?, env: WISDK.WIEnvironment)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate {

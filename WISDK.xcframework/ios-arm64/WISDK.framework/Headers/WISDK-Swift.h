@@ -256,6 +256,7 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
+
 @class UIEvent;
 @class NSCoder;
 
@@ -520,6 +521,7 @@ SWIFT_CLASS("_TtC5WISDK11WIWebAction")
 SWIFT_CLASS("_TtC5WISDK15WIWelcomeAdData")
 @interface WIWelcomeAdData : NSObject
 - (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId domainUrl:(NSString * _Nullable)domainUrl env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
