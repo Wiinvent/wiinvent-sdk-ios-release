@@ -322,7 +322,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env timeoutInSecond:(int64_t)timeoutInSecond logLevel:(enum WILevelLog)logLevel SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout logLevel:(enum WILevelLog)logLevel SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
@@ -330,6 +330,9 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
+- (void)resume;
+- (void)skip;
+- (void)destroy;
 @end
 
 
