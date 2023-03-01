@@ -318,10 +318,9 @@ enum WILevelLog : NSInteger;
 @class IMAAdsManager;
 @class IMAAdEvent;
 @class IMAAdError;
-@class UIGestureRecognizer;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
-@interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate, UIGestureRecognizerDelegate>
+@interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout logLevel:(enum WILevelLog)logLevel SWIFT_METHOD_FAMILY(none);
@@ -335,7 +334,6 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)resume;
 - (void)skip;
 - (void)destroy;
-- (BOOL)gestureRecognizer:(UIGestureRecognizer * _Nonnull)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer * _Nonnull)otherGestureRecognizer SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

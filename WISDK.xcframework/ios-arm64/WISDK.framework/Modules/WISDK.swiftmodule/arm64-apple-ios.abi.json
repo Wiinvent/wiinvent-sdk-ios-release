@@ -1051,7 +1051,6 @@
             "moduleName": "WISDK",
             "static": true,
             "declAttributes": [
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1081,7 +1080,6 @@
             "mangledName": "$s5WISDK20WIAdsInStreamManagerC14loaderDelegateAA0bcd6LoaderG0_pSgvp",
             "moduleName": "WISDK",
             "declAttributes": [
-              "Custom",
               "HasInitialValue",
               "HasStorage",
               "AccessControl"
@@ -1217,7 +1215,6 @@
             "moduleName": "WISDK",
             "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:",
             "declAttributes": [
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1278,7 +1275,6 @@
             "moduleName": "WISDK",
             "objc_name": "requestAdsWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:",
             "declAttributes": [
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1314,7 +1310,6 @@
             "objc_name": "adsLoader:adsLoadedWithData:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1350,7 +1345,6 @@
             "objc_name": "adsLoader:failedWithErrorData:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1385,7 +1379,6 @@
             "objc_name": "adsManager:didReceiveAdEvent:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1415,7 +1408,6 @@
             "objc_name": "adsManagerDidRequestContentPause:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1444,7 +1436,6 @@
             "objc_name": "adsManagerDidRequestContentResume:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1479,7 +1470,6 @@
             "objc_name": "adsManager:didReceiveAdError:",
             "declAttributes": [
               "ObjC",
-              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1500,7 +1490,6 @@
             "mangledName": "$s5WISDK20WIAdsInStreamManagerC6resumeyyF",
             "moduleName": "WISDK",
             "declAttributes": [
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1522,7 +1511,6 @@
             "mangledName": "$s5WISDK20WIAdsInStreamManagerC4skipyyF",
             "moduleName": "WISDK",
             "declAttributes": [
-              "Custom",
               "AccessControl",
               "ObjC"
             ],
@@ -1544,45 +1532,8 @@
             "mangledName": "$s5WISDK20WIAdsInStreamManagerC7destroyyyF",
             "moduleName": "WISDK",
             "declAttributes": [
-              "Custom",
               "AccessControl",
               "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "gestureRecognizer",
-            "printedName": "gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIGestureRecognizer",
-                "printedName": "UIKit.UIGestureRecognizer",
-                "usr": "c:objc(cs)UIGestureRecognizer"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIGestureRecognizer",
-                "printedName": "UIKit.UIGestureRecognizer",
-                "usr": "c:objc(cs)UIGestureRecognizer"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC17gestureRecognizer_33shouldRecognizeSimultaneouslyWithSbSo09UIGestureG0C_AGtF",
-            "moduleName": "WISDK",
-            "objc_name": "gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:",
-            "declAttributes": [
-              "ObjC",
-              "Custom",
-              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -1592,7 +1543,6 @@
         "mangledName": "$s5WISDK20WIAdsInStreamManagerC",
         "moduleName": "WISDK",
         "declAttributes": [
-          "Custom",
           "AccessControl",
           "ObjC"
         ],
@@ -10893,35 +10843,35 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 343,
+      "offset": 314,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 371,
+      "offset": 342,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 399,
+      "offset": 370,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1707,
+      "offset": 1678,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1743,
+      "offset": 1714,
       "length": 1,
       "value": "5"
     },
