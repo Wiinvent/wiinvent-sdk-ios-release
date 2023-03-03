@@ -21,6 +21,30 @@
         "children": [
           {
             "kind": "Function",
+            "name": "onDisplayAds",
+            "printedName": "onDisplayAds()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate(im)onDisplayAds",
+            "mangledName": "$s5WISDK19WIWelcomeAdDelegateP12onDisplayAdsyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIWelcomeAdDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIWelcomeAdDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onNoAds",
             "printedName": "onNoAds()",
             "children": [
@@ -807,6 +831,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
       },
       {
         "kind": "TypeDecl",
@@ -10666,9 +10697,17 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "WIWelcomeAdDelegate",
-                "printedName": "WISDK.WIWelcomeAdDelegate",
-                "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate"
+                "name": "Optional",
+                "printedName": "WISDK.WIWelcomeAdDelegate?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIWelcomeAdDelegate",
+                    "printedName": "WISDK.WIWelcomeAdDelegate",
+                    "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -10679,7 +10718,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecondyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_ps5Int32VtF",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecondyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgs5Int32VtF",
             "moduleName": "WISDK",
             "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:",
             "declAttributes": [
@@ -10836,7 +10875,7 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdData.swift",
       "kind": "StringLiteral",
-      "offset": 121,
+      "offset": 134,
       "length": 15,
       "value": "\"WISDK.WIWelcomeAdData\""
     },

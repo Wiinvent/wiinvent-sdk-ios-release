@@ -533,6 +533,7 @@ SWIFT_CLASS("_TtC5WISDK15WIWelcomeAdData")
 
 SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 @protocol WIWelcomeAdDelegate
+- (void)onDisplayAds;
 - (void)onNoAds;
 - (void)onAdsWelcomeDismiss;
 - (void)onAdsWelcomeClickWithCampaignId:(int64_t)campaignId;
@@ -545,7 +546,7 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
 @interface WIWelcomeAdManager : NSObject
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nonnull)delegate timeoutInSecond:(int32_t)timeoutInSecond;
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(int32_t)timeoutInSecond;
 - (void)remove;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

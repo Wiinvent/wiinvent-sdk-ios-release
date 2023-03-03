@@ -8,11 +8,13 @@ import Foundation
 import GoogleInteractiveMediaAds
 import JavaScriptCore
 import Swift
+import UIKit
 @_exported import WISDK
 import WebKit
 import _Concurrency
 import _StringProcessing
 @objc public protocol WIWelcomeAdDelegate {
+  @objc func onDisplayAds()
   @objc func onNoAds()
   @objc func onAdsWelcomeDismiss()
   @objc func onAdsWelcomeClick(campaignId: Swift.Int64)
@@ -240,7 +242,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate, timeoutInSecond: Swift.Int32)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit
