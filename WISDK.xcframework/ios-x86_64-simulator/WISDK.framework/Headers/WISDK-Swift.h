@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import AVKit;
 @import CoreFoundation;
 @import Foundation;
 @import GoogleInteractiveMediaAds;
@@ -312,6 +313,7 @@ enum WILevelLog : NSInteger;
 @class AVPlayer;
 @class UIViewController;
 @class UIPanGestureRecognizer;
+@class AVPictureInPictureController;
 @class IMAAdsLoader;
 @class IMAAdsLoadedData;
 @class IMAAdLoadingErrorData;
@@ -320,10 +322,9 @@ enum WILevelLog : NSInteger;
 @class IMAAdError;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
-@interface WIAdsInStreamManager : NSObject <IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout logLevel:(enum WILevelLog)logLevel SWIFT_METHOD_FAMILY(none);
+@interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP SWIFT_METHOD_FAMILY(none);
+- (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
@@ -334,6 +335,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)resume;
 - (void)skip;
 - (void)destroy;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

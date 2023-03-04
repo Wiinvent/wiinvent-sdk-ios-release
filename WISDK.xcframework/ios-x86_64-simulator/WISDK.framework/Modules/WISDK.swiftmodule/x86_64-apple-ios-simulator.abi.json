@@ -1199,7 +1199,7 @@
           {
             "kind": "Function",
             "name": "initInstream",
-            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:)",
+            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1238,13 +1238,94 @@
                 "printedName": "WISDK.WILevelLog",
                 "hasDefaultArg": true,
                 "usr": "c:@M@WISDK@E@WILevelLog"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM08logLevelySi_AA13WIEnvironmentOSfSdAA10WILevelLogOtF",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM08logLevel9enablePiPySi_AA13WIEnvironmentOSfSdAA10WILevelLogOSbtF",
             "moduleName": "WISDK",
-            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:",
+            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "requestAdsPiP",
+            "printedName": "requestAdsPiP(requestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WIAdsRequestData",
+                "printedName": "WISDK.WIAdsRequestData",
+                "usr": "c:@M@WISDK@objc(cs)WIAdsRequestData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AVPlayer",
+                "printedName": "AVFoundation.AVPlayer",
+                "usr": "c:objc(cs)AVPlayer"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIPanGestureRecognizer?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIPanGestureRecognizer",
+                    "printedName": "UIKit.UIPanGestureRecognizer",
+                    "usr": "c:objc(cs)UIPanGestureRecognizer"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVKit.AVPictureInPictureController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPictureInPictureController",
+                    "printedName": "AVKit.AVPictureInPictureController",
+                    "usr": "c:objc(cs)AVPictureInPictureController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC13requestAdsPiP0F4Data6player11adContainer14viewController22uiPanGestureRecognizer03pipN0yAA0b7RequestI0C_So8AVPlayerCSo6UIViewCSo0vN0CSo05UIPanqR0CSgSo09AVPicturec7PictureN0CSgtF",
+            "moduleName": "WISDK",
+            "objc_name": "requestAdsPiPWithRequestData:player:adContainer:viewController:uiPanGestureRecognizer:pipController:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -1567,6 +1648,32 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIAdsInStreamManager",
+                "printedName": "WISDK.WIAdsInStreamManager",
+                "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)init",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerCACycfc",
+            "moduleName": "WISDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -1578,7 +1685,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
@@ -10882,37 +10988,44 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 314,
+      "offset": 352,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 342,
+      "offset": 380,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 370,
+      "offset": 408,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1678,
+      "offset": 1399,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1714,
+      "offset": 1435,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1496,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayManager.swift",
@@ -11179,6 +11292,13 @@
       "offset": 366,
       "length": 1,
       "value": "5"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "IntegerLiteral",
+      "offset": 456,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
