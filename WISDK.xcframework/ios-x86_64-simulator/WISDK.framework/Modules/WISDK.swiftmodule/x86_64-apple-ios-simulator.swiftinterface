@@ -55,7 +55,8 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate {
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: WISDK.WIAdsInStreamLoaderDelegate?
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 3, loadVideoTimeout: Foundation.TimeInterval = 5, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false)
+  public var pipController: AVKit.AVPictureInPictureController?
+  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 5, loadVideoTimeout: Foundation.TimeInterval = 5, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
@@ -130,6 +131,13 @@ import _StringProcessing
   @objc public func addGameView(container: UIKit.UIView!, data: WISDK.WIGameData!, gameDelegate: WISDK.WIGameDelegate)
   @objc public func removeGameView()
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class WILocalCache {
+  public class func shared() -> WISDK.WILocalCache
+  public func getDeviceId() -> Swift.String
+  public func getWelcomeNextTime() -> Swift.Int32
+  public func setWelcomeNextTime(time: Swift.Int32)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {
@@ -244,7 +252,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32 = 5, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit

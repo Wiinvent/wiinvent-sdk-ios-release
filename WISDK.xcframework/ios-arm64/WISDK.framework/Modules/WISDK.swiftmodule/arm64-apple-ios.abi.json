@@ -1197,6 +1197,116 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "pipController",
+            "printedName": "pipController",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AVKit.AVPictureInPictureController?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AVPictureInPictureController",
+                    "printedName": "AVKit.AVPictureInPictureController",
+                    "usr": "c:objc(cs)AVPictureInPictureController"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvp",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVKit.AVPictureInPictureController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPictureInPictureController",
+                        "printedName": "AVKit.AVPictureInPictureController",
+                        "usr": "c:objc(cs)AVPictureInPictureController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvg",
+                "mangledName": "$s5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvg",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "AVKit.AVPictureInPictureController?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AVPictureInPictureController",
+                        "printedName": "AVKit.AVPictureInPictureController",
+                        "usr": "c:objc(cs)AVPictureInPictureController"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvs",
+                "mangledName": "$s5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvs",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvM",
+                "mangledName": "$s5WISDK20WIAdsInStreamManagerC13pipControllerSo09AVPicturec7PictureG0CSgvM",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "initInstream",
             "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:logLevel:enablePiP:)",
@@ -5950,6 +6060,122 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WILocalCache",
+        "printedName": "WILocalCache",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "shared",
+            "printedName": "shared()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WILocalCache",
+                "printedName": "WISDK.WILocalCache",
+                "usr": "s:5WISDK12WILocalCacheC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC6sharedACyFZ",
+            "mangledName": "$s5WISDK12WILocalCacheC6sharedACyFZ",
+            "moduleName": "WISDK",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDeviceId",
+            "printedName": "getDeviceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC11getDeviceIdSSyF",
+            "mangledName": "$s5WISDK12WILocalCacheC11getDeviceIdSSyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getWelcomeNextTime",
+            "printedName": "getWelcomeNextTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC18getWelcomeNextTimes5Int32VyF",
+            "mangledName": "$s5WISDK12WILocalCacheC18getWelcomeNextTimes5Int32VyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setWelcomeNextTime",
+            "printedName": "setWelcomeNextTime(time:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC18setWelcomeNextTime4timeys5Int32V_tF",
+            "mangledName": "$s5WISDK12WILocalCacheC18setWelcomeNextTime4timeys5Int32V_tF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:5WISDK12WILocalCacheC",
+        "mangledName": "$s5WISDK12WILocalCacheC",
+        "moduleName": "WISDK",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
       },
       {
         "kind": "Import",
@@ -10774,7 +11000,7 @@
           {
             "kind": "Function",
             "name": "requestAds",
-            "printedName": "requestAds(requestData:container:delegate:timeoutInSecond:)",
+            "printedName": "requestAds(requestData:container:delegate:timeoutInSecond:levelLog:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -10819,14 +11045,22 @@
                 "kind": "TypeNominal",
                 "name": "Int32",
                 "printedName": "Swift.Int32",
+                "hasDefaultArg": true,
                 "usr": "s:s5Int32V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WILevelLog",
+                "printedName": "WISDK.WILevelLog",
+                "hasDefaultArg": true,
+                "usr": "c:@M@WISDK@E@WILevelLog"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecondyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgs5Int32VtF",
+            "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgs5Int32VAA07WILevelN0OtF",
             "moduleName": "WISDK",
-            "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:",
+            "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -11009,21 +11243,21 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1399,
+      "offset": 1459,
       "length": 1,
-      "value": "3"
+      "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1435,
+      "offset": 1495,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1496,
+      "offset": 1556,
       "length": 5,
       "value": "false"
     },
@@ -11278,6 +11512,13 @@
       "offset": 116,
       "length": 10,
       "value": "\"WISDK.WIGameData\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 682,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
