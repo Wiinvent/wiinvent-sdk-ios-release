@@ -136,8 +136,10 @@ import _StringProcessing
 @_hasMissingDesignatedInitializers open class WILocalCache {
   public class func shared() -> WISDK.WILocalCache
   public func getDeviceId() -> Swift.String
+  public func changeDeviceId()
   public func getWelcomeNextTime() -> Swift.Int32
   public func setWelcomeNextTime(time: Swift.Int32)
+  public func removeWelcomeNextTime()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class WIStreamSource : ObjectiveC.NSObject {

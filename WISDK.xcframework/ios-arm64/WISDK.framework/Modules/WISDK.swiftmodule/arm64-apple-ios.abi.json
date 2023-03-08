@@ -6121,6 +6121,26 @@
           },
           {
             "kind": "Function",
+            "name": "changeDeviceId",
+            "printedName": "changeDeviceId()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC14changeDeviceIdyyF",
+            "mangledName": "$s5WISDK12WILocalCacheC14changeDeviceIdyyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "getWelcomeNextTime",
             "printedName": "getWelcomeNextTime()",
             "children": [
@@ -6160,6 +6180,26 @@
             "declKind": "Func",
             "usr": "s:5WISDK12WILocalCacheC18setWelcomeNextTime4timeys5Int32V_tF",
             "mangledName": "$s5WISDK12WILocalCacheC18setWelcomeNextTime4timeys5Int32V_tF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeWelcomeNextTime",
+            "printedName": "removeWelcomeNextTime()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:5WISDK12WILocalCacheC21removeWelcomeNextTimeyyF",
+            "mangledName": "$s5WISDK12WILocalCacheC21removeWelcomeNextTimeyyF",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl"
@@ -11522,22 +11562,71 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "IntegerLiteral",
+      "offset": 164,
+      "length": 2,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 192,
+      "length": 8,
+      "value": "\"BANNER\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 257,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
       "kind": "BooleanLiteral",
-      "offset": 331,
+      "offset": 326,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
       "kind": "IntegerLiteral",
-      "offset": 366,
+      "offset": 360,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 386,
+      "length": 4,
+      "value": "\"-1\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 418,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
       "kind": "IntegerLiteral",
-      "offset": 456,
+      "offset": 448,
       "length": 2,
       "value": "60"
     },
