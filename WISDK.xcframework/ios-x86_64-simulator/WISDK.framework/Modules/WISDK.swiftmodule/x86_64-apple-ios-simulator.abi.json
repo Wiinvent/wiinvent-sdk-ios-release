@@ -94,12 +94,24 @@
           {
             "kind": "Function",
             "name": "onAdsWelcomeClick",
-            "printedName": "onAdsWelcomeClick(campaignId:)",
+            "printedName": "onAdsWelcomeClick(clickThroughType:contentId:campaignId:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WIClickThroughType",
+                "printedName": "WISDK.WIClickThroughType",
+                "usr": "c:@M@WISDK@E@WIClickThroughType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -109,8 +121,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate(im)onAdsWelcomeClickWithCampaignId:",
-            "mangledName": "$s5WISDK19WIWelcomeAdDelegateP17onAdsWelcomeClick10campaignIdys5Int64V_tF",
+            "usr": "c:@M@WISDK@objc(pl)WIWelcomeAdDelegate(im)onAdsWelcomeClickWithClickThroughType:contentId:campaignId:",
+            "mangledName": "$s5WISDK19WIWelcomeAdDelegateP17onAdsWelcomeClick16clickThroughType9contentId08campaignM0yAA07WIClickjK0O_SSs5Int64VtF",
             "moduleName": "WISDK",
             "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIWelcomeAdDelegate>",
             "sugared_genericSig": "<Self where Self : WISDK.WIWelcomeAdDelegate>",
@@ -9228,6 +9240,43 @@
               },
               {
                 "kind": "Var",
+                "name": "USER_CLICK_INTERNAL",
+                "printedName": "USER_CLICK_INTERNAL",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIWelcomeAdWebAction.TypeAction.Type) -> WISDK.WIWelcomeAdWebAction.TypeAction",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TypeAction",
+                        "printedName": "WISDK.WIWelcomeAdWebAction.TypeAction",
+                        "usr": "s:5WISDK20WIWelcomeAdWebActionC04TypeE0O"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIWelcomeAdWebAction.TypeAction.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TypeAction",
+                            "printedName": "WISDK.WIWelcomeAdWebAction.TypeAction",
+                            "usr": "s:5WISDK20WIWelcomeAdWebActionC04TypeE0O"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK20WIWelcomeAdWebActionC04TypeE0O19USER_CLICK_INTERNALyA2EmF",
+                "mangledName": "$s5WISDK20WIWelcomeAdWebActionC04TypeE0O19USER_CLICK_INTERNALyA2EmF",
+                "moduleName": "WISDK"
+              },
+              {
+                "kind": "Var",
                 "name": "ALLOW_BACK",
                 "printedName": "ALLOW_BACK",
                 "children": [
@@ -9575,6 +9624,309 @@
         "printedName": "WebKit",
         "declKind": "Import",
         "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIClickThroughType",
+        "printedName": "WIClickThroughType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "LINK",
+            "printedName": "LINK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIClickThroughType.Type) -> WISDK.WIClickThroughType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIClickThroughType",
+                    "printedName": "WISDK.WIClickThroughType",
+                    "usr": "c:@M@WISDK@E@WIClickThroughType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIClickThroughType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIClickThroughType",
+                        "printedName": "WISDK.WIClickThroughType",
+                        "usr": "c:@M@WISDK@E@WIClickThroughType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeLINK",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO4LINKyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "VOD",
+            "printedName": "VOD",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIClickThroughType.Type) -> WISDK.WIClickThroughType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIClickThroughType",
+                    "printedName": "WISDK.WIClickThroughType",
+                    "usr": "c:@M@WISDK@E@WIClickThroughType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIClickThroughType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIClickThroughType",
+                        "printedName": "WISDK.WIClickThroughType",
+                        "usr": "c:@M@WISDK@E@WIClickThroughType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeVOD",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO3VODyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "FIRM",
+            "printedName": "FIRM",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIClickThroughType.Type) -> WISDK.WIClickThroughType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIClickThroughType",
+                    "printedName": "WISDK.WIClickThroughType",
+                    "usr": "c:@M@WISDK@E@WIClickThroughType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIClickThroughType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIClickThroughType",
+                        "printedName": "WISDK.WIClickThroughType",
+                        "usr": "c:@M@WISDK@E@WIClickThroughType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeFIRM",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO4FIRMyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "LIVE",
+            "printedName": "LIVE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIClickThroughType.Type) -> WISDK.WIClickThroughType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIClickThroughType",
+                    "printedName": "WISDK.WIClickThroughType",
+                    "usr": "c:@M@WISDK@E@WIClickThroughType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIClickThroughType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIClickThroughType",
+                        "printedName": "WISDK.WIClickThroughType",
+                        "usr": "c:@M@WISDK@E@WIClickThroughType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeLIVE",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO4LIVEyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK18WIClickThroughTypeO8rawValueSSvp",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO8rawValueSSvp",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK18WIClickThroughTypeO8rawValueSSvg",
+                "mangledName": "$s5WISDK18WIClickThroughTypeO8rawValueSSvg",
+                "moduleName": "WISDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WISDK.WIClickThroughType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIClickThroughType",
+                    "printedName": "WISDK.WIClickThroughType",
+                    "usr": "c:@M@WISDK@E@WIClickThroughType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK18WIClickThroughTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@WISDK@E@WIClickThroughType",
+        "mangledName": "$s5WISDK18WIClickThroughTypeO",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -11519,6 +11871,27 @@
       "value": "\"WISDK.WIWelcomeAdWebAction\""
     },
     {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 179,
+      "length": 3,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 184,
+      "length": 4,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 190,
+      "length": 4,
+      "value": "3"
+    },
+    {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIOverlayView.swift",
       "kind": "BooleanLiteral",
       "offset": 1394,
@@ -11556,79 +11929,16 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 682,
-      "length": 1,
-      "value": "5"
+      "offset": 340,
+      "length": 3,
+      "value": "300"
     },
     {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 164,
+      "offset": 729,
       "length": 2,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 192,
-      "length": 8,
-      "value": "\"BANNER\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 223,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 257,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 289,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "BooleanLiteral",
-      "offset": 326,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "IntegerLiteral",
-      "offset": 360,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 386,
-      "length": 4,
-      "value": "\"-1\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "StringLiteral",
-      "offset": 418,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/AdsWelcomeCampaign.swift",
-      "kind": "IntegerLiteral",
-      "offset": 448,
-      "length": 2,
-      "value": "60"
+      "value": "15"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",

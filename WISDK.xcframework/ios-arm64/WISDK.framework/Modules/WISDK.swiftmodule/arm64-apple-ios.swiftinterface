@@ -17,7 +17,7 @@ import _StringProcessing
   @objc func onDisplayAds()
   @objc func onNoAds()
   @objc func onAdsWelcomeDismiss()
-  @objc func onAdsWelcomeClick(campaignId: Swift.Int64)
+  @objc func onAdsWelcomeClick(clickThroughType: WISDK.WIClickThroughType, contentId: Swift.String, campaignId: Swift.Int64)
   @objc func onAdsWelcomeImpression(campaignId: Swift.Int64)
   @objc func onAdsWelcomeSkip(campaignId: Swift.Int64)
   @objc func onAdsWelcomeError()
@@ -207,7 +207,7 @@ import _StringProcessing
 }
 @objc public class WIWelcomeAdWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
-    case USER_DISMISS, USER_CLICK, ALLOW_BACK, UNKNOWN
+    case USER_DISMISS, USER_CLICK, USER_CLICK_INTERNAL, ALLOW_BACK, UNKNOWN
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -217,6 +217,14 @@ import _StringProcessing
   public init(payload: Swift.String)
   public func getType() -> WISDK.WIWelcomeAdWebAction.TypeAction
   @objc deinit
+}
+@objc public enum WIClickThroughType : Swift.Int, Swift.RawRepresentable {
+  case LINK, VOD, FIRM, LIVE
+  public typealias RawValue = Swift.String
+  public var rawValue: WISDK.WIClickThroughType.RawValue {
+    get
+  }
+  public init?(rawValue: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) open var isUserGestureEnabled: Swift.Bool
@@ -254,7 +262,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32 = 5, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32 = 15, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit
@@ -278,3 +286,5 @@ extension WISDK.WILevelLog : Swift.Hashable {}
 extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.RawRepresentable {}
+extension WISDK.WIClickThroughType : Swift.Equatable {}
+extension WISDK.WIClickThroughType : Swift.Hashable {}

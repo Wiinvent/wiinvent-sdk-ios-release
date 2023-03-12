@@ -346,6 +346,13 @@ SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+typedef SWIFT_ENUM(NSInteger, WIClickThroughType, open) {
+  WIClickThroughTypeLINK = 0,
+  WIClickThroughTypeVOD = 1,
+  WIClickThroughTypeFIRM = 2,
+  WIClickThroughTypeLIVE = 3,
+};
+
 @class WIStreamSource;
 
 SWIFT_CLASS("_TtC5WISDK12WIConfigData")
@@ -538,7 +545,7 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 - (void)onDisplayAds;
 - (void)onNoAds;
 - (void)onAdsWelcomeDismiss;
-- (void)onAdsWelcomeClickWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeClickWithClickThroughType:(enum WIClickThroughType)clickThroughType contentId:(NSString * _Nonnull)contentId campaignId:(int64_t)campaignId;
 - (void)onAdsWelcomeImpressionWithCampaignId:(int64_t)campaignId;
 - (void)onAdsWelcomeSkipWithCampaignId:(int64_t)campaignId;
 - (void)onAdsWelcomeError;
