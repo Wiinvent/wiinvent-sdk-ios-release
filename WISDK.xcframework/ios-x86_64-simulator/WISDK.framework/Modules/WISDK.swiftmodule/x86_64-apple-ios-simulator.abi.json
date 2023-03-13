@@ -9724,8 +9724,8 @@
           },
           {
             "kind": "Var",
-            "name": "FIRM",
-            "printedName": "FIRM",
+            "name": "FILM",
+            "printedName": "FILM",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -9755,8 +9755,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeFIRM",
-            "mangledName": "$s5WISDK18WIClickThroughTypeO4FIRMyA2CmF",
+            "usr": "c:@M@WISDK@E@WIClickThroughType@WIClickThroughTypeFILM",
+            "mangledName": "$s5WISDK18WIClickThroughTypeO4FILMyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"

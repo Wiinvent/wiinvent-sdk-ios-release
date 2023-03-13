@@ -349,7 +349,7 @@ SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
 typedef SWIFT_ENUM(NSInteger, WIClickThroughType, open) {
   WIClickThroughTypeLINK = 0,
   WIClickThroughTypeVOD = 1,
-  WIClickThroughTypeFIRM = 2,
+  WIClickThroughTypeFILM = 2,
   WIClickThroughTypeLIVE = 3,
 };
 

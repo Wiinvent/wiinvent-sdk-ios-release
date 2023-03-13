@@ -219,7 +219,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc public enum WIClickThroughType : Swift.Int, Swift.RawRepresentable {
-  case LINK, VOD, FIRM, LIVE
+  case LINK, VOD, FILM, LIVE
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIClickThroughType.RawValue {
     get
