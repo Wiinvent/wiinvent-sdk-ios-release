@@ -1710,6 +1710,27 @@
           },
           {
             "kind": "Function",
+            "name": "contentComplete",
+            "printedName": "contentComplete()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)contentComplete",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC15contentCompleteyyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "resume",
             "printedName": "resume()",
             "children": [
@@ -5697,6 +5718,28 @@
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIAdEvent(im)getDuration",
             "mangledName": "$s5WISDK9WIAdEventC11getDurationSSyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTypeString",
+            "printedName": "getTypeString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdEvent(im)getTypeString",
+            "mangledName": "$s5WISDK9WIAdEventC13getTypeStringSSyF",
             "moduleName": "WISDK",
             "declAttributes": [
               "AccessControl",

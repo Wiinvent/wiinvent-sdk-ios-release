@@ -65,6 +65,7 @@ import _StringProcessing
   @objc public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive error: GoogleInteractiveMediaAds.IMAAdError)
+  @objc public func contentComplete()
   @objc public func resume()
   @objc public func skip()
   @objc public func destroy()
@@ -120,6 +121,7 @@ import _StringProcessing
   @objc public func getEventData(key: Swift.String) -> Swift.String
   @objc public func getCampaignId() -> Swift.String
   @objc public func getDuration() -> Swift.String
+  @objc public func getTypeString() -> Swift.String
   @objc public func isLinear() -> Swift.Bool
   @objc public func getErrorCode() -> Swift.Int
   @objc public func getErrorMessage() -> Swift.String

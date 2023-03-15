@@ -278,6 +278,7 @@ SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
 - (NSString * _Nonnull)getEventDataWithKey:(NSString * _Nonnull)key SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getCampaignId SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getDuration SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)getTypeString SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isLinear SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getErrorCode SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getErrorMessage SWIFT_WARN_UNUSED_RESULT;
@@ -332,6 +333,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
+- (void)contentComplete;
 - (void)resume;
 - (void)skip;
 - (void)destroy;
