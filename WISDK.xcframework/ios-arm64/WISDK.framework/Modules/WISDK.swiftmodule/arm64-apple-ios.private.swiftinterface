@@ -264,7 +264,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int32 = 15, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int = 5, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit

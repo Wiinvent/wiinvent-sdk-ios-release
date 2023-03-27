@@ -557,7 +557,7 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
 @interface WIWelcomeAdManager : NSObject
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(int32_t)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSInteger)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
 - (void)remove;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -11478,10 +11478,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int32",
-                "printedName": "Swift.Int32",
+                "name": "Int",
+                "printedName": "Swift.Int",
                 "hasDefaultArg": true,
-                "usr": "s:s5Int32V"
+                "usr": "s:Si"
               },
               {
                 "kind": "TypeNominal",
@@ -11493,7 +11493,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgs5Int32VAA07WILevelN0OtF",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgSiAA07WILevelN0OtF",
             "moduleName": "WISDK",
             "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
             "declAttributes": [
@@ -11914,6 +11914,20 @@
       "value": "\"WISDK.WIWelcomeAdWebAction\""
     },
     {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 399,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 432,
+      "length": 1,
+      "value": "5"
+    },
+    {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/pojo\/WIClickThroughType.swift",
       "kind": "IntegerLiteral",
       "offset": 179,
@@ -11979,9 +11993,16 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 729,
-      "length": 2,
-      "value": "15"
+      "offset": 727,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7841,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",
