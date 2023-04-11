@@ -109,7 +109,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
-    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
+    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, ALL_ADS_COMPLETED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
     public typealias RawValue = Swift.String
     public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
       get
@@ -264,7 +264,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIWelcomeAdManager
-  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int = 5, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
+  @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, delegate: WISDK.WIWelcomeAdDelegate?, timeoutInSecond: Swift.Int = 10, levelLog: WISDK.WILevelLog = WILevelLog.NODE)
   @objc public func remove()
   @objc override dynamic public init()
   @objc deinit

@@ -5251,6 +5251,47 @@
               },
               {
                 "kind": "Var",
+                "name": "ALL_ADS_COMPLETED",
+                "printedName": "ALL_ADS_COMPLETED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIAdEvent.AdEventType.Type) -> WISDK.WIAdEvent.AdEventType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEventType",
+                        "printedName": "WISDK.WIAdEvent.AdEventType",
+                        "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIAdEvent.AdEventType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdEventType",
+                            "printedName": "WISDK.WIAdEvent.AdEventType",
+                            "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK9WIAdEventC02AdC4TypeO17ALL_ADS_COMPLETEDyA2EmF",
+                "mangledName": "$s5WISDK9WIAdEventC02AdC4TypeO17ALL_ADS_COMPLETEDyA2EmF",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 6
+              },
+              {
+                "kind": "Var",
                 "name": "USER_AD_BLOCK",
                 "printedName": "USER_AD_BLOCK",
                 "children": [
@@ -5288,7 +5329,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 6
+                "fixedbinaryorder": 7
               },
               {
                 "kind": "Var",
@@ -5329,7 +5370,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 7
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Var",
@@ -5370,7 +5411,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 8
+                "fixedbinaryorder": 9
               },
               {
                 "kind": "Var",
@@ -5411,7 +5452,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 9
+                "fixedbinaryorder": 10
               },
               {
                 "kind": "Var",
@@ -5452,7 +5493,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 10
+                "fixedbinaryorder": 11
               },
               {
                 "kind": "Var",
@@ -11763,62 +11804,69 @@
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
-      "length": 13,
+      "length": 17,
       "value": "6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 285,
-      "length": 12,
+      "offset": 289,
+      "length": 13,
       "value": "7"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
-      "length": 9,
+      "offset": 304,
+      "length": 12,
       "value": "8"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 310,
-      "length": 5,
+      "offset": 318,
+      "length": 9,
       "value": "9"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 317,
-      "length": 6,
+      "offset": 329,
+      "length": 5,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 336,
+      "length": 6,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2088,
+      "offset": 2267,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2102,
+      "offset": 2281,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2285,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 2118,
+      "offset": 2297,
       "length": 4,
       "value": "true"
     },
@@ -11994,15 +12042,15 @@
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
       "offset": 727,
-      "length": 1,
-      "value": "5"
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7841,
-      "length": 1,
-      "value": "5"
+      "offset": 7876,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/common\/WIMd5.swift",

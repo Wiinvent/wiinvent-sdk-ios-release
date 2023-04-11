@@ -292,11 +292,12 @@ typedef SWIFT_ENUM(NSInteger, AdEventType, open) {
   AdEventTypeCLICK = 3,
   AdEventTypeCOMPLETE = 4,
   AdEventTypeSKIPPED = 5,
-  AdEventTypeUSER_AD_BLOCK = 6,
-  AdEventTypeVOLUME_MUTED = 7,
-  AdEventTypeVOLUME_ON = 8,
-  AdEventTypeERROR = 9,
-  AdEventTypeUNKNOW = 10,
+  AdEventTypeALL_ADS_COMPLETED = 6,
+  AdEventTypeUSER_AD_BLOCK = 7,
+  AdEventTypeVOLUME_MUTED = 8,
+  AdEventTypeVOLUME_ON = 9,
+  AdEventTypeERROR = 10,
+  AdEventTypeUNKNOW = 11,
 };
 
 
