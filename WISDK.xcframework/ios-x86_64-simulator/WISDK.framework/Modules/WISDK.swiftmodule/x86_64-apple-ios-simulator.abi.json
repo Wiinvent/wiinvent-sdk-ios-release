@@ -11643,10 +11643,10 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
+                "name": "Double",
+                "printedName": "Swift.Double",
                 "hasDefaultArg": true,
-                "usr": "s:Si"
+                "usr": "s:Sd"
               },
               {
                 "kind": "TypeNominal",
@@ -11658,7 +11658,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@WISDK@objc(cs)WIWelcomeAdManager(im)requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
-            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgSiAA07WILevelN0OtF",
+            "mangledName": "$s5WISDK18WIWelcomeAdManagerC10requestAds0E4Data9container8delegate15timeoutInSecond8levelLogyAA0bcG0C_So6UIViewCSgAA0bC8Delegate_pSgSdAA07WILevelN0OtF",
             "moduleName": "WISDK",
             "objc_name": "requestAdsWithRequestData:container:delegate:timeoutInSecond:levelLog:",
             "declAttributes": [
@@ -12094,15 +12094,8 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 399,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 432,
+      "offset": 414,
       "length": 1,
       "value": "5"
     },
@@ -12172,14 +12165,14 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 727,
+      "offset": 736,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7876,
+      "offset": 7880,
       "length": 2,
       "value": "10"
     },
