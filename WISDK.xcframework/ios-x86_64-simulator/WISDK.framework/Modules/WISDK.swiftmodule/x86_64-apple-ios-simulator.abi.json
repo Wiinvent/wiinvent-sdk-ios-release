@@ -821,6 +821,44 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "mediaProgress",
+            "printedName": "mediaProgress(mediaTime:totalTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIAdsInStreamLoaderDelegate(im)mediaProgressWithMediaTime:totalTime:",
+            "mangledName": "$s5WISDK27WIAdsInStreamLoaderDelegateP13mediaProgress0G4Time05totalI0ySd_SdtF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIAdsInStreamLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIAdsInStreamLoaderDelegate>",
+            "protocolReq": true,
+            "objc_name": "mediaProgressWithMediaTime:totalTime:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",

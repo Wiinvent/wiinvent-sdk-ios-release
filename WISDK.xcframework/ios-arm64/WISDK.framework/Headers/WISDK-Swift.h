@@ -307,6 +307,8 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)wiManagerRequestPauseContent;
 - (void)wiManagerRequestFailure;
 - (void)onEventWithEvent:(WIAdEvent * _Nonnull)event;
+@optional
+- (void)mediaProgressWithMediaTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 @end
 
 enum WIEnvironment : NSInteger;

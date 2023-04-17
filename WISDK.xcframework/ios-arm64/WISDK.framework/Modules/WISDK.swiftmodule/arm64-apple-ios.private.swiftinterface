@@ -46,6 +46,7 @@ import _StringProcessing
   @objc func wiManagerRequestPauseContent()
   @objc func wiManagerRequestFailure()
   @objc func onEvent(event: WISDK.WIAdEvent)
+  @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
   @objc public init(accountId: Swift.String?, env: WISDK.WIEnvironment)
