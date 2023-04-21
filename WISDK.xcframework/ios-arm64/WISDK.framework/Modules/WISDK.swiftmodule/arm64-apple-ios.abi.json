@@ -1630,35 +1630,6 @@
           },
           {
             "kind": "Function",
-            "name": "adsManagerAdDidStartBuffering",
-            "printedName": "adsManagerAdDidStartBuffering(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "IMAAdsManager",
-                "printedName": "GoogleInteractiveMediaAds.IMAAdsManager",
-                "usr": "c:objc(cs)IMAAdsManager"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)adsManagerAdDidStartBuffering:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC03adsE19AdDidStartBufferingyySo06IMAAdsE0CF",
-            "moduleName": "WISDK",
-            "objc_name": "adsManagerAdDidStartBuffering:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "adsManagerAdPlaybackReady",
             "printedName": "adsManagerAdPlaybackReady(_:)",
             "children": [
@@ -1681,7 +1652,8 @@
             "objc_name": "adsManagerAdPlaybackReady:",
             "declAttributes": [
               "ObjC",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
