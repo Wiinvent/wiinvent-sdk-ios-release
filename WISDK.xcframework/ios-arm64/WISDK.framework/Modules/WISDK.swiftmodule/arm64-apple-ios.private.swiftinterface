@@ -113,7 +113,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
-    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, ALL_ADS_COMPLETED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
+    case REQUEST, START, IMPRESSION, CLICK, COMPLETE, SKIPPED, TAPPED, ALL_ADS_COMPLETED, USER_AD_BLOCK, VOLUME_MUTED, VOLUME_ON, ERROR, UNKNOW
     public typealias RawValue = Swift.String
     public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
       get

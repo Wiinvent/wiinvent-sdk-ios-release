@@ -5385,6 +5385,47 @@
               },
               {
                 "kind": "Var",
+                "name": "TAPPED",
+                "printedName": "TAPPED",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(WISDK.WIAdEvent.AdEventType.Type) -> WISDK.WIAdEvent.AdEventType",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AdEventType",
+                        "printedName": "WISDK.WIAdEvent.AdEventType",
+                        "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "WISDK.WIAdEvent.AdEventType.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "AdEventType",
+                            "printedName": "WISDK.WIAdEvent.AdEventType",
+                            "usr": "s:5WISDK9WIAdEventC02AdC4TypeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:5WISDK9WIAdEventC02AdC4TypeO6TAPPEDyA2EmF",
+                "mangledName": "$s5WISDK9WIAdEventC02AdC4TypeO6TAPPEDyA2EmF",
+                "moduleName": "WISDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "fixedbinaryorder": 6
+              },
+              {
+                "kind": "Var",
                 "name": "ALL_ADS_COMPLETED",
                 "printedName": "ALL_ADS_COMPLETED",
                 "children": [
@@ -5422,7 +5463,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 6
+                "fixedbinaryorder": 7
               },
               {
                 "kind": "Var",
@@ -5463,7 +5504,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 7
+                "fixedbinaryorder": 8
               },
               {
                 "kind": "Var",
@@ -5504,7 +5545,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 8
+                "fixedbinaryorder": 9
               },
               {
                 "kind": "Var",
@@ -5545,7 +5586,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 9
+                "fixedbinaryorder": 10
               },
               {
                 "kind": "Var",
@@ -5586,7 +5627,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 10
+                "fixedbinaryorder": 11
               },
               {
                 "kind": "Var",
@@ -5627,7 +5668,7 @@
                 "declAttributes": [
                   "ObjC"
                 ],
-                "fixedbinaryorder": 11
+                "fixedbinaryorder": 12
               },
               {
                 "kind": "Var",
@@ -11945,69 +11986,76 @@
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
       "offset": 270,
-      "length": 17,
+      "length": 6,
       "value": "6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 289,
-      "length": 13,
+      "offset": 278,
+      "length": 17,
       "value": "7"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 304,
-      "length": 12,
+      "offset": 297,
+      "length": 13,
       "value": "8"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
-      "length": 9,
+      "offset": 312,
+      "length": 12,
       "value": "9"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 329,
-      "length": 5,
+      "offset": 326,
+      "length": 9,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
-      "length": 6,
+      "offset": 337,
+      "length": 5,
       "value": "11"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
+      "kind": "IntegerLiteral",
+      "offset": 344,
+      "length": 6,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2267,
+      "offset": 2391,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "IntegerLiteral",
-      "offset": 2281,
+      "offset": 2405,
       "length": 2,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "StringLiteral",
-      "offset": 2285,
+      "offset": 2409,
       "length": 10,
       "value": "\"isLinear\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
       "kind": "BooleanLiteral",
-      "offset": 2297,
+      "offset": 2421,
       "length": 4,
       "value": "true"
     },
