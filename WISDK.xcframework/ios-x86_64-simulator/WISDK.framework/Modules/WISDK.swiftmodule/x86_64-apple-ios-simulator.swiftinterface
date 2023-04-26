@@ -68,6 +68,7 @@ import _StringProcessing
   @objc public func adsManagerDidRequestContentPause(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerDidRequestContentResume(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive error: GoogleInteractiveMediaAds.IMAAdError)
+  @objc public func goToBackground()
   @objc public func callPlayVideoTimeout()
   @objc public func contentComplete()
   @objc public func resume()

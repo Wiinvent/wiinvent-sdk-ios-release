@@ -369,6 +369,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)adsManagerDidRequestContentPause:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerDidRequestContentResume:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdError:(IMAAdError * _Nonnull)error;
+- (void)goToBackground;
 - (void)callPlayVideoTimeout;
 - (void)contentComplete;
 - (void)resume;

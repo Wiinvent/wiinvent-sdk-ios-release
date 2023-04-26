@@ -1823,6 +1823,27 @@
           },
           {
             "kind": "Function",
+            "name": "goToBackground",
+            "printedName": "goToBackground()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)goToBackground",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC14goToBackgroundyyF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "callPlayVideoTimeout",
             "printedName": "callPlayVideoTimeout()",
             "children": [
@@ -12489,14 +12510,14 @@
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 12324,
+      "offset": 12417,
       "length": 29,
       "value": "\"====> WI play video timeout\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 12519,
+      "offset": 12612,
       "length": 32,
       "value": "\"=====> WI call contentComplete\""
     },
