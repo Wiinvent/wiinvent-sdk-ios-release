@@ -338,6 +338,8 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)wiManagerRequestPauseContent;
 - (void)wiManagerRequestFailure;
 - (void)onEventWithEvent:(WIAdEvent * _Nonnull)event;
+- (void)wiShowSkipButtonWithDuration:(NSInteger)duration;
+- (void)wiRemoveSkipButton;
 @optional
 - (void)mediaProgressWithMediaTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 @end
@@ -358,7 +360,7 @@ enum WILevelLog : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 @interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
-- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP SWIFT_METHOD_FAMILY(none);
+- (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP durationSkip:(NSInteger)durationSkip SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsPiPWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer pipController:(AVPictureInPictureController * _Nullable)pipController;
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(AVPlayer * _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
@@ -374,6 +376,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)contentComplete;
 - (void)resume;
 - (void)skip;
+- (void)discardAdBreak;
 - (void)destroy;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -607,6 +610,15 @@ SWIFT_CLASS("_TtC5WISDK20WIWelcomeAdWebAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+
+SWIFT_CLASS("_TtC5WISDK15WiAdsSkipButton")
+@interface WiAdsSkipButton : UIButton
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)startCountdownWithDuration:(NSInteger)duration;
+- (void)remove;
+@end
 
 #endif
 #if defined(__cplusplus)

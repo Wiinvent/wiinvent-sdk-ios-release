@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
-// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WISDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import Alamofire
@@ -46,6 +46,8 @@ import _StringProcessing
   @objc func wiManagerRequestPauseContent()
   @objc func wiManagerRequestFailure()
   @objc func onEvent(event: WISDK.WIAdEvent)
+  @objc func wiShowSkipButton(duration: Swift.Int)
+  @objc func wiRemoveSkipButton()
   @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
@@ -57,7 +59,7 @@ import _StringProcessing
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: (any WISDK.WIAdsInStreamLoaderDelegate)?
   public var pipController: AVKit.AVPictureInPictureController?
-  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false)
+  @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 15, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, durationSkip: Swift.Int = 5)
   @objc public func requestAdsPiP(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, pipController: AVKit.AVPictureInPictureController?)
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: AVFoundation.AVPlayer, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
@@ -73,6 +75,7 @@ import _StringProcessing
   @objc public func contentComplete()
   @objc public func resume()
   @objc public func skip()
+  @objc public func discardAdBreak()
   @objc public func destroy()
   @objc override dynamic public init()
   @objc deinit
@@ -102,6 +105,15 @@ import _StringProcessing
   @objc public static func requestAds()
   @objc public static func requestAdsWithVastLink(vastLink: Swift.String)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class WiAdsSkipButton : UIKit.UIButton {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) open func normalUi()
+  @objc @_Concurrency.MainActor(unsafe) public func startCountdown(duration: Swift.Int = 5)
+  @objc @_Concurrency.MainActor(unsafe) public func remove()
+  @_Concurrency.MainActor(unsafe) open func skipUi()
   @objc deinit
 }
 @objc public enum WIEnvironment : Swift.Int, Swift.RawRepresentable {
