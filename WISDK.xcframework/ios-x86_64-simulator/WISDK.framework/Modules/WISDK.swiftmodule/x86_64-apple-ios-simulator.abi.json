@@ -1413,7 +1413,7 @@
           {
             "kind": "Function",
             "name": "initInstream",
-            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:durationSkip:)",
+            "printedName": "initInstream(accountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:skipDuration:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1476,10 +1476,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:durationSkip:",
-            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM009bufferingoM08logLevel9enablePiP12durationSkipySi_AA13WIEnvironmentOSfS2dAA10WILevelLogOSbSitF",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:skipDuration:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC12initInstream9accountId3env15vastLoadTimeout09loadVideoM009bufferingoM08logLevel9enablePiP12skipDurationySi_AA13WIEnvironmentOSfS2dAA10WILevelLogOSbSitF",
             "moduleName": "WISDK",
-            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:durationSkip:",
+            "objc_name": "initInstreamWithAccountId:env:vastLoadTimeout:loadVideoTimeout:bufferingVideoTimeout:logLevel:enablePiP:skipDuration:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
