@@ -299,6 +299,7 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 @end
 
 
+
 @class NSString;
 enum AdEventType : NSInteger;
 
@@ -598,9 +599,17 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
-@interface WIWelcomeAdManager : NSObject
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog;
+@interface WIWelcomeAdManager : NSObject <WIWelcomeAdDelegate>
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container viewController:(UIViewController * _Nonnull)viewController delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)remove;
+- (void)onDisplayAds;
+- (void)onNoAds;
+- (void)onAdsWelcomeDismiss;
+- (void)onAdsWelcomeClickWithClickThroughType:(enum WIClickThroughType)clickThroughType contentId:(NSString * _Nonnull)contentId campaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeImpressionWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeSkipWithCampaignId:(int64_t)campaignId;
+- (void)onAdsWelcomeError;
+- (void)onAdsWelcomeTimeout;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
