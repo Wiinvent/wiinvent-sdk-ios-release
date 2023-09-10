@@ -15532,449 +15532,505 @@
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 411,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 719,
+      "offset": 771,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 815,
+      "offset": 867,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1345,
+      "offset": 939,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1782,
+      "offset": 1867,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1893,
+      "offset": 1978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1899,
+      "offset": 1984,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1909,
+      "offset": 1994,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1922,
+      "offset": 2007,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2065,
+      "offset": 2150,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2148,
+      "offset": 2233,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2200,
+      "offset": 2285,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2265,
+      "offset": 2350,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2277,
+      "offset": 2362,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2291,
+      "offset": 2376,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 2304,
+      "offset": 2389,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2345,
+      "offset": 2430,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 2383,
+      "offset": 2468,
       "length": 10,
       "value": "\"Bỏ qua\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2482,
+      "offset": 2567,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2870,
+      "offset": 2955,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3056,
+      "offset": 3141,
       "length": 4,
       "value": "-100"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3468,
+      "offset": 3553,
       "length": 3,
       "value": "230"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3579,
+      "offset": 3664,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3585,
+      "offset": 3670,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3595,
+      "offset": 3680,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3608,
+      "offset": 3693,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3751,
+      "offset": 3836,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3834,
+      "offset": 3919,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3886,
+      "offset": 3971,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3951,
+      "offset": 4036,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3963,
+      "offset": 4048,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3977,
+      "offset": 4062,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "FloatLiteral",
-      "offset": 3990,
+      "offset": 4075,
       "length": 4,
       "value": "22.0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4031,
+      "offset": 4116,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 4069,
+      "offset": 4154,
       "length": 10,
       "value": "\"Bỏ qua\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4168,
+      "offset": 4253,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4665,
+      "offset": 4750,
       "length": 3,
       "value": "-50"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4859,
+      "offset": 4944,
       "length": 3,
       "value": "-60"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5151,
+      "offset": 5236,
       "length": 3,
       "value": "-20"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5345,
+      "offset": 5430,
       "length": 4,
       "value": "-100"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 6210,
+      "offset": 6295,
       "length": 33,
       "value": "\"https:\/\/google.com\/wiinvent.mp4\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6601,
+      "offset": 6686,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6607,
+      "offset": 6692,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6658,
+      "offset": 6743,
       "length": 3,
       "value": "250"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6729,
+      "offset": 6814,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 6991,
+      "offset": 7076,
       "length": 4,
       "value": "\"vi\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7040,
+      "offset": 7125,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7128,
+      "offset": 7213,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7165,
+      "offset": 7250,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 7625,
+      "offset": 7710,
       "length": 13,
       "value": "\"Skip Button\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8111,
+      "offset": 8196,
       "length": 4,
       "value": "1000"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 9479,
+      "offset": 9564,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9495,
+      "offset": 9580,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9807,
+      "offset": 9892,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 10495,
+      "length": 37,
+      "value": "\"====> showSkipButtonTimeoutCallBack\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 10755,
+      "length": 22,
+      "value": "\"====> showSkipButton\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10096,
+      "offset": 10819,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10539,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10603,
+      "offset": 10983,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10680,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10883,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 10957,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11100,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 11250,
+      "offset": 11039,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 11288,
+      "offset": 11311,
+      "length": 40,
+      "value": "\"====> adsManagerDidRequestContentPause\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11617,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11681,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11758,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11961,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12035,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 12189,
+      "length": 18,
+      "value": "\"====> updateTime\""
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12255,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12405,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 12443,
       "length": 10,
       "value": "\"Bỏ qua\""
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11348,
+      "offset": 12503,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/namco\/Projects\/Wiinvent\/sdk\/ios\/WISDK\/WISDK\/welcomead\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11709,
+      "offset": 12864,
       "length": 2,
       "value": "-1"
     },
