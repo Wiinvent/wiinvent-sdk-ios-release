@@ -413,6 +413,7 @@ SWIFT_CLASS("_TtC5WISDK12WIConfigData")
 typedef SWIFT_ENUM(NSInteger, WIEnvironment, open) {
   WIEnvironmentSANDBOX = 0,
   WIEnvironmentPRODUCTION = 1,
+  WIEnvironmentVIETTEL_PRODUCTION = 2,
 };
 
 
