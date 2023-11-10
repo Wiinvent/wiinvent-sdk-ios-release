@@ -66,6 +66,7 @@ import _StringProcessing
   @objc public func addFriendlyObstruction(friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
+  @objc public func adsManagerAdDidStartBuffering(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManagerAdPlaybackReady(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, adDidProgressToTime mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
   @objc public func adsManager(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager, didReceive event: GoogleInteractiveMediaAds.IMAAdEvent)
