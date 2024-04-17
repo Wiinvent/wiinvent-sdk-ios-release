@@ -1,7 +1,7 @@
 framework module WISDK {
   umbrella header "WISDK.h"
-
   export *
+
   module * { export * }
 }
 
