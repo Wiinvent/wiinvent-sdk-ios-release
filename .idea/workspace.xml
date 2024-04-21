@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WISDK.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/WISDK.podspec" afterDir="false" />
-    </list>
+    <list default="true" id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +84,7 @@
       <workItem from="1666582737063" duration="1398000" />
       <workItem from="1713507313276" duration="651000" />
       <workItem from="1713510034376" duration="622000" />
-      <workItem from="1713688694535" duration="55000" />
+      <workItem from="1713688694535" duration="722000" />
     </task>
     <servers />
   </component>
