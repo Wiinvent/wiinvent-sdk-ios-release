@@ -20,8 +20,7 @@ Pod::Spec.new do |spec|
   spec.pod_target_xcconfig = {'ONLY_ACTIVE_ARCH' => 'NO'}
   spec.user_target_xcconfig = {'ONLY_ACTIVE_ARCH' => 'NO'}
 
-  spec.dependency 'Alamofire', '~> 5.8.1'
-  spec.dependency 'GoogleAds-IMA-iOS-SDK', '~> 3.18.4'
+  spec.dependency 'GoogleAds-IMA-iOS-SDK', '3.18.4'
 
   spec.frameworks = 'AVFoundation', 'UIKit', 'WebKit'
 end
