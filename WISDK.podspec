@@ -21,6 +21,7 @@ Pod::Spec.new do |spec|
   spec.user_target_xcconfig = {'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64', 'ONLY_ACTIVE_ARCH' => 'NO'}
 
   spec.dependency 'GoogleAds-IMA-iOS-SDK', '3.18.4'
+  spec.dependency 'TokenGenerator'
 
   spec.frameworks = 'AVFoundation', 'UIKit', 'WebKit'
 end
