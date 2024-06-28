@@ -317,54 +317,7 @@ SWIFT_CLASS("_TtC5WISDK15PassthroughView")
 
 
 
-
-
-
-
-
-
 @class NSString;
-enum WIEnvironment : NSInteger;
-enum WIContentType : NSInteger;
-enum WIGender : NSInteger;
-enum WI3rdBannerAdSize : NSInteger;
-
-SWIFT_CLASS("_TtC5WISDK17WI3rdBannerAdData")
-@interface WI3rdBannerAdData : NSObject
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId env:(enum WIEnvironment)env channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId transId:(NSString * _Nullable)transId contentType:(enum WIContentType)contentType title:(NSString * _Nullable)title category:(NSString * _Nullable)category keyword:(NSString * _Nullable)keyword age:(NSInteger)age gender:(enum WIGender)gender adSize:(enum WI3rdBannerAdSize)adSize uid20:(NSString * _Nullable)uid20 OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class WI3rdBannerAdManager;
-
-SWIFT_PROTOCOL("_TtP5WISDK21WI3rdBannerAdDelegate_")
-@protocol WI3rdBannerAdDelegate
-- (void)wi3rdBannerAdManager:(WI3rdBannerAdManager * _Nonnull)manager hasNoAdsAt:(UIView * _Nullable)containerView;
-- (void)wi3rdBannerAdManager:(WI3rdBannerAdManager * _Nonnull)manager at:(UIView * _Nullable)containerView changeRatio:(CGFloat)ratio;
-- (void)wi3rdBannerAdManager:(WI3rdBannerAdManager * _Nonnull)manager click:(NSString * _Nonnull)url;
-@end
-
-
-SWIFT_CLASS("_TtC5WISDK20WI3rdBannerAdManager")
-@interface WI3rdBannerAdManager : NSObject
-- (void)requestAdsWithRequestData:(WI3rdBannerAdData * _Nonnull)requestData containerView:(UIView * _Nullable)containerView timeoutInSecond:(NSTimeInterval)timeoutInSecond;
-- (void)destroy;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-
-typedef SWIFT_ENUM(NSInteger, WI3rdBannerAdSize, open) {
-  WI3rdBannerAdSizeBANNER = 0,
-  WI3rdBannerAdSizeLARGE_BANNER = 1,
-  WI3rdBannerAdSizeRECTANGLE = 2,
-};
-
 enum AdEventType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK9WIAdEvent")
@@ -409,6 +362,7 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)mediaProgressWithMediaTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 @end
 
+enum WIEnvironment : NSInteger;
 enum WILevelLog : NSInteger;
 @class WIAdsRequestData;
 @class AVPlayer;
@@ -431,7 +385,6 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader adsLoadedWithData:(IMAAdsLoadedData * _Nonnull)adsLoadedData;
 - (void)adsLoader:(IMAAdsLoader * _Nonnull)loader failedWithErrorData:(IMAAdLoadingErrorData * _Nonnull)adErrorData;
-- (void)adsManagerAdDidStartBuffering:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManagerAdPlaybackReady:(IMAAdsManager * _Nonnull)adsManager;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager adDidProgressToTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
 - (void)adsManager:(IMAAdsManager * _Nonnull)adsManager didReceiveAdEvent:(IMAAdEvent * _Nonnull)event;
@@ -449,6 +402,8 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+enum WIContentType : NSInteger;
+enum WIGender : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
 @interface WIAdsRequestData : NSObject
@@ -530,19 +485,25 @@ typedef SWIFT_ENUM(NSInteger, WILevelLog, open) {
   WILevelLogBODY = 1,
 };
 
+enum ContentType : NSInteger;
 @class Platform;
 enum OverlayType : NSInteger;
 
 SWIFT_CLASS("_TtC5WISDK13WIOverlayData")
 @interface WIOverlayData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum WIContentType)contentType env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum WIContentType)contentType platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum WIContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum WIContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId contentType:(enum ContentType)contentType platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId thirdPartyToken:(NSString * _Nullable)thirdPartyToken contentType:(enum ContentType)contentType accountId:(NSInteger)accountId platform:(Platform * _Nullable)platform env:(enum WIEnvironment)env timeoutSecond:(NSInteger)timeoutSecond OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithType:(enum OverlayType)type accountId:(NSInteger)accountId thirdPartyToken:(NSString * _Nullable)thirdPartyToken env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, ContentType, open) {
+  ContentTypeVOD = 0,
+  ContentTypeLIVESTREAM = 1,
+};
 
 typedef SWIFT_ENUM(NSInteger, OverlayType, open) {
   OverlayTypePROFILE = 0,
@@ -653,8 +614,8 @@ SWIFT_CLASS("_TtC5WISDK11WIWebAction")
 
 SWIFT_CLASS("_TtC5WISDK15WIWelcomeAdData")
 @interface WIWelcomeAdData : NSObject
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender uid20:(NSString * _Nonnull)uid20 env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender uid20:(NSString * _Nonnull)uid20 domainUrl:(NSString * _Nullable)domainUrl env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId domainUrl:(NSString * _Nullable)domainUrl env:(enum WIEnvironment)env OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -675,7 +636,7 @@ SWIFT_PROTOCOL("_TtP5WISDK19WIWelcomeAdDelegate_")
 
 SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
 @interface WIWelcomeAdManager : NSObject <WIWelcomeAdDelegate>
-- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container viewController:(UIViewController * _Nonnull)viewController delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate skipDuration:(NSInteger)skipDuration levelLog:(enum WILevelLog)levelLog friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
+- (void)requestAdsWithRequestData:(WIWelcomeAdData * _Nonnull)requestData container:(UIView * _Null_unspecified)container viewController:(UIViewController * _Nonnull)viewController delegate:(id <WIWelcomeAdDelegate> _Nullable)delegate timeoutInSecond:(NSTimeInterval)timeoutInSecond levelLog:(enum WILevelLog)levelLog friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)remove;
 - (void)onDisplayAds;
 - (void)onNoAds;
@@ -687,8 +648,6 @@ SWIFT_CLASS("_TtC5WISDK18WIWelcomeAdManager")
 - (void)onAdsWelcomeTimeout;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
-
 
 
 SWIFT_CLASS("_TtC5WISDK20WIWelcomeAdWebAction")

@@ -71,6 +71,10 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="SwiftWorkspaceSettings">
+    <option name="detectedToolchain" value="true" />
+    <option name="toolchainPathValue" value="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e74f41c1-ca83-47a7-8745-f9662e3887d1" name="Default Changelist" comment="" />
@@ -86,6 +90,7 @@
       <workItem from="1713510034376" duration="622000" />
       <workItem from="1713688694535" duration="722000" />
       <workItem from="1713705387357" duration="602000" />
+      <workItem from="1719559810547" duration="1487000" />
     </task>
     <servers />
   </component>
@@ -121,6 +126,42 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="c2700238-5e99-43e9-a35d-9aeaaa47daf9" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="c2700238-5e99-43e9-a35d-9aeaaa47daf9">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>
