@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/WISDK-Swift.h</key>
 		<data>
-		b2z53Fhxeu6DRcNOIuHjOd6h6MI=
+		0pcbgtOk/xj+zpeymFl/ravlQtU=
 		</data>
 		<key>Headers/WISDK.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3EIa97wEvAmhLBjm0Su+B5Zk6is=
+		qtm1uQHSm6yC0Ma2P37NgAqg7zk=
 		</data>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZzLubHQVKtiRozyqGAzcUoAqpfg=
+		UgsDQ9YlFjl+cw4bhyeGlNSUuCA=
 		</data>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		oh8MUMwI82yACUwC2WOKj2Tg7go=
+		zfAKnNyaK90VEzUKfLO6dt/0PgU=
 		</data>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		jnUFln15Wwe1M2gS5B7mCPmfahs=
+		WTb4iINM1TUMB1UbprhrT6WeD+0=
 		</data>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		oh8MUMwI82yACUwC2WOKj2Tg7go=
+		zfAKnNyaK90VEzUKfLO6dt/0PgU=
 		</data>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VviuHWNrrcVQSheVY6BNCLetmME=
+		HHwkZ3+ORiGw8/Zdw9gJpNqdyCw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdkJpGP0EBQfpkY8bjNj364DNLnh9cMw71MlMnZeS10=
+			tBQF4DFxGYlSfrSyp74H1kRTccm4I4vJ8fr4SABRGiI=
 			</data>
 		</dict>
 		<key>Headers/WISDK.h</key>
@@ -61,35 +61,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AKpLEWxJNyadTspqY/nQ6sCMGIGZlsvhkXD3gmnkW60=
+			yUH2PsRIjFq7pc90+SL7V+i3ZNFx3WvSE/9zsEITmPc=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oitn6U6VXhLLNQHn55K43oflB5hF5u2Pax2doMPi5hg=
+			RerpYrbMawjm7iWpj+Vwl2Rc42z3oXl1HHZdp7BZ4uE=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kQ5e2kUxz8FVJET0RVzvs4lFtkXrk8o///oocKAa8V4=
+			9VFa3c4RAwZVtsYDjRGc9HUjGX38WKN3HfS0BQ7koqw=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oitn6U6VXhLLNQHn55K43oflB5hF5u2Pax2doMPi5hg=
+			RerpYrbMawjm7iWpj+Vwl2Rc42z3oXl1HHZdp7BZ4uE=
 			</data>
 		</dict>
 		<key>Modules/WISDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e4quKnCRpSIUuBfqwb3frTIf7QC1TjAxgUEiMSwtOKU=
+			p02+SA10qlkc9VXAjTxcDFPzOfAeMbn3NARofieMrj0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

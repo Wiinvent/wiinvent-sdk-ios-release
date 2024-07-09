@@ -91,6 +91,7 @@
       <workItem from="1713688694535" duration="722000" />
       <workItem from="1713705387357" duration="602000" />
       <workItem from="1719559810547" duration="1487000" />
+      <workItem from="1719561708631" duration="1239000" />
     </task>
     <servers />
   </component>
@@ -135,6 +136,11 @@
     </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="c2700238-5e99-43e9-a35d-9aeaaa47daf9">
           <value>
             <State>
