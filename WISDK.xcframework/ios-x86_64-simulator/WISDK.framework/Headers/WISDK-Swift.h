@@ -482,6 +482,7 @@ typedef SWIFT_ENUM(NSInteger, WIContentType, open) {
   WIContentTypeFILM = 0,
   WIContentTypeVIDEO = 1,
   WIContentTypeTV = 2,
+  WIContentTypeSHORT_VIDEO = 3,
 };
 
 typedef SWIFT_ENUM(NSInteger, WIEnvironment, open) {

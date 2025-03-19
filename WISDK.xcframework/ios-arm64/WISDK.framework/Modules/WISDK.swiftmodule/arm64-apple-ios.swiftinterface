@@ -236,7 +236,7 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc public enum WIContentType : Swift.Int, Swift.RawRepresentable {
-  case FILM, VIDEO, TV
+  case FILM, VIDEO, TV, SHORT_VIDEO
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIContentType.RawValue {
     get

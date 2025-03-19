@@ -11026,6 +11026,47 @@
           },
           {
             "kind": "Var",
+            "name": "SHORT_VIDEO",
+            "printedName": "SHORT_VIDEO",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIContentType.Type) -> WISDK.WIContentType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIContentType",
+                    "printedName": "WISDK.WIContentType",
+                    "usr": "c:@M@WISDK@E@WIContentType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIContentType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIContentType",
+                        "printedName": "WISDK.WIContentType",
+                        "usr": "c:@M@WISDK@E@WIContentType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIContentType@WIContentTypeSHORT_VIDEO",
+            "mangledName": "$s5WISDK13WIContentTypeO11SHORT_VIDEOyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
             "name": "rawValue",
             "printedName": "rawValue",
             "children": [
@@ -17618,6 +17659,13 @@
       "offset": 177,
       "length": 2,
       "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIContentType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 181,
+      "length": 11,
+      "value": "3"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIGender.swift",
