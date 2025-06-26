@@ -2287,7 +2287,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Player",
-                "printedName": "any BitmovinPlayerCore.Player",
+                "printedName": "any BitmovinPlayer.Player",
                 "usr": "c:objc(pl)BMPPlayer"
               },
               {
