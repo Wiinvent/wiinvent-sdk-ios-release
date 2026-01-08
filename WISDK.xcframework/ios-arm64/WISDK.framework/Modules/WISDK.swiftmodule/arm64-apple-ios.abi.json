@@ -961,231 +961,6 @@
         "moduleName": "WISDK"
       },
       {
-        "kind": "TypeDecl",
-        "name": "WI3rdBannerAdBannerType",
-        "printedName": "WI3rdBannerAdBannerType",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "display",
-            "printedName": "display",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WISDK.WI3rdBannerAdBannerType.Type) -> WISDK.WI3rdBannerAdBannerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdBannerType",
-                    "printedName": "WISDK.WI3rdBannerAdBannerType",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WISDK.WI3rdBannerAdBannerType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WI3rdBannerAdBannerType",
-                        "printedName": "WISDK.WI3rdBannerAdBannerType",
-                        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType@WI3rdBannerAdBannerTypeDisplay",
-            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO7displayyA2CmF",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "overlay",
-            "printedName": "overlay",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WISDK.WI3rdBannerAdBannerType.Type) -> WISDK.WI3rdBannerAdBannerType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdBannerType",
-                    "printedName": "WISDK.WI3rdBannerAdBannerType",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WISDK.WI3rdBannerAdBannerType.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WI3rdBannerAdBannerType",
-                        "printedName": "WISDK.WI3rdBannerAdBannerType",
-                        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType@WI3rdBannerAdBannerTypeOverlay",
-            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO7overlayyA2CmF",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvp",
-            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvp",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvg",
-                "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueSSvg",
-                "moduleName": "WISDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "WISDK.WI3rdBannerAdBannerType?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdBannerType",
-                    "printedName": "WISDK.WI3rdBannerAdBannerType",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:5WISDK013WI3rdBannerAdC4TypeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO8rawValueACSgSS_tcfc",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType",
-        "mangledName": "$s5WISDK013WI3rdBannerAdC4TypeO",
-        "moduleName": "WISDK",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -7120,14 +6895,21 @@
         "moduleName": "WISDK"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "WI3rdBannerAdSize",
         "printedName": "WI3rdBannerAdSize",
         "children": [
           {
             "kind": "Var",
-            "name": "BANNER",
-            "printedName": "BANNER",
+            "name": "HOMEPAGE_BANNER",
+            "printedName": "HOMEPAGE_BANNER",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7157,8 +6939,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeBANNER",
-            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO6BANNERyA2CmF",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeHOMEPAGE_BANNER",
+            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO15HOMEPAGE_BANNERyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -7167,8 +6949,8 @@
           },
           {
             "kind": "Var",
-            "name": "LARGE_BANNER",
-            "printedName": "LARGE_BANNER",
+            "name": "SUBPAGE_BANNER",
+            "printedName": "SUBPAGE_BANNER",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -7198,136 +6980,13 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeLARGE_BANNER",
-            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO12LARGE_BANNERyA2CmF",
+            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeSUBPAGE_BANNER",
+            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO14SUBPAGE_BANNERyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
             ],
             "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "RECTANGLE",
-            "printedName": "RECTANGLE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdSize",
-                    "printedName": "WISDK.WI3rdBannerAdSize",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WI3rdBannerAdSize",
-                        "printedName": "WISDK.WI3rdBannerAdSize",
-                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeRECTANGLE",
-            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO9RECTANGLEyA2CmF",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "MINI_BANNER",
-            "printedName": "MINI_BANNER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdSize",
-                    "printedName": "WISDK.WI3rdBannerAdSize",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WI3rdBannerAdSize",
-                        "printedName": "WISDK.WI3rdBannerAdSize",
-                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeMINI_BANNER",
-            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO11MINI_BANNERyA2CmF",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Var",
-            "name": "MEDIUM_BANNER",
-            "printedName": "MEDIUM_BANNER",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(WISDK.WI3rdBannerAdSize.Type) -> WISDK.WI3rdBannerAdSize",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "WI3rdBannerAdSize",
-                    "printedName": "WISDK.WI3rdBannerAdSize",
-                    "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "WISDK.WI3rdBannerAdSize.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "WI3rdBannerAdSize",
-                        "printedName": "WISDK.WI3rdBannerAdSize",
-                        "usr": "c:@M@WISDK@E@WI3rdBannerAdSize"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WI3rdBannerAdSize@WI3rdBannerAdSizeMEDIUM_BANNER",
-            "mangledName": "$s5WISDK17WI3rdBannerAdSizeO13MEDIUM_BANNERyA2CmF",
-            "moduleName": "WISDK",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -7368,7 +7027,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -8566,7 +8225,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(position:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:bannerType:padding:)",
+            "printedName": "init(position:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:padding:cacheTimeSec:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8741,23 +8400,24 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "WI3rdBannerAdBannerType",
-                "printedName": "WISDK.WI3rdBannerAdBannerType",
-                "usr": "c:@M@WISDK@E@WI3rdBannerAdBannerType"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "UIEdgeInsets",
                 "printedName": "UIKit.UIEdgeInsets",
                 "hasDefaultArg": true,
                 "usr": "c:@S@UIEdgeInsets"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithPosition:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:bannerType:padding:",
-            "mangledName": "$s5WISDK17WI3rdBannerAdDataC8position9accountId3env07channelH006streamH005transH011contentType5title8category7keyword3age6gender6adSize5uid208segments06bannerN07paddingACSS_SSSgAA13WIEnvironmentOA3uA09WIContentN0OA3USiAA8WIGenderOAA0bcdU0OA2uA0bcdcN0OSo12UIEdgeInsetsVtcfc",
+            "usr": "c:@M@WISDK@objc(cs)WI3rdBannerAdData(im)initWithPosition:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:padding:cacheTimeSec:",
+            "mangledName": "$s5WISDK17WI3rdBannerAdDataC8position9accountId3env07channelH006streamH005transH011contentType5title8category7keyword3age6gender6adSize5uid208segments7padding12cacheTimeSecACSS_SSSgAA13WIEnvironmentOA3uA09WIContentN0OA3USiAA8WIGenderOAA0bcdU0OA2USo12UIEdgeInsetsVSitcfc",
             "moduleName": "WISDK",
-            "objc_name": "initWithPosition:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:bannerType:padding:",
+            "objc_name": "initWithPosition:accountId:env:channelId:streamId:transId:contentType:title:category:keyword:age:gender:adSize:uid20:segments:padding:cacheTimeSec:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -16767,6 +16427,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       }
@@ -16791,35 +16458,28 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 381,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 436,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 805,
+      "offset": 787,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5526,
+      "offset": 4787,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5701,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdBannerType.swift",
       "kind": "IntegerLiteral",
-      "offset": 99,
+      "offset": 92,
       "length": 7,
       "value": "1"
     },
@@ -18392,6 +18052,13 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdCampaign.swift",
+      "kind": "BooleanLiteral",
+      "offset": 432,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
       "offset": 381,
@@ -18821,37 +18488,16 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 97,
-      "length": 12,
+      "offset": 119,
+      "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
       "kind": "IntegerLiteral",
-      "offset": 111,
-      "length": 9,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 130,
-      "length": 11,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 143,
-      "length": 13,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSize.swift",
-      "kind": "IntegerLiteral",
-      "offset": 158,
+      "offset": 135,
       "length": 12,
-      "value": "5"
+      "value": "2"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/overlays\/WIAdEvent.swift",
@@ -18964,6 +18610,20 @@
       "offset": 2421,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1080,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdData.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1084,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/3rdbannerad\/WI3rdBannerAdSource.swift",

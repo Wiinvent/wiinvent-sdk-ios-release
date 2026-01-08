@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name WISDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name WISDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import AVKit
 import AdSupport
 import AppTrackingTransparency
@@ -28,12 +28,22 @@ import _SwiftConcurrencyShims
   @objc func onAdsWelcomeTimeout()
 }
 @objc public protocol WI3rdBannerAdDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, hasNoAdsAt containerView: UIKit.UIView?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, at containerView: UIKit.UIView?, changeRatio ratio: CoreFoundation.CGFloat)
+  #endif
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, click url: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, hasNoAdAt containerView: UIKit.UIView?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, skipAdAt containerView: UIKit.UIView?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func wi3rdBannerAdManager(_ manager: WISDK.WI3rdBannerAdManager, pauseBannerVisibleAt containerView: UIKit.UIView?) -> Swift.Bool
+  #endif
 }
 @objc public protocol WIGameDelegate {
   @objc func onDismiss()
@@ -42,23 +52,19 @@ import _SwiftConcurrencyShims
 }
 @objc open class WI3rdBannerAdManager : ObjectiveC.NSObject, WISDK.WILoggable {
   public init(delegate: any WISDK.WI3rdBannerAdDelegate, levelLog: WISDK.WILevelLog = .NODE)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func requestAds(requestData: WISDK.WI3rdBannerAdData, containerView: UIKit.UIView?, timeoutInSecond: Foundation.TimeInterval = 10)
+  #endif
   @objc public func destroy()
   @objc public func destroyPauseBanner()
   @objc deinit
 }
-@objc public enum WI3rdBannerAdBannerType : Swift.Int, Swift.RawRepresentable {
-  case display, overlay
-  public typealias RawValue = Swift.String
-  public var rawValue: WISDK.WI3rdBannerAdBannerType.RawValue {
-    get
-  }
-  public init?(rawValue: WISDK.WI3rdBannerAdBannerType.RawValue)
-}
 @objc public class WIGameWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
     case USER_DISMISS, UNKNOWN
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -78,8 +84,12 @@ import _SwiftConcurrencyShims
   @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, env: WISDK.WIEnvironment, segments: Swift.String)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate {
@@ -87,8 +97,12 @@ import _SwiftConcurrencyShims
   public var loaderDelegate: (any WISDK.WIAdsInStreamLoaderDelegate)?
   public var pipController: AVKit.AVPictureInPictureController?
   @objc public func initInstream(accountId: Swift.Int, env: WISDK.WIEnvironment, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 10, bitrate: Swift.Int = 2500, logLevel: WISDK.WILevelLog = WILevelLog.NODE, enablePiP: Swift.Bool = false, skipDuration: Swift.Int = 6)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func requestAds(requestData: WISDK.WIAdsRequestData, player: Swift.AnyObject, adContainer: UIKit.UIView, viewController: UIKit.UIViewController, uiPanGestureRecognizer: UIKit.UIPanGestureRecognizer?, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func addFriendlyObstruction(friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
+  #endif
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, adsLoadedWith adsLoadedData: GoogleInteractiveMediaAds.IMAAdsLoadedData)
   @objc public func adsLoader(_ loader: GoogleInteractiveMediaAds.IMAAdsLoader, failedWith adErrorData: GoogleInteractiveMediaAds.IMAAdLoadingErrorData)
   @objc public func adsManagerAdDidStartBuffering(_ adsManager: GoogleInteractiveMediaAds.IMAAdsManager)
@@ -125,9 +139,13 @@ import _SwiftConcurrencyShims
   @objc public static var onAdsRequestSuccess: ((_ campaignId: Swift.String) -> ())?
   @objc public static var onAdsRequestError: ((_ campaignId: Swift.String, _ error: Swift.String) -> ())?
   @objc public static var onAdsEvent: ((_ event: WISDK.WIAdEvent) -> ())?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func monitorAVPlayer(player: AVFoundation.AVPlayer?)
+  #endif
   @objc public static func unmonitorAVPlayer()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func addOverlaysToPlayerView(container: UIKit.UIView!, overlayData: WISDK.WIOverlayData!)
+  #endif
   @objc public static func removeOverlays()
   @objc public static func onUserPurchaseSuccess(token: Swift.String, productId: Swift.String)
   @objc public static func onUserPurchaseError(errorCode: Swift.String)
@@ -138,7 +156,9 @@ import _SwiftConcurrencyShims
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class WiAdsSkipButton : UIKit.UIButton {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  #endif
   @_Concurrency.MainActor @preconcurrency open func normalUi()
   @objc @_Concurrency.MainActor @preconcurrency public func startCountdown(duration: Swift.Int = 5)
   @objc @_Concurrency.MainActor @preconcurrency public func hide()
@@ -150,7 +170,9 @@ import _SwiftConcurrencyShims
 public protocol WILoggable {
 }
 extension WISDK.WILoggable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func log(_ items: Any..., error: (any Swift.Error)? = nil)
+  #endif
 }
 @_hasMissingDesignatedInitializers final public class WILogger {
   public static var isEnabled: Swift.Bool
@@ -164,16 +186,19 @@ extension WISDK.WILoggable {
   public var rawValue: WISDK.WIEnvironment.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: WISDK.WIEnvironment.RawValue)
+  #endif
 }
 @objc public enum WI3rdBannerAdSize : Swift.Int, Swift.RawRepresentable {
-  case BANNER, LARGE_BANNER, RECTANGLE
-  case MINI_BANNER, MEDIUM_BANNER, PAUSE_BANNER
+  case HOMEPAGE_BANNER, SUBPAGE_BANNER, PAUSE_BANNER
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WI3rdBannerAdSize.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: WISDK.WI3rdBannerAdSize.RawValue)
+  #endif
 }
 @_inheritsConvenienceInitializers @objc open class WIAdEvent : ObjectiveC.NSObject {
   @objc public enum AdEventType : Swift.Int, Swift.RawRepresentable {
@@ -182,10 +207,14 @@ extension WISDK.WILoggable {
     public var rawValue: WISDK.WIAdEvent.AdEventType.RawValue {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: WISDK.WIAdEvent.AdEventType.RawValue)
+    #endif
   }
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(event: [Swift.String : Any]?)
+  #endif
   @objc public func getEventData(key: Swift.String) -> Swift.String
   @objc public func getCampaignId() -> Swift.String
   @objc public func getDuration() -> Swift.String
@@ -197,12 +226,16 @@ extension WISDK.WILoggable {
   @objc deinit
 }
 @objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
-  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?, segments: Swift.String?, bannerType: WISDK.WI3rdBannerAdBannerType, padding: UIKit.UIEdgeInsets = .zero)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, uid20: Swift.String?, segments: Swift.String?, padding: UIKit.UIEdgeInsets = .zero, cacheTimeSec: Swift.Int = 5 * 60)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
   public class func shared() -> WISDK.WIGameManager
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func addGameView(container: UIKit.UIView!, data: WISDK.WIGameData!, gameDelegate: any WISDK.WIGameDelegate)
+  #endif
   @objc public func removeGameView()
   @objc override dynamic public init()
   @objc deinit
@@ -243,7 +276,9 @@ extension WISDK.WI3rdBannerReusableManager {
 @objc public class WIWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
     case LOAD_CONFIG_SUCCESS, OVERLAY_VISIBILITY_CHANGE, USER_VOTED, USER_PURCHASE, TOKEN_EXPIRE, LOGIN, CLOSE_PROFILE_PAGE, DETAIL_VIDEO, DETAIL_CATEGORY, OVELAY_DISPLAY, START_OVERLAY, OVERLAY_COMPLETED, ADS_REQUEST_START, ADS_REQUEST_SUCCESS, ADS_REQUEST_ERROR, ADS_EVENT, UNKNOWN
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -254,15 +289,27 @@ extension WISDK.WI3rdBannerReusableManager {
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, uid20: Swift.String, segments: Swift.String)
+  #endif
   @objc deinit
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIContentType, env: WISDK.WIEnvironment = .PRODUCTION)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, contentType: WISDK.WIContentType, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(channelId: Swift.String?, streamId: Swift.String?, thirdPartyToken: Swift.String?, contentType: WISDK.WIContentType, accountId: Swift.Int, platform: WISDK.WIOverlayData.Platform?, env: WISDK.WIEnvironment = .PRODUCTION, timeoutSecond: Swift.Int = 0)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(type: WISDK.WIOverlayData.OverlayType, accountId: Swift.Int, thirdPartyToken: Swift.String?, env: WISDK.WIEnvironment = WIEnvironment.PRODUCTION)
+  #endif
   @objc @_hasMissingDesignatedInitializers public class Platform : ObjectiveC.NSObject {
     @objc deinit
   }
@@ -272,7 +319,9 @@ extension WISDK.WI3rdBannerReusableManager {
     public var rawValue: WISDK.WIOverlayData.OverlayType.RawValue {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: WISDK.WIOverlayData.OverlayType.RawValue)
+    #endif
   }
   @objc deinit
 }
@@ -282,12 +331,16 @@ extension WISDK.WI3rdBannerReusableManager {
   public var rawValue: WISDK.WIContentType.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: WISDK.WIContentType.RawValue)
+  #endif
 }
 @objc public class WIConfigData : ObjectiveC.NSObject {
   @objc public var sources: [WISDK.WIStreamSource]?
   @objc final public let isVod: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(data: [Swift.String : Any]?)
+  #endif
   @objc deinit
 }
 @objc public enum WIGender : Swift.Int, Swift.RawRepresentable {
@@ -296,7 +349,9 @@ extension WISDK.WI3rdBannerReusableManager {
   public var rawValue: WISDK.WIGender.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: WISDK.WIGender.RawValue)
+  #endif
 }
 @objc public enum WILevelLog : Swift.Int, Swift.RawRepresentable {
   case NODE, BODY
@@ -304,12 +359,16 @@ extension WISDK.WI3rdBannerReusableManager {
   public var rawValue: WISDK.WILevelLog.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: WISDK.WILevelLog.RawValue)
+  #endif
 }
 @objc public class WIWelcomeAdWebAction : ObjectiveC.NSObject {
   public enum TypeAction : Swift.String {
     case USER_DISMISS, USER_CLICK, USER_CLICK_INTERNAL, ALLOW_BACK, UNKNOWN
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -325,16 +384,22 @@ extension WISDK.WI3rdBannerReusableManager {
   public var rawValue: WISDK.WIClickThroughType.RawValue {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
 }
 extension UIKit.UICollectionView {
   @_Concurrency.MainActor @preconcurrency public func register<T>(byType: T.Type) where T : UIKit.UICollectionViewCell
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class PassthroughView : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency open var isUserGestureEnabled: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func point(inside point: CoreFoundation.CGPoint, with event: UIKit.UIEvent?) -> Swift.Bool
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor @preconcurrency public class WIOverlayView : WISDK.PassthroughView, WebKit.WKScriptMessageHandler, WebKit.WKNavigationDelegate, WebKit.WKUIDelegate, UIKit.UIScrollViewDelegate {
@@ -348,33 +413,51 @@ extension UIKit.UICollectionView {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func scrollViewWillBeginZooming(_ scrollView: UIKit.UIScrollView, with view: UIKit.UIView?)
+  #endif
   @_Concurrency.MainActor @preconcurrency public func injectJavascript(javascript: Swift.String)
   @_Concurrency.MainActor @preconcurrency @objc open func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  #endif
   @_Concurrency.MainActor @preconcurrency @objc public func webViewDidClose(_ webView: WebKit.WKWebView)
   @_Concurrency.MainActor @preconcurrency public func clearAll()
   @objc deinit
 }
 @objc public class WIGameData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(accountId: Swift.String?, channelId: Swift.String?, streamId: Swift.String?, token: Swift.String?, env: WISDK.WIEnvironment)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers open class WIDomainFactory {
   public class func shared() -> WISDK.WIDomainFactory
   public func getGameUrl(env: WISDK.WIEnvironment) -> Swift.String
   public func getOverlayUrl(type: WISDK.WIOverlayData.OverlayType, env: WISDK.WIEnvironment) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public func welcomeWebViewUrl(domainUrl: Swift.String?, env: WISDK.WIEnvironment) -> Swift.String
+  #endif
   public func getDomain(env: WISDK.WIEnvironment) -> Swift.String
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIWelcomeAdManager : ObjectiveC.NSObject, WISDK.WIWelcomeAdDelegate {
   public class func shared() -> WISDK.WIWelcomeAdManager
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func requestAds(requestData: WISDK.WIWelcomeAdData, container: UIKit.UIView!, viewController: UIKit.UIViewController, delegate: (any WISDK.WIWelcomeAdDelegate)?, vastLoadTimeout: Swift.Float = 10, loadVideoTimeout: Foundation.TimeInterval = 10, bufferingVideoTimeout: Foundation.TimeInterval = 10, bitrate: Swift.Int = 2500, skipDuration: Swift.Int = 6, levelLog: WISDK.WILevelLog = WILevelLog.NODE, friendlyObstructionList: [GoogleInteractiveMediaAds.IMAFriendlyObstruction]? = nil)
+  #endif
   @objc public func remove()
   @objc public func onDisplayAds()
   @objc public func onNoAds()
@@ -392,8 +475,6 @@ extension UIKit.UICollectionView {
   final public func remove(observer: Swift.AnyObject)
   @objc deinit
 }
-extension WISDK.WI3rdBannerAdBannerType : Swift.Equatable {}
-extension WISDK.WI3rdBannerAdBannerType : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
