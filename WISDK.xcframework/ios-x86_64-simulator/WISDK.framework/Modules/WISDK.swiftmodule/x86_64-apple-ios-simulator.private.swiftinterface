@@ -326,7 +326,7 @@ extension WISDK.WI3rdBannerReusableManager {
   @objc deinit
 }
 @objc public enum WIContentType : Swift.Int, Swift.RawRepresentable {
-  case FILM, VIDEO, TV, SHORT_VIDEO
+  case FILM, VIDEO, TV, SHORT_VOD
   public typealias RawValue = Swift.String
   public var rawValue: WISDK.WIContentType.RawValue {
     get

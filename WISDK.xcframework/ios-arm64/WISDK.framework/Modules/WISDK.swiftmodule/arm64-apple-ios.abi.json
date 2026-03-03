@@ -11927,8 +11927,8 @@
           },
           {
             "kind": "Var",
-            "name": "SHORT_VIDEO",
-            "printedName": "SHORT_VIDEO",
+            "name": "SHORT_VOD",
+            "printedName": "SHORT_VOD",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -11958,8 +11958,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@WISDK@E@WIContentType@WIContentTypeSHORT_VIDEO",
-            "mangledName": "$s5WISDK13WIContentTypeO11SHORT_VIDEOyA2CmF",
+            "usr": "c:@M@WISDK@E@WIContentType@WIContentTypeSHORT_VOD",
+            "mangledName": "$s5WISDK13WIContentTypeO9SHORT_VODyA2CmF",
             "moduleName": "WISDK",
             "declAttributes": [
               "ObjC"
@@ -18909,7 +18909,7 @@
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/common\/WIContentType.swift",
       "kind": "IntegerLiteral",
       "offset": 181,
-      "length": 11,
+      "length": 9,
       "value": "3"
     },
     {
