@@ -402,6 +402,8 @@ SWIFT_PROTOCOL("_TtP5WISDK27WIAdsInStreamLoaderDelegate_")
 - (void)wiRemoveSkipButton;
 @optional
 - (void)mediaProgressWithMediaTime:(NSTimeInterval)mediaTime totalTime:(NSTimeInterval)totalTime;
+- (void)wiPauseSkipButton;
+- (void)wiResumeSkipButton;
 @end
 
 enum WILevelLog : NSInteger;
@@ -416,7 +418,7 @@ enum WILevelLog : NSInteger;
 @class IMAAdEvent;
 @class IMAAdError;
 SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
-@interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate>
+@interface WIAdsInStreamManager : NSObject <AVPictureInPictureControllerDelegate, IMAAdsLoaderDelegate, IMAAdsManagerDelegate, IMALinkOpenerDelegate>
 - (void)initInstreamWithAccountId:(NSInteger)accountId env:(enum WIEnvironment)env vastLoadTimeout:(float)vastLoadTimeout loadVideoTimeout:(NSTimeInterval)loadVideoTimeout bufferingVideoTimeout:(NSTimeInterval)bufferingVideoTimeout bitrate:(NSInteger)bitrate logLevel:(enum WILevelLog)logLevel enablePiP:(BOOL)enablePiP skipDuration:(NSInteger)skipDuration SWIFT_METHOD_FAMILY(none);
 - (void)requestAdsWithRequestData:(WIAdsRequestData * _Nonnull)requestData player:(id _Nonnull)player adContainer:(UIView * _Nonnull)adContainer viewController:(UIViewController * _Nonnull)viewController uiPanGestureRecognizer:(UIPanGestureRecognizer * _Nullable)uiPanGestureRecognizer friendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
 - (void)addFriendlyObstructionWithFriendlyObstructionList:(NSArray<IMAFriendlyObstruction *> * _Nullable)friendlyObstructionList;
@@ -437,6 +439,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 - (void)skip;
 - (void)discardAdBreak;
 - (void)destroy;
+- (void)linkOpenerDidCloseInAppLink:(NSObject * _Nonnull)linkOpener;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -615,6 +618,19 @@ SWIFT_CLASS("_TtC5WISDK13WIOverlayView")
 - (void)webView:(WKWebView * _Nonnull)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 - (void)webViewDidClose:(WKWebView * _Nonnull)webView;
+@end
+
+typedef SWIFT_ENUM(NSInteger, WIReasonReport, open) {
+  WIReasonReportRESTRICTED_PRODUCT = 0,
+  WIReasonReportHARMFUL_CONTENT = 1,
+  WIReasonReportMISLEADING = 2,
+};
+
+SWIFT_CLASS("_TtC5WISDK18WIReportAdMetadata")
+@interface WIReportAdMetadata : NSObject
+- (nonnull instancetype)initWithTenantId:(NSString * _Nonnull)tenantId env:(enum WIEnvironment)env campaignId:(NSString * _Nonnull)campaignId adId:(NSString * _Nonnull)adId adName:(NSString * _Nonnull)adName wrapperIds:(NSArray<NSString *> * _Nonnull)wrapperIds adType:(NSString * _Nonnull)adType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class NSURL;

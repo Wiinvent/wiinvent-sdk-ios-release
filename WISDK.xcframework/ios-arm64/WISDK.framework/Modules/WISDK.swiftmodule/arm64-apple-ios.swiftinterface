@@ -82,6 +82,8 @@ import _SwiftConcurrencyShims
   @objc func wiShowSkipButton(duration: Swift.Int)
   @objc func wiRemoveSkipButton()
   @objc optional func mediaProgress(mediaTime: Foundation.TimeInterval, totalTime: Foundation.TimeInterval)
+  @objc optional func wiPauseSkipButton()
+  @objc optional func wiResumeSkipButton()
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -92,7 +94,7 @@ import _SwiftConcurrencyShims
   #endif
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate {
+@_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate, GoogleInteractiveMediaAds.IMALinkOpenerDelegate {
   public class func shared() -> WISDK.WIAdsInStreamManager
   public var loaderDelegate: (any WISDK.WIAdsInStreamLoaderDelegate)?
   public var pipController: AVKit.AVPictureInPictureController?
@@ -120,6 +122,7 @@ import _SwiftConcurrencyShims
   @objc public func skip()
   @objc public func discardAdBreak()
   @objc public func destroy()
+  @objc public func linkOpenerDidClose(inAppLink linkOpener: ObjectiveC.NSObject)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -475,6 +478,22 @@ extension UIKit.UICollectionView {
   final public func remove(observer: Swift.AnyObject)
   @objc deinit
 }
+@objc public enum WIReasonReport : Swift.Int {
+  case RESTRICTED_PRODUCT
+  case HARMFUL_CONTENT
+  case MISLEADING
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class WIReportAdMetadata : ObjectiveC.NSObject {
+  @objc public init(tenantId: Swift.String, env: WISDK.WIEnvironment, campaignId: Swift.String, adId: Swift.String, adName: Swift.String, wrapperIds: [Swift.String], adType: Swift.String)
+  @objc deinit
+}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIGameWebAction.TypeAction : Swift.RawRepresentable {}
@@ -500,3 +519,6 @@ extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.Hashable {}
 extension WISDK.WIWelcomeAdWebAction.TypeAction : Swift.RawRepresentable {}
 extension WISDK.WIClickThroughType : Swift.Equatable {}
 extension WISDK.WIClickThroughType : Swift.Hashable {}
+extension WISDK.WIReasonReport : Swift.Equatable {}
+extension WISDK.WIReasonReport : Swift.Hashable {}
+extension WISDK.WIReasonReport : Swift.RawRepresentable {}

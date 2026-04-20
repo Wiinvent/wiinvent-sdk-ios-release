@@ -1556,6 +1556,56 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wiPauseSkipButton",
+            "printedName": "wiPauseSkipButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIAdsInStreamLoaderDelegate(im)wiPauseSkipButton",
+            "mangledName": "$s5WISDK27WIAdsInStreamLoaderDelegateP17wiPauseSkipButtonyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIAdsInStreamLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIAdsInStreamLoaderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "wiResumeSkipButton",
+            "printedName": "wiResumeSkipButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(pl)WIAdsInStreamLoaderDelegate(im)wiResumeSkipButton",
+            "mangledName": "$s5WISDK27WIAdsInStreamLoaderDelegateP18wiResumeSkipButtonyyF",
+            "moduleName": "WISDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : WISDK.WIAdsInStreamLoaderDelegate>",
+            "sugared_genericSig": "<Self where Self : WISDK.WIAdsInStreamLoaderDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -2832,6 +2882,35 @@
             "declAttributes": [
               "AccessControl",
               "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "linkOpenerDidClose",
+            "printedName": "linkOpenerDidClose(inAppLink:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSObject",
+                "printedName": "ObjectiveC.NSObject",
+                "usr": "c:objc(cs)NSObject"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@WISDK@objc(cs)WIAdsInStreamManager(im)linkOpenerDidCloseInAppLink:",
+            "mangledName": "$s5WISDK20WIAdsInStreamManagerC18linkOpenerDidClose9inAppLinkySo8NSObjectC_tF",
+            "moduleName": "WISDK",
+            "objc_name": "linkOpenerDidCloseInAppLink:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -16278,6 +16357,519 @@
         "moduleName": "WISDK"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIReasonReport",
+        "printedName": "WIReasonReport",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "RESTRICTED_PRODUCT",
+            "printedName": "RESTRICTED_PRODUCT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIReasonReport.Type) -> WISDK.WIReasonReport",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIReasonReport",
+                    "printedName": "WISDK.WIReasonReport",
+                    "usr": "c:@M@WISDK@E@WIReasonReport"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIReasonReport.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIReasonReport",
+                        "printedName": "WISDK.WIReasonReport",
+                        "usr": "c:@M@WISDK@E@WIReasonReport"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIReasonReport@WIReasonReportRESTRICTED_PRODUCT",
+            "mangledName": "$s5WISDK14WIReasonReportO18RESTRICTED_PRODUCTyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "HARMFUL_CONTENT",
+            "printedName": "HARMFUL_CONTENT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIReasonReport.Type) -> WISDK.WIReasonReport",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIReasonReport",
+                    "printedName": "WISDK.WIReasonReport",
+                    "usr": "c:@M@WISDK@E@WIReasonReport"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIReasonReport.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIReasonReport",
+                        "printedName": "WISDK.WIReasonReport",
+                        "usr": "c:@M@WISDK@E@WIReasonReport"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIReasonReport@WIReasonReportHARMFUL_CONTENT",
+            "mangledName": "$s5WISDK14WIReasonReportO15HARMFUL_CONTENTyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "MISLEADING",
+            "printedName": "MISLEADING",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(WISDK.WIReasonReport.Type) -> WISDK.WIReasonReport",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIReasonReport",
+                    "printedName": "WISDK.WIReasonReport",
+                    "usr": "c:@M@WISDK@E@WIReasonReport"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "WISDK.WIReasonReport.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WIReasonReport",
+                        "printedName": "WISDK.WIReasonReport",
+                        "usr": "c:@M@WISDK@E@WIReasonReport"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@WISDK@E@WIReasonReport@WIReasonReportMISLEADING",
+            "mangledName": "$s5WISDK14WIReasonReportO10MISLEADINGyA2CmF",
+            "moduleName": "WISDK",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "WISDK.WIReasonReport?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WIReasonReport",
+                    "printedName": "WISDK.WIReasonReport",
+                    "usr": "c:@M@WISDK@E@WIReasonReport"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:5WISDK14WIReasonReportO8rawValueACSgSi_tcfc",
+            "mangledName": "$s5WISDK14WIReasonReportO8rawValueACSgSi_tcfc",
+            "moduleName": "WISDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:5WISDK14WIReasonReportO8rawValueSivp",
+            "mangledName": "$s5WISDK14WIReasonReportO8rawValueSivp",
+            "moduleName": "WISDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:5WISDK14WIReasonReportO8rawValueSivg",
+                "mangledName": "$s5WISDK14WIReasonReportO8rawValueSivg",
+                "moduleName": "WISDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@WISDK@E@WIReasonReport",
+        "mangledName": "$s5WISDK14WIReasonReportO",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WIReportAdMetadata",
+        "printedName": "WIReportAdMetadata",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(tenantId:env:campaignId:adId:adName:wrapperIds:adType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIReportAdMetadata",
+                "printedName": "WISDK.WIReportAdMetadata",
+                "usr": "c:@M@WISDK@objc(cs)WIReportAdMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WIEnvironment",
+                "printedName": "WISDK.WIEnvironment",
+                "usr": "c:@M@WISDK@E@WIEnvironment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIReportAdMetadata(im)initWithTenantId:env:campaignId:adId:adName:wrapperIds:adType:",
+            "mangledName": "$s5WISDK18WIReportAdMetadataC8tenantId3env08campaignF002adF00I4Name10wrapperIds0I4TypeACSS_AA13WIEnvironmentOS3SSaySSGSStcfc",
+            "moduleName": "WISDK",
+            "objc_name": "initWithTenantId:env:campaignId:adId:adName:wrapperIds:adType:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WIReportAdMetadata",
+                "printedName": "WISDK.WIReportAdMetadata",
+                "usr": "c:@M@WISDK@objc(cs)WIReportAdMetadata"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@WISDK@objc(cs)WIReportAdMetadata(im)init",
+            "mangledName": "$s5WISDK18WIReportAdMetadataCACycfc",
+            "moduleName": "WISDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@WISDK@objc(cs)WIReportAdMetadata",
+        "mangledName": "$s5WISDK18WIReportAdMetadataC",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "WISDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "UICollectionView",
         "printedName": "UICollectionView",
@@ -18061,175 +18653,196 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 381,
+      "offset": 404,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 409,
+      "offset": 432,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 437,
+      "offset": 460,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1774,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1688,
+      "offset": 1817,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1721,
+      "offset": 1850,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1760,
+      "offset": 1889,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1836,
+      "offset": 1965,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1877,
+      "offset": 2006,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1923,
+      "offset": 2052,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1963,
+      "offset": 2092,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
+      "offset": 2127,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2049,
+      "offset": 2178,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2095,
+      "offset": 2224,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2134,
+      "offset": 2263,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2176,
+      "offset": 2305,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2217,
+      "offset": 2346,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2279,
+      "offset": 2408,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2394,
+      "offset": 2523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2567,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2610,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
+      "kind": "Array",
+      "offset": 2659,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2505,
+      "offset": 2767,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2542,
+      "offset": 2804,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2584,
+      "offset": 2846,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2603,
+      "offset": 2865,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2667,
+      "offset": 2929,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/instream\/WIAdsInStreamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2694,
+      "offset": 2956,
       "length": 1,
       "value": "6"
     },
@@ -18389,99 +19002,106 @@
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2240,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2431,
+      "offset": 2463,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2436,
+      "offset": 2468,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "FloatLiteral",
-      "offset": 2505,
+      "offset": 2537,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2546,
+      "offset": 2578,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2595,
+      "offset": 2627,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2605,
+      "offset": 2637,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2617,
+      "offset": 2649,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2628,
+      "offset": 2660,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2757,
+      "offset": 2789,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2979,
+      "offset": 3011,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3073,
+      "offset": 3105,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3107,
+      "offset": 3139,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3266,
+      "offset": 3298,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WI3rdWelcomeBannerAdWebView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6106,
+      "offset": 6138,
       "length": 1,
       "value": "7"
     },
@@ -18684,161 +19304,203 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 421,
+      "offset": 444,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 446,
+      "offset": 469,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 507,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 885,
+      "offset": 908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 981,
+      "offset": 1004,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1007,
+      "offset": 1030,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1083,
+      "offset": 1106,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1150,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1165,
+      "offset": 1228,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1211,
+      "offset": 1274,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1251,
+      "offset": 1314,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1286,
+      "offset": 1349,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1330,
+      "offset": 1393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1369,
+      "offset": 1432,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1611,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "Array",
+      "offset": 1713,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1500,
+      "offset": 1773,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2110,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2152,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1579,
+      "offset": 2231,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1582,
+      "offset": 2234,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1768,
+      "offset": 2420,
       "length": 7,
       "value": "\"Check\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5894,
+      "offset": 6546,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5931,
+      "offset": 6583,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5973,
+      "offset": 6625,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5992,
+      "offset": 6644,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6018,
+      "offset": 6670,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIComboWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21096,
+      "offset": 23160,
       "length": 1,
       "value": "6"
     },
@@ -19020,140 +19682,182 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 419,
+      "offset": 442,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 444,
+      "offset": 467,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 482,
+      "offset": 505,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 842,
+      "offset": 865,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 938,
+      "offset": 961,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 964,
+      "offset": 987,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1040,
+      "offset": 1063,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1107,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1122,
+      "offset": 1185,
       "length": 4,
       "value": "\"-1\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1168,
+      "offset": 1231,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1271,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "StringLiteral",
-      "offset": 1243,
+      "offset": 1306,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1287,
+      "offset": 1350,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1326,
+      "offset": 1389,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1568,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "StringLiteral",
+      "offset": 1616,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "Array",
+      "offset": 1670,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1457,
+      "offset": 1730,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2067,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2109,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1851,
+      "offset": 2503,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1888,
+      "offset": 2540,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1930,
+      "offset": 2582,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1949,
+      "offset": 2601,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1975,
+      "offset": 2627,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIVastWelcomeAdView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17579,
+      "offset": 18477,
       "length": 1,
       "value": "7"
     },
@@ -19188,140 +19892,154 @@
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 605,
+      "offset": 659,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 639,
+      "offset": 693,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1064,
+      "offset": 1276,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1101,
+      "offset": 1313,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1143,
+      "offset": 1355,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1162,
+      "offset": 1374,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1188,
+      "offset": 1400,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6920,
+      "offset": 7595,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8163,
+      "offset": 8838,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8200,
+      "offset": 8875,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8242,
+      "offset": 8917,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8261,
+      "offset": 8936,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 8287,
+      "offset": 8962,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9883,
+      "offset": 10558,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9920,
+      "offset": 10595,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9962,
+      "offset": 10637,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9981,
+      "offset": 10656,
       "length": 4,
       "value": "2500"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10007,
+      "offset": 10682,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11599,
+      "offset": 12274,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11631,
+      "offset": 12306,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13205,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/WIWelcomeAdManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13237,
       "length": 1,
       "value": "6"
     },
@@ -19373,6 +20091,1441 @@
       "offset": 7437,
       "length": 48,
       "value": "[0x67452301, 0xefcdab89, 0x98badcfe, 0x10325476]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 643,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 748,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 784,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 816,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1039,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 2,
+      "value": "18"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1113,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1154,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1203,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1213,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1225,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1236,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1365,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1579,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1839,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/welcomead\/view\/WIImageWelcomeAdView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5290,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReasonReport.swift",
+      "kind": "IntegerLiteral",
+      "offset": 168,
+      "length": 15,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReasonReport.swift",
+      "kind": "IntegerLiteral",
+      "offset": 193,
+      "length": 10,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportAdService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 232,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportAdService.swift",
+      "kind": "FloatLiteral",
+      "offset": 280,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 357,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 362,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 376,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 381,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 399,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 413,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 453,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 512,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "StringLiteral",
+      "offset": 570,
+      "length": 4,
+      "value": "\"QC\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 622,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 736,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1016,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1112,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1310,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 1315,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1329,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 1334,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1347,
+      "length": 4,
+      "value": "0x2A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 1352,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "FloatLiteral",
+      "offset": 1366,
+      "length": 4,
+      "value": "0.85"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1406,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1465,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "StringLiteral",
+      "offset": 1556,
+      "length": 18,
+      "value": "\"info.circle.fill\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1723,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2019,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2087,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2149,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2212,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2396,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportButton.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2490,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "Array",
+      "offset": 320,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "Array",
+      "offset": 369,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 533,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 595,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 739,
+      "length": 4,
+      "value": "0x1C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 744,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 758,
+      "length": 4,
+      "value": "0x1C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 763,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 776,
+      "length": 4,
+      "value": "0x1E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 781,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 795,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 832,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 864,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 926,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 1052,
+      "length": 30,
+      "value": "\"Bạn gặp vấn đề gì?\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1134,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1267,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1418,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1423,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1437,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1442,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1455,
+      "length": 4,
+      "value": "0x3C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1460,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1474,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1534,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1709,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1769,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1945,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2048,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 2196,
+      "length": 7,
+      "value": "\"Hủy\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2330,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2397,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2402,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2416,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2421,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2434,
+      "length": 4,
+      "value": "0x3C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2439,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2453,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2492,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2554,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 2703,
+      "length": 7,
+      "value": "\"Gửi\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2819,
+      "length": 4,
+      "value": "0x66"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2824,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2838,
+      "length": 4,
+      "value": "0x66"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2843,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2856,
+      "length": 4,
+      "value": "0x66"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 2861,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2875,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2955,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3022,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3027,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3041,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3046,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3059,
+      "length": 4,
+      "value": "0x3C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 3064,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3078,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3117,
+      "length": 2,
+      "value": "22"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3179,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3212,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6980,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7035,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7040,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7054,
+      "length": 4,
+      "value": "0x3A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7059,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7072,
+      "length": 4,
+      "value": "0x3C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7077,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7091,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7153,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7169,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7397,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7512,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7594,
+      "length": 3,
+      "value": "1.5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7648,
+      "length": 4,
+      "value": "0x8E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7653,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7667,
+      "length": 4,
+      "value": "0x8E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7672,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7685,
+      "length": 4,
+      "value": "0x93"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 7690,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7704,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7753,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8020,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8113,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8156,
+      "length": 4,
+      "value": "0xE0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8161,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8175,
+      "length": 4,
+      "value": "0xE0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8180,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8193,
+      "length": 4,
+      "value": "0xE0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 8198,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8212,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8245,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8289,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8652,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8748,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8895,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8962,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9055,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9149,
+      "length": 3,
+      "value": "-20"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9234,
+      "length": 2,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9324,
+      "length": 3,
+      "value": "-12"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9685,
+      "length": 4,
+      "value": "0x1A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9690,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9704,
+      "length": 4,
+      "value": "0x56"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9709,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9722,
+      "length": 4,
+      "value": "0xA0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9727,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9741,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9796,
+      "length": 4,
+      "value": "0x1A"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9801,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9815,
+      "length": 4,
+      "value": "0x56"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9820,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9833,
+      "length": 4,
+      "value": "0xA0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9838,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9852,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 9891,
+      "length": 5,
+      "value": "\"✓\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10031,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10206,
+      "length": 4,
+      "value": "0x8E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 10211,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10225,
+      "length": 4,
+      "value": "0x8E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 10230,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10243,
+      "length": 4,
+      "value": "0x93"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 10248,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10262,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 10301,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "StringLiteral",
+      "offset": 12479,
+      "length": 185,
+      "value": "\"Báo cáo đã được gửi thành công\nChúng tôi trân trọng cảm ơn phản hồi của bạn và sẽ xem xét nội dung này để mang lại trải nghiệm tốt hơn.\""
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12841,
+      "length": 4,
+      "value": "0x1C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12846,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12860,
+      "length": 4,
+      "value": "0x1C"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12865,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12878,
+      "length": 4,
+      "value": "0x1E"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12883,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 12897,
+      "length": 4,
+      "value": "0.95"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12965,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13083,
+      "length": 2,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13150,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 13210,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13371,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13463,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13557,
+      "length": 3,
+      "value": "-16"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13648,
+      "length": 3,
+      "value": "-14"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14105,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14111,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14142,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 14182,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14194,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14297,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 14402,
+      "length": 3,
+      "value": "3.5"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "FloatLiteral",
+      "offset": 14450,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14462,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14572,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14578,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportBottomSheetView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 14617,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 398,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 803,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dangnam\/Projects\/Wiinvent\/SDK\/IOS\/WISDK\/WISDK\/reportad\/WIReportAdManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 829,
+      "length": 5,
+      "value": "false"
     }
   ]
 }
