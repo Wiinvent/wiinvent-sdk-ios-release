@@ -87,10 +87,10 @@ import _SwiftConcurrencyShims
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, useImpressionLimit: Swift.Int, env: WISDK.WIEnvironment, segments: Swift.String)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, env: WISDK.WIEnvironment, segments: Swift.String)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, useImpressionLimit: Swift.Int, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
   #endif
   @objc deinit
 }
@@ -230,7 +230,7 @@ extension WISDK.WILoggable {
 }
 @objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, userId: Swift.String?, useImpressionLimit: Swift.Int, segments: Swift.String?, padding: UIKit.UIEdgeInsets = .zero, cacheTimeSec: Swift.Int = 5 * 60)
+  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, userId: Swift.String?, userImpressionLimit: Swift.Int, segments: Swift.String?, padding: UIKit.UIEdgeInsets = .zero, cacheTimeSec: Swift.Int = 5 * 60)
   #endif
   @objc deinit
 }
@@ -293,7 +293,7 @@ extension WISDK.WI3rdBannerReusableManager {
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, useImpressionLimit: Swift.Int, segments: Swift.String)
+  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, segments: Swift.String)
   #endif
   @objc deinit
 }
