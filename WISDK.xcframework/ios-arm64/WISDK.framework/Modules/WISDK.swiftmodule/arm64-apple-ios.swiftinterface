@@ -72,8 +72,8 @@ import _SwiftConcurrencyShims
   @objc optional func wiResumeSkipButton()
 }
 @objc public class WIWelcomeAdData : ObjectiveC.NSObject {
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTimes: Swift.Int, env: WISDK.WIEnvironment, segments: Swift.String)
-  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTimes: Swift.Int, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTime: Swift.Int, env: WISDK.WIEnvironment, segments: Swift.String)
+  @objc public init(accountId: Swift.String?, transId: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTime: Swift.Int, domainUrl: Swift.String?, env: WISDK.WIEnvironment, segments: Swift.String)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class WIAdsInStreamManager : ObjectiveC.NSObject, GoogleInteractiveMediaAds.IMAAdsLoaderDelegate, GoogleInteractiveMediaAds.IMAAdsManagerDelegate, AVKit.AVPictureInPictureControllerDelegate, GoogleInteractiveMediaAds.IMALinkOpenerDelegate {
@@ -191,7 +191,7 @@ extension WISDK.WILoggable {
   @objc deinit
 }
 @objc public class WI3rdBannerAdData : ObjectiveC.NSObject {
-  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, userId: Swift.String?, userImpressionLimit: Swift.Int, adPendingTimes: Swift.Int, segments: Swift.String?, padding: UIKit.UIEdgeInsets = .zero, cacheTimeSec: Swift.Int = 5 * 60)
+  @objc public init(position: Swift.String, accountId: Swift.String? = nil, env: WISDK.WIEnvironment, channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, adSize: WISDK.WI3rdBannerAdSize, userId: Swift.String?, userImpressionLimit: Swift.Int, adPendingTime: Swift.Int, segments: Swift.String?, padding: UIKit.UIEdgeInsets = .zero, cacheTimeSec: Swift.Int = 5 * 60)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers open class WIGameManager : ObjectiveC.NSObject {
@@ -248,7 +248,7 @@ extension WISDK.WI3rdBannerReusableManager {
   @objc deinit
 }
 @objc public class WIAdsRequestData : ObjectiveC.NSObject {
-  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTimes: Swift.Int, segments: Swift.String)
+  @objc public init(channelId: Swift.String? = nil, streamId: Swift.String? = nil, transId: Swift.String?, contentType: WISDK.WIContentType, title: Swift.String?, category: Swift.String?, keyword: Swift.String?, age: Swift.Int, gender: WISDK.WIGender, userId: Swift.String, userImpressionLimit: Swift.Int, adPendingTime: Swift.Int, segments: Swift.String)
   @objc deinit
 }
 @objc public class WIOverlayData : ObjectiveC.NSObject {

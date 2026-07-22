@@ -391,7 +391,7 @@ SWIFT_ENUM_FWD_DECL(NSInteger, WIGender)
 SWIFT_ENUM_FWD_DECL(NSInteger, WI3rdBannerAdSize)
 SWIFT_CLASS("_TtC5WISDK17WI3rdBannerAdData")
 @interface WI3rdBannerAdData : NSObject
-- (nonnull instancetype)initWithPosition:(NSString * _Nonnull)position accountId:(NSString * _Nullable)accountId env:(enum WIEnvironment)env channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId transId:(NSString * _Nullable)transId contentType:(enum WIContentType)contentType title:(NSString * _Nullable)title category:(NSString * _Nullable)category keyword:(NSString * _Nullable)keyword age:(NSInteger)age gender:(enum WIGender)gender adSize:(enum WI3rdBannerAdSize)adSize userId:(NSString * _Nullable)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTimes:(NSInteger)adPendingTimes segments:(NSString * _Nullable)segments padding:(UIEdgeInsets)padding cacheTimeSec:(NSInteger)cacheTimeSec OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPosition:(NSString * _Nonnull)position accountId:(NSString * _Nullable)accountId env:(enum WIEnvironment)env channelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId transId:(NSString * _Nullable)transId contentType:(enum WIContentType)contentType title:(NSString * _Nullable)title category:(NSString * _Nullable)category keyword:(NSString * _Nullable)keyword age:(NSInteger)age gender:(enum WIGender)gender adSize:(enum WI3rdBannerAdSize)adSize userId:(NSString * _Nullable)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTime:(NSInteger)adPendingTime segments:(NSString * _Nullable)segments padding:(UIEdgeInsets)padding cacheTimeSec:(NSInteger)cacheTimeSec OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -510,7 +510,7 @@ SWIFT_CLASS("_TtC5WISDK20WIAdsInStreamManager")
 
 SWIFT_CLASS("_TtC5WISDK16WIAdsRequestData")
 @interface WIAdsRequestData : NSObject
-- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId transId:(NSString * _Nullable)transId contentType:(enum WIContentType)contentType title:(NSString * _Nullable)title category:(NSString * _Nullable)category keyword:(NSString * _Nullable)keyword age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTimes:(NSInteger)adPendingTimes segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithChannelId:(NSString * _Nullable)channelId streamId:(NSString * _Nullable)streamId transId:(NSString * _Nullable)transId contentType:(enum WIContentType)contentType title:(NSString * _Nullable)title category:(NSString * _Nullable)category keyword:(NSString * _Nullable)keyword age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTime:(NSInteger)adPendingTime segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -715,8 +715,8 @@ SWIFT_CLASS("_TtC5WISDK11WIWebAction")
 
 SWIFT_CLASS("_TtC5WISDK15WIWelcomeAdData")
 @interface WIWelcomeAdData : NSObject
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTimes:(NSInteger)adPendingTimes env:(enum WIEnvironment)env segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTimes:(NSInteger)adPendingTimes domainUrl:(NSString * _Nullable)domainUrl env:(enum WIEnvironment)env segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTime:(NSInteger)adPendingTime env:(enum WIEnvironment)env segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAccountId:(NSString * _Nullable)accountId transId:(NSString * _Nullable)transId age:(NSInteger)age gender:(enum WIGender)gender userId:(NSString * _Nonnull)userId userImpressionLimit:(NSInteger)userImpressionLimit adPendingTime:(NSInteger)adPendingTime domainUrl:(NSString * _Nullable)domainUrl env:(enum WIEnvironment)env segments:(NSString * _Nonnull)segments OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
