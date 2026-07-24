@@ -397,7 +397,7 @@ extension UIKit.UICollectionView {
   }
 }
 @objc public class WIReportAdMetadata : ObjectiveC.NSObject {
-  @objc public init(tenantId: Swift.String, env: WISDK.WIEnvironment, campaignId: Swift.String, adId: Swift.String, adName: Swift.String, wrapperIds: [Swift.String], adType: Swift.String)
+  @objc public init(tenantId: Swift.String, env: WISDK.WIEnvironment, campaignId: Swift.String, adId: Swift.String, adName: Swift.String, wrapperIds: [Swift.String], adType: Swift.String, userId: Swift.String = "")
   @objc deinit
 }
 extension WISDK.WIGameWebAction.TypeAction : Swift.Equatable {}

@@ -693,7 +693,7 @@ typedef SWIFT_ENUM(NSInteger, WIReasonReport, open) {
 
 SWIFT_CLASS("_TtC5WISDK18WIReportAdMetadata")
 @interface WIReportAdMetadata : NSObject
-- (nonnull instancetype)initWithTenantId:(NSString * _Nonnull)tenantId env:(enum WIEnvironment)env campaignId:(NSString * _Nonnull)campaignId adId:(NSString * _Nonnull)adId adName:(NSString * _Nonnull)adName wrapperIds:(NSArray<NSString *> * _Nonnull)wrapperIds adType:(NSString * _Nonnull)adType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTenantId:(NSString * _Nonnull)tenantId env:(enum WIEnvironment)env campaignId:(NSString * _Nonnull)campaignId adId:(NSString * _Nonnull)adId adName:(NSString * _Nonnull)adName wrapperIds:(NSArray<NSString *> * _Nonnull)wrapperIds adType:(NSString * _Nonnull)adType userId:(NSString * _Nonnull)userId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
